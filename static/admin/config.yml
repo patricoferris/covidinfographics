@@ -13,9 +13,10 @@ collections:
     slug: 'index'
     media_folder: ''
     public_folder: ''
-    path: '{{title}}/index'
+    path: '{{title}}/{{sub}}/index'
     editor:
       preview: false
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Subcategory', name: 'sub', widget: 'string' }
       - { label: "Infographics", name: "infographics", widget: "list", summary: '{{fields.image}}', field: {label: Image, name: image, widget: image}}
