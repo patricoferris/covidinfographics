@@ -1,31 +1,31 @@
 import React from "react"
 import { graphql } from "gatsby"
 import locales from "../../config/i18n"
-import LocalizedLink from "../components/localizedLink"
-import SimpleCard from "../components/card"
+import LocalizedLink from "../components/LocalizedLink"
+import SimpleCard from "../components/Card"
 import useTranslations from "../components/useTranslations"
-import Selector from "../components/selector"
+import Selector from "../components/Selector"
 
 import Grid from '@material-ui/core/Grid'
 import { TwitterTimelineEmbed } from 'react-twitter-embed'
 
 const Index = ({ data: { allMdx } }) => {
-  const translations = useTranslations()
+  const { index } = useTranslations()
 
   return (
     <>
       <Grid container spacing={3}>
         <Grid item sm={12} md={8} spacing={3}>
-          <SimpleCard title={translations.missionTitle} content={translations.mission}/>
-          <SimpleCard title={translations.stepOneTitle} content={translations.stepOne}>
+          <SimpleCard title={index.missionTitle} content={index.mission}/>
+          <SimpleCard title={index.stepOneTitle} content={index.stepOne}>
             <Selector languages={Object.keys(locales).map(locale => locales[locale])}/>
           </SimpleCard>
-          <SimpleCard title={translations.stepTwoTitle} content={translations.stepTwo}/>
+          <SimpleCard title={index.stepTwoTitle} content={index.stepTwo}/>
         </Grid>
         <Grid item sm={12} md={4}>
-          <SimpleCard title={translations.wellBeing} content={translations.wellBeingText}>
+          <SimpleCard title={index.wellBeing} content={index.wellBeingText}>
             <LocalizedLink to={"/resources"}> 
-              <p>{translations.wellBeingLink}</p>
+              <p>{index.wellBeingLink}</p>
             </LocalizedLink>
           </SimpleCard>
           <SimpleCard>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { navigate } from "gatsby"
-import { LocaleContext } from "./layout"
+import { LocaleContext } from "./Layout"
 import { makeStyles } from '@material-ui/core/styles';
 import MenuItem from '@material-ui/core/MenuItem';
 import FormControl from '@material-ui/core/FormControl';

@@ -1,8 +1,10 @@
 import React from "react"
+import useTranslations from "../components/useTranslations"
 
 const Resources = () => {
+  const { resources } = useTranslations()
   return (
-    <div>Resources coming soon....</div>
+    <div>{resources.placeholder}</div>
   )
 }
 

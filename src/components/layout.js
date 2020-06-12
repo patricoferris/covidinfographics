@@ -1,6 +1,6 @@
 import React from "react"
 import { MDXProvider } from "@mdx-js/react"
-import MdxLink from "./mdxLink"
+import MdxLink from "./MdxLink"
 
 import locales from "../../config/i18n"
 

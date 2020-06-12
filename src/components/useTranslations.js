@@ -1,6 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { LocaleContext } from "./layout"
+import { LocaleContext } from "./Layout"
 
 const useTranslations = () => {
   // Grab the locale (passed through context) from the Context Provider
@@ -25,12 +25,13 @@ const useTranslations = () => {
 export default useTranslations
 
 const query = graphql`
-  query useTranslations {
-    rawData: allFile(filter: { sourceInstanceName: { eq: "translations" } }) {
-      edges {
-        node {
-          name
-          translations: childTranslationsJson {
+query useTranslations {
+  rawData: allFile(filter: { sourceInstanceName: { eq: "translations" } }) {
+    edges {
+      node {
+        name
+        translations: childTranslationsJson {
+          index {
             missionTitle
             mission
             stepOneTitle
@@ -41,8 +42,12 @@ const query = graphql`
             wellBeingText
             wellBeingLink
           }
+          resources {
+            placeholder
+          }
         }
       }
     }
   }
+}
 `
