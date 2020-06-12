@@ -1,5 +1,7 @@
-# COVID-19 Infographics
+Covid-19 Infographics 
+------------------------
 
-A site to access all the info grahics avaliable at https://www.facebook.com/COVID2019Infographics
+### Our Mission
+As a group of doctors, medical students and volunteers, we’ve created infographics to help summarise key points about COVID-19 in a variety of languages to get the right information, in an easy to understand format, to these communities.
 
-Visit https://www.covid19graphics.info
+
