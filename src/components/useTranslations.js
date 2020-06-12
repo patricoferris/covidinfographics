@@ -31,9 +31,15 @@ const query = graphql`
         node {
           name
           translations: childTranslationsJson {
+            missionTitle
             mission
-            step1
-            step2
+            stepOneTitle
+            stepOne
+            stepTwoTitle
+            stepTwo
+            wellBeing
+            wellBeingText
+            wellBeingLink
           }
         }
       }

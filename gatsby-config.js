@@ -16,21 +16,6 @@ module.exports = {
       },
     },
     `gatsby-transformer-json`,
-    {
-      resolve: `gatsby-plugin-material-ui`,
-      options: {
-        stylesProvider: {
-          injectFirst: true,
-        },  
-        theme: {
-          palette: {
-              primary: {
-                  main: '#BA3D3B', // new color here 
-              } 
-          },
-        },
-      },
-    },
-    `gatsby-plugin-styled-components`,
+    `gatsby-theme-material-ui`,
   ],
 }

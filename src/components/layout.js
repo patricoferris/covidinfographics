@@ -1,6 +1,5 @@
 import React from "react"
 import { MDXProvider } from "@mdx-js/react"
-import Navigation from "./navigation"
 import MdxLink from "./mdxLink"
 
 import locales from "../../config/i18n"
@@ -21,6 +20,9 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
+  topNav: {
+    backgroundColor: theme.palette.primary.main
+  },
   menuButton: {
     marginRight: theme.spacing(2),
   },
@@ -35,20 +37,14 @@ const Layout = ({ children, pageContext: { locale } }) => {
   return (
   <LocaleContext.Provider value={{ locale }}>
     <AppBar position="static">
-      <Toolbar>
-        <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-          <MenuIcon />
-        </IconButton>
-        <Typography variant="h6" className={classes.title}>
+      <Toolbar className={classes.topNav}>
+        <Typography variant="h5" className={classes.title}>
           {locales[locale].defaultTitle}
         </Typography>
         <Button color="inherit">Login</Button>
       </Toolbar>
     </AppBar>
     <div className="global-wrapper">
-      <header className="global-header">
-        <Navigation />
-      </header>
       <MDXProvider components={{ a: MdxLink }}>
         <main>{children}</main>
       </MDXProvider>

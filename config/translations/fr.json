@@ -1,6 +1,12 @@
 {
+  "missionTitle": "Notre Mission",
   "mission": "En tant que groupe de médecins, d'étudiants en médecine et de bénévoles, nous avons créé des infographies pour aider à résumer les points clés de COVID-19 dans une variété de langues afin d'obtenir les bonnes informations, dans un format facile à comprendre, pour ces communautés.",
-  "step1": "Choisissez votre langue",
-  "step2": "Voir ou télécharger les infographies"
+  "stepOneTitle": "Étape 1",
+  "stepOne": "Choisissez votre langue.",
+  "stepTwoTitle": "Étape 2",
+  "stepTwo": "Voir ou télécharger les infographies.",
+  "wellBeing": "Bien-Être",
+  "wellBeingText": "On a créé une liste de tous les services offrant un soutien aux groupes BAME dans chaque région du Royaume-Uni.",
+  "wellBeingLink": "Cliquez ici pour en trouver un près de chez vous."
 }
 

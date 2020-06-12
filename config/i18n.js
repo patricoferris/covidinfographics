@@ -2,6 +2,7 @@ module.exports = {
   en: {
     default: true,
     path: `en`,
+    name: `English`,
     locale: `en-UK`,
     dateFormat: `DD/MM/YYYY`,
     siteLanguage: `en`,
@@ -12,6 +13,7 @@ module.exports = {
   fr: {
     default: false,
     path: `fr`,
+    name: `Français`,
     locale: `fr-FR`,
     dateFormat: `DD.MM.YYYY`,
     siteLanguage: `fr`,

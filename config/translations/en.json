@@ -1,5 +1,11 @@
 {
+  "missionTitle": "Our Mission",
   "mission": "As a group of doctors, medical students and volunteers, we’ve created infographics to help summarise key points about COVID-19 in a variety of languages to get the right information, in an easy to understand format, to these communities.",
-  "step1": "First, select your preferred language",
-  "step2": "View or download infographics from the list below by clicking either of the two options"
+  "stepOneTitle": "Step 1",
+  "stepOne": "First, select your preferred language.",
+  "stepTwoTitle": "Step 2",
+  "stepTwo": "View or download infographics from the list below by clicking either of the two options.",
+  "wellBeing": "Well-Being",
+  "wellBeingText": "We have created a list of all the services offering support to BAME groups in each region of the UK.",
+  "wellBeingLink": "Click here to find one near you."
 }

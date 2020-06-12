@@ -1,28 +1,42 @@
 import React from "react"
 import { graphql } from "gatsby"
+import locales from "../../config/i18n"
 import LocalizedLink from "../components/localizedLink"
+import SimpleCard from "../components/card"
 import useTranslations from "../components/useTranslations"
+import Selector from "../components/selector"
+
+import Grid from '@material-ui/core/Grid'
+import { TwitterTimelineEmbed } from 'react-twitter-embed'
 
 const Index = ({ data: { allMdx } }) => {
-  // useTranslations is aware of the global context (and therefore also "locale")
-  // so it'll automatically give back the right translations
-  const { mission, step1 } = useTranslations()
-  console.log(useTranslations())
+  const translations = useTranslations()
+
   return (
     <>
-      <h1>{mission}</h1>
-      <p>{step1}</p>
-      <hr style={{ margin: `2rem 0` }} />
-      <ul className="post-list">
-        {allMdx.edges.map(({ node: post }) => (
-          <li key={`${post.frontmatter.title}-${post.fields.locale}`}>
-            <LocalizedLink to={`/${post.parent.relativeDirectory}`}> 
-              {post.frontmatter.title}
+      <Grid container spacing={3}>
+        <Grid item sm={12} md={8} spacing={3}>
+          <SimpleCard title={translations.missionTitle} content={translations.mission}/>
+          <SimpleCard title={translations.stepOneTitle} content={translations.stepOne}>
+            <Selector languages={Object.keys(locales).map(locale => locales[locale])}/>
+          </SimpleCard>
+          <SimpleCard title={translations.stepTwoTitle} content={translations.stepTwo}/>
+        </Grid>
+        <Grid item sm={12} md={4}>
+          <SimpleCard title={translations.wellBeing} content={translations.wellBeingText}>
+            <LocalizedLink to={"/resources"}> 
+              <p>{translations.wellBeingLink}</p>
             </LocalizedLink>
-            <div>{post.frontmatter.date}</div>
-          </li>
-        ))}
-      </ul>
+          </SimpleCard>
+          <SimpleCard>
+            <TwitterTimelineEmbed
+              sourceType="profile"
+              screenName="C19Infographics"
+              options={{height: 400}}
+            />
+          </SimpleCard>
+        </Grid>
+      </Grid>
     </>
   )
 }
