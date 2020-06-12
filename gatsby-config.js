@@ -17,5 +17,13 @@ module.exports = {
     },
     `gatsby-transformer-json`,
     `gatsby-theme-material-ui`,
+      {
+        resolve: `gatsby-plugin-netlify-cms`,
+        options: {
+          enableIdentityWidget: true,
+          publicPath: `admin`,
+          htmlTitle: `Content Manager`,
+        }
+      }
   ],
 }
