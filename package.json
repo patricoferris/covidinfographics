@@ -11,13 +11,20 @@
     "start": "npm run develop"
   },
   "dependencies": {
+    "@material-ui/core": "^4.10.2",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/styles": "^4.10.0",
     "@mdx-js/mdx": "^1.6.5",
     "@mdx-js/react": "^1.6.5",
+    "babel-plugin-styled-components": "^1.10.7",
     "gatsby": "^2.22.15",
+    "gatsby-plugin-material-ui": "^2.1.9",
     "gatsby-plugin-mdx": "^1.2.13",
+    "gatsby-plugin-styled-components": "^3.3.4",
     "gatsby-source-filesystem": "^2.3.8",
     "gatsby-transformer-json": "^2.4.3",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "styled-components": "^5.1.1"
   }
 }

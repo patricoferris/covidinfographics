@@ -7,7 +7,7 @@ const Index = ({ data: { allMdx } }) => {
   // useTranslations is aware of the global context (and therefore also "locale")
   // so it'll automatically give back the right translations
   const { mission, step1 } = useTranslations()
-
+  console.log(useTranslations())
   return (
     <>
       <h1>{mission}</h1>
