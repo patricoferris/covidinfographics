@@ -39,7 +39,7 @@ const Selector = ({ languages }) => {
         >
           {languages.map(lang => <MenuItem value={lang}>{lang.name}</MenuItem>)}
         </Select>
-        <FormHelperText>English</FormHelperText>
+        <FormHelperText>Lanuage selector</FormHelperText>
       </FormControl>
   )
 }

@@ -1,5 +1,4 @@
 import React from "react"
-import { graphql } from "gatsby"
 import locales from "../../config/i18n"
 import LocalizedLink from "../components/LocalizedLink"
 import SimpleCard from "../components/Card"
@@ -8,8 +7,10 @@ import Selector from "../components/Selector"
 
 import Grid from '@material-ui/core/Grid'
 import { TwitterTimelineEmbed } from 'react-twitter-embed'
-
-const Index = ({ data: { allMdx } }) => {
+import Accordion from "../components/Accordion"
+import DownloadLinks from "../components/DownloadLinks"
+  
+const Index = () => {
   const { index } = useTranslations()
 
   return (
@@ -20,7 +21,10 @@ const Index = ({ data: { allMdx } }) => {
           <SimpleCard title={index.stepOneTitle} content={index.stepOne}>
             <Selector languages={Object.keys(locales).map(locale => locales[locale])}/>
           </SimpleCard>
-          <SimpleCard title={index.stepTwoTitle} content={index.stepTwo}/>
+          <SimpleCard title={index.stepTwoTitle} content={index.stepTwo}>
+            <br/>
+            <DownloadLinks style={{marginTop: "15px"}}/>
+          </SimpleCard>
         </Grid>
         <Grid item sm={12} md={4}>
           <SimpleCard title={index.wellBeing} content={index.wellBeingText}>
@@ -42,29 +46,3 @@ const Index = ({ data: { allMdx } }) => {
 }
 
 export default Index
-
-export const query = graphql`
-  query Index($locale: String!, $dateFormat: String!) {
-    allMdx(
-      filter: { fields: { locale: { eq: $locale } } }
-      sort: { fields: [frontmatter___date], order: DESC }
-    ) {
-      edges {
-        node {
-          frontmatter {
-            title
-            date(formatString: $dateFormat)
-          }
-          fields {
-            locale
-          }
-          parent {
-            ... on File {
-              relativeDirectory
-            }
-          }
-        }
-      }
-    }
-  }
-`

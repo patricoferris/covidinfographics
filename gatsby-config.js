@@ -15,6 +15,15 @@ module.exports = {
         name: `blog`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/infographics`,
+        name: `infographics`,
+      },
+    },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     `gatsby-transformer-json`,
     `gatsby-theme-material-ui`,
       {

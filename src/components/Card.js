@@ -8,7 +8,8 @@ import PropTypes from "prop-types"
 const useStyles = makeStyles((theme) => ({
   root: {
     minWidth: 275,
-    marginBottom: theme.spacing(3)
+    marginBottom: theme.spacing(3),
+    backgroundColor: '#f5f5f5'
   },
   bullet: {
     display: 'inline-block',
