@@ -2,9 +2,9 @@ import React from "react"
 import useTranslations from "../components/useTranslations"
 
 const Resources = () => {
-  const { resources } = useTranslations()
+  const ts = useTranslations()
   return (
-    <div>{resources.placeholder}</div>
+    <div>{localizeText(ts, "resources", "placeholder")}</div>
   )
 }
 
