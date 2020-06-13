@@ -9,27 +9,28 @@ import Grid from '@material-ui/core/Grid'
 import { TwitterTimelineEmbed } from 'react-twitter-embed'
 import Accordion from "../components/Accordion"
 import DownloadLinks from "../components/DownloadLinks"
+import localizeText from "../utils/localizeText"
   
 const Index = () => {
-  const { index } = useTranslations()
+  const ts = useTranslations()
 
   return (
     <>
       <Grid container spacing={3}>
         <Grid item sm={12} md={8} spacing={3}>
-          <SimpleCard title={index.missionTitle} content={index.mission}/>
-          <SimpleCard title={index.stepOneTitle} content={index.stepOne}>
+          <SimpleCard title={localizeText(ts, "index", "missionTitle")} content={localizeText(ts, "index", "mission")}/>
+          <SimpleCard title={localizeText(ts, "index", "stepOneTitle")} content={localizeText(ts, "index", "stepOne")}>
             <Selector languages={Object.keys(locales).map(locale => locales[locale])}/>
           </SimpleCard>
-          <SimpleCard title={index.stepTwoTitle} content={index.stepTwo}>
+          <SimpleCard title={localizeText(ts, "index", "stepTwoTitle")} content={localizeText(ts, "index", "stepOneTitle")}>
             <br/>
             <DownloadLinks style={{marginTop: "15px"}}/>
           </SimpleCard>
         </Grid>
         <Grid item sm={12} md={4}>
-          <SimpleCard title={index.wellBeing} content={index.wellBeingText}>
+          <SimpleCard title={localizeText(ts, "index", "wellBeing")} content={localizeText(ts, "index", "wellBeingText")}>
             <LocalizedLink to={"/resources"}> 
-              <p>{index.wellBeingLink}</p>
+              <p>{localizeText(ts, "index", "wellBeingLink")}</p>
             </LocalizedLink>
           </SimpleCard>
           <SimpleCard>

@@ -2,10 +2,10 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { LocaleContext } from "./Layout"
 
-const useTranslations = () => {
-  // Grab the locale (passed through context) from the Context Provider
+const useTranslations = (backup="en") => {
+  // The current active locale
   const { locale } = React.useContext(LocaleContext)
-  // Query the JSON files in <rootDir>/i18n/translations
+  // Query for the translations
   const { rawData } = useStaticQuery(query)
 
   // Simplify the response from GraphQL
@@ -16,10 +16,12 @@ const useTranslations = () => {
     }
   })
 
-  // Only return translations for the current locale
+  // Translations for current locale
   const { translations } = simplified.filter(lang => lang.name === locale)[0]
+  // Default English translations
+  const { english } = simplified.filter(lang => lang.name === backup)[0]
 
-  return translations
+  return {localised: translations, backup: english}
 }
 
 export default useTranslations

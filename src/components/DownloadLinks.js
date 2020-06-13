@@ -9,12 +9,16 @@ import ListItemText from '@material-ui/core/ListItemText';
 import IconButton from '@material-ui/core/IconButton';
 import CloudDownload from '@material-ui/icons/CloudDownload';
 import { makeStyles } from '@material-ui/core/styles'
+import Divider from '@material-ui/core/Divider';
 import Accordion from "./Accordion";
 
 const useStyles = makeStyles((theme) => ({
   link: {
     color: "black",
     textDecoraction: "none"
+  }, 
+  download: {
+    color: theme.palette.primary.main
   }
 }));
 
@@ -48,19 +52,23 @@ const DownloadLinks = () => {
       topics.map(topic => {
         return (
           <List style={{width: "100%"}}>
+            <Divider/>
             {infographics.map(node => {
               const { publicURL, name } = node
               return (
-                <ListItem key={publicURL} button onClick={() => window.location = publicURL}>
-                  <ListItemText primary={name.split("_").reduce((a, b) => a + " " + b)}/>
-                  <ListItemSecondaryAction>
-                    <IconButton edge="end" aria-label="delete">
-                      <a className={classes.link} href={publicURL} download>
-                        <CloudDownload />
-                      </a>
-                    </IconButton>
-                  </ListItemSecondaryAction>
-                </ListItem>
+                <>
+                  <ListItem key={publicURL} button onClick={() => window.location = publicURL}>
+                    <ListItemText className={classes.download} primary={name.split("_").reduce((a, b) => a + " " + b)}/>
+                    <ListItemSecondaryAction>
+                      <IconButton edge="end" aria-label="delete">
+                        <a className={classes.link} href={publicURL} download>
+                          <CloudDownload />
+                        </a>
+                      </IconButton>
+                    </ListItemSecondaryAction>
+                  </ListItem>
+                  <Divider/>
+                </>
               )
             })}
         </List>
