@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link changes the class when hovered 1`] = `
+<div
+  className="MuiPaper-root MuiCard-root makeStyles-root-1 MuiPaper-elevation1 MuiPaper-rounded"
+>
+  <div
+    className="MuiCardContent-root"
+  >
+    <h2
+      className="MuiTypography-root makeStyles-title-3 MuiTypography-h5 MuiTypography-gutterBottom"
+    >
+      my title
+    </h2>
+    <p
+      className="MuiTypography-root MuiTypography-body1"
+    >
+      some content
+    </p>
+    <h1>
+      A child component
+    </h1>
+  </div>
+</div>
+`;

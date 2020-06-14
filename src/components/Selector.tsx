@@ -47,6 +47,7 @@ const Selector: React.SFC<SelectorProps> = ({ languages }) => {
   return (
     <FormControl className={classes.formControl}>
       <Select
+        id="selector"
         value={language}
         onChange={handleChange}
         displayEmpty

@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Clicking on selector reveals options for language 1`] = `
+<WithStyles(ForwardRef(FormControl))
+  className="makeStyles-formControl-1"
+>
+  <WithStyles(ForwardRef(Select))
+    className="makeStyles-selectEmpty-2"
+    displayEmpty={true}
+    id="selector"
+    inputProps={
+      Object {
+        "aria-label": "Without label",
+      }
+    }
+    onChange={[Function]}
+    value="en"
+  >
+    <WithStyles(ForwardRef(MenuItem))
+      key="English"
+      value="en"
+    >
+      English
+    </WithStyles(ForwardRef(MenuItem))>
+    <WithStyles(ForwardRef(MenuItem))
+      key="Français"
+      value="fr"
+    >
+      Français
+    </WithStyles(ForwardRef(MenuItem))>
+  </WithStyles(ForwardRef(Select))>
+  <WithStyles(ForwardRef(FormHelperText))>
+    Lanuage selector
+  </WithStyles(ForwardRef(FormHelperText))>
+</WithStyles(ForwardRef(FormControl))>
+`;
