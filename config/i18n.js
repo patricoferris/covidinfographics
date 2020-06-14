@@ -21,4 +21,4 @@ module.exports = {
     defaultTitle: `Infographie de COVID19`,
     defaultDescription: `Le site de COVID19`,
   },
-}
+};

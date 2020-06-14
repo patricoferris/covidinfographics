@@ -26,13 +26,14 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-transformer-json`,
     `gatsby-theme-material-ui`,
-      {
-        resolve: `gatsby-plugin-netlify-cms`,
-        options: {
-          enableIdentityWidget: true,
-          publicPath: `admin`,
-          htmlTitle: `Content Manager`,
-        }
+    {
+      resolve: `gatsby-plugin-netlify-cms`,
+      options: {
+        enableIdentityWidget: true,
+        publicPath: `admin`,
+        htmlTitle: `Content Manager`,
       }
+    },
+    `gatsby-plugin-typescript`
   ],
 }

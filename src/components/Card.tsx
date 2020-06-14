@@ -3,13 +3,18 @@ import { makeStyles } from '@material-ui/core/styles'
 import Card from '@material-ui/core/Card'
 import CardContent from '@material-ui/core/CardContent'
 import Typography from '@material-ui/core/Typography'
-import PropTypes from "prop-types"
+
+interface CardProps {
+  title?: string
+  content?: string
+  children?: React.ReactChild
+}
 
 const useStyles = makeStyles((theme) => ({
   root: {
     minWidth: 275,
     marginBottom: theme.spacing(3),
-    backgroundColor: '#f5f5f5'
+    backgroundColor: '#f5f5f5',
   },
   bullet: {
     display: 'inline-block',
@@ -22,26 +27,21 @@ const useStyles = makeStyles((theme) => ({
   pos: {
     marginBottom: 12,
   },
-}));
+}))
 
-export default function SimpleCard(props) {
-  const classes = useStyles();
+const SimpleCard: React.SFC<CardProps> = (props) => {
+  const classes = useStyles()
   return (
     <Card className={classes.root}>
       <CardContent>
         <Typography className={classes.title} variant="h5" component="h2" gutterBottom>
           {props.title}
         </Typography>
-        <Typography component="p">
-          {props.content}
-        </Typography>
+        <Typography component="p">{props.content}</Typography>
         {props.children}
       </CardContent>
     </Card>
-  );
+  )
 }
 
-SimpleCard.propTypes = {
-  title: PropTypes.string,
-  content: PropTypes.string
-};
+export default SimpleCard

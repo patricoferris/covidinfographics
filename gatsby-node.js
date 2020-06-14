@@ -1,10 +1,7 @@
+/* esline-disable */
 const path = require(`path`)
 const locales = require(`./config/i18n`)
-const {
-  localizedSlug,
-  findKey,
-  removeTrailingSlash,
-} = require(`./src/utils/gatsby-node-helpers`)
+const { localizedSlug, findKey, removeTrailingSlash } = require(`./src/utils/gatsby-node-helpers`)
 
 exports.onCreatePage = ({ page, actions }) => {
   const { createPage, deletePage } = actions
@@ -14,11 +11,9 @@ exports.onCreatePage = ({ page, actions }) => {
   deletePage(page)
 
   // Grab the keys ('en' & 'de') of locales and map over them
-  Object.keys(locales).map(lang => {
+  Object.keys(locales).map((lang) => {
     // Use the values defined in "locales" to construct the path
-    const localizedPath = locales[lang].default
-      ? page.path
-      : `${locales[lang].path}${page.path}`
+    const localizedPath = locales[lang].default ? page.path : `${locales[lang].path}${page.path}`
 
     return createPage({
       // Pass on everything from the original page
@@ -55,7 +50,7 @@ exports.onCreateNode = ({ node, actions }) => {
     const isDefault = name === `index`
 
     // Find the key that has "default: true" set (in this case it returns "en")
-    const defaultKey = findKey(locales, o => o.default === true)
+    const defaultKey = findKey(locales, (o) => o.default === true)
 
     // Files are defined with "name-with-dashes.lang.mdx"
     // name returns "name-with-dashes.lang"
@@ -71,7 +66,7 @@ exports.onCreateNode = ({ node, actions }) => {
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
 
-  const postTemplate = require.resolve(`./src/templates/post.js`)
+  const postTemplate = require.resolve(`./src/templates/post.tsx`)
 
   const result = await graphql(`
     {
