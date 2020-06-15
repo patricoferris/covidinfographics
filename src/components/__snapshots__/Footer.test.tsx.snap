@@ -24,6 +24,7 @@ exports[`Render footer correctly 1`] = `
     <ul>
       <li>
         <a
+          className="makeStyles-link-2"
           href="https://www.facebook.com/COVID2019Infographics"
         >
           Facebook
@@ -31,6 +32,7 @@ exports[`Render footer correctly 1`] = `
       </li>
       <li>
         <a
+          className="makeStyles-link-2"
           href="https://twitter.com/19Infographics"
         >
           Twitter
@@ -38,6 +40,7 @@ exports[`Render footer correctly 1`] = `
       </li>
       <li>
         <a
+          className="makeStyles-link-2"
           href="https://www.instagram.com/covid19_infographics/"
         >
           Facebook
@@ -58,6 +61,7 @@ exports[`Render footer correctly 1`] = `
     <ul>
       <li>
         <a
+          className="makeStyles-link-2"
           href="https://www.nice.org.uk/covid-19"
         >
           NICE
@@ -65,6 +69,7 @@ exports[`Render footer correctly 1`] = `
       </li>
       <li>
         <a
+          className="makeStyles-link-2"
           href="https://www.nhs.uk/conditions/coronavirus-covid-19/"
         >
           NHS
@@ -72,6 +77,7 @@ exports[`Render footer correctly 1`] = `
       </li>
       <li>
         <a
+          className="makeStyles-link-2"
           href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019"
         >
           WHO
