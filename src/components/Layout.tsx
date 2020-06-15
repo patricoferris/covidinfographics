@@ -2,13 +2,12 @@ import React from 'react'
 import { MDXProvider } from '@mdx-js/react'
 
 import { makeStyles } from '@material-ui/core/styles'
-import AppBar from '@material-ui/core/AppBar'
-import Toolbar from '@material-ui/core/Toolbar'
 import { Helmet } from 'react-helmet'
-import Typography from '@material-ui/core/Typography'
 import Navigation from './Navigation'
 import locales from '../../config/i18n'
 import MdxLink from './MdxLink'
+import Footer from './Footer'
+import { Paper } from '@material-ui/core'
 
 const pages = ['home', 'about', 'partners', 'media', 'involved']
 
@@ -47,12 +46,15 @@ const Layout: React.SFC<LayoutProps> = ({ children, pageContext: { locale } }) =
         />
         <title>{locales[locale].defaultTitle}</title>
       </Helmet>
-      <Navigation title={locales[locale].defaultTitle} pages={pages} />
-      <div className="global-wrapper">
-        <MDXProvider components={{ a: MdxLink }}>
-          <main>{children}</main>
-        </MDXProvider>
-      </div>
+      <Paper elevation={3}>
+        <Navigation title={locales[locale].defaultTitle} pages={pages} />
+        <div className="global-wrapper">
+          <MDXProvider components={{ a: MdxLink }}>
+            <main>{children}</main>
+          </MDXProvider>
+        </div>
+      </Paper>
+      <Footer />
     </LocaleContext.Provider>
   )
 }

@@ -4,7 +4,6 @@ import React from 'react'
 import LocalizedLink from './LocalizedLink'
 import useTranslations, { Translations } from '../utils/useTranslations'
 
-import Drawer from '@material-ui/core/Drawer'
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft'
 import ChevronRightIcon from '@material-ui/icons/ChevronRight'
 import clsx from 'clsx'
@@ -17,6 +16,7 @@ import {
   Divider,
   List,
   ListItem,
+  SwipeableDrawer,
 } from '@material-ui/core'
 import { makeStyles, useTheme } from '@material-ui/core/styles'
 import MenuIcon from '@material-ui/icons/Menu'
@@ -134,7 +134,7 @@ export const PureNavigation: React.SFC<PureNavigationProps> = ({ title, pages, t
           </Typography>
         </Toolbar>
       </AppBar>
-      <Drawer
+      <SwipeableDrawer
         className={classes.drawer}
         variant="persistent"
         anchor="left"
@@ -158,7 +158,7 @@ export const PureNavigation: React.SFC<PureNavigationProps> = ({ title, pages, t
             </ListItem>
           ))}
         </List>
-      </Drawer>
+      </SwipeableDrawer>
     </div>
   )
 }

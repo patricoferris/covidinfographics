@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render footer correctly 1`] = `
+<WithStyles(ForwardRef(Grid))
+  className="makeStyles-footer-1"
+  container={true}
+  spacing={3}
+>
+  <WithStyles(ForwardRef(Grid))
+    item={true}
+    md={2}
+    sm={false}
+  />
+  <WithStyles(ForwardRef(Grid))
+    item={true}
+    md={4}
+    sm={12}
+  >
+    <WithStyles(ForwardRef(Typography))
+      variant="h6"
+    >
+      Platforms
+    </WithStyles(ForwardRef(Typography))>
+    <ul>
+      <li>
+        Facebook
+      </li>
+      <li>
+        Twitter
+      </li>
+      <li>
+        Instagram
+      </li>
+    </ul>
+  </WithStyles(ForwardRef(Grid))>
+  <WithStyles(ForwardRef(Grid))
+    item={true}
+    md={4}
+    sm={12}
+  >
+    <WithStyles(ForwardRef(Typography))
+      variant="h6"
+    >
+      Sources
+    </WithStyles(ForwardRef(Typography))>
+    <ul>
+      <li>
+        NHS
+      </li>
+      <li>
+        NICE
+      </li>
+      <li>
+        WHO
+      </li>
+    </ul>
+  </WithStyles(ForwardRef(Grid))>
+  <WithStyles(ForwardRef(Grid))
+    item={true}
+    md={2}
+    sm={false}
+  />
+  <WithStyles(ForwardRef(Grid))
+    item={true}
+    md={2}
+    sm={false}
+  />
+  <WithStyles(ForwardRef(Grid))
+    item={true}
+    md={4}
+    sm={12}
+  >
+    © 2020 Copyright
+  </WithStyles(ForwardRef(Grid))>
+  <WithStyles(ForwardRef(Grid))
+    item={true}
+    md={4}
+    sm={12}
+  >
+    <a
+      className="makeStyles-link-2"
+      href="https://github.com/baizel/covidinfographics"
+    >
+      Source Code
+    </a>
+  </WithStyles(ForwardRef(Grid))>
+</WithStyles(ForwardRef(Grid))>
+`;

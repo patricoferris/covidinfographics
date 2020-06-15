@@ -24,7 +24,7 @@ exports[`Should render the five pages correctly 1`] = `
       </WithStyles(ForwardRef(Typography))>
     </WithStyles(ForwardRef(Toolbar))>
   </WithStyles(ForwardRef(AppBar))>
-  <WithStyles(ForwardRef(Drawer))
+  <ForwardRef(SwipeableDrawer)
     anchor="left"
     className="makeStyles-drawer-8"
     classes={
@@ -107,6 +107,6 @@ exports[`Should render the five pages correctly 1`] = `
         </LocalizedLink>
       </WithStyles(ForwardRef(ListItem))>
     </WithStyles(ForwardRef(List))>
-  </WithStyles(ForwardRef(Drawer))>
+  </ForwardRef(SwipeableDrawer)>
 </div>
 `;
