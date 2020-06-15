@@ -3,6 +3,7 @@
 exports[`Render closed share correctly 1`] = `
 <div>
   <WithStyles(ForwardRef(IconButton))
+    id="popover-anchor"
     onClick={[Function]}
   >
     <ShareIcon />
@@ -55,6 +56,7 @@ exports[`Render opened share correctly 1`] = `
 <div>
   <WithStyles(ForwardRef(IconButton))
     aria-describedby="simple-popover"
+    id="popover-anchor"
     onClick={[Function]}
   >
     <ShareIcon />
