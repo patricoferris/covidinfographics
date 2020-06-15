@@ -12,6 +12,7 @@ import { makeStyles } from '@material-ui/core/styles'
 import Divider from '@material-ui/core/Divider'
 import Accordion from './Accordion'
 import CSS from 'csstype'
+import Share from './Share'
 
 interface Node {
   ext: string
@@ -87,10 +88,13 @@ const DownloadLinks: React.SFC<{ style?: CSS.Properties }> = () => {
                       primary={name.split('_').reduce((a, b) => a + ' ' + b)}
                     />
                     <ListItemSecondaryAction>
-                      <IconButton edge="end" aria-label="delete">
+                      <IconButton edge="end" aria-label="dowload">
                         <a className={classes.link} href={publicURL} download>
                           <CloudDownload />
                         </a>
+                      </IconButton>
+                      <IconButton edge="end" aria-label="dowload">
+                        <Share url={publicURL} />
                       </IconButton>
                     </ListItemSecondaryAction>
                   </ListItem>

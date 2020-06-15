@@ -25,13 +25,19 @@ const Footer: React.SFC = () => {
         <Typography variant="h6">Platforms</Typography>
         <ul>
           <li>
-            <a className={classes.link} href="https://www.facebook.com/COVID2019Infographics">Facebook</a>
+            <a className={classes.link} href="https://www.facebook.com/COVID2019Infographics">
+              Facebook
+            </a>
           </li>
           <li>
-            <a className={classes.link} href="https://twitter.com/19Infographics">Twitter</a>
+            <a className={classes.link} href="https://twitter.com/19Infographics">
+              Twitter
+            </a>
           </li>
           <li>
-            <a className={classes.link} href="https://www.instagram.com/covid19_infographics/">Facebook</a>
+            <a className={classes.link} href="https://www.instagram.com/covid19_infographics/">
+              Facebook
+            </a>
           </li>
         </ul>
       </Grid>
@@ -39,13 +45,22 @@ const Footer: React.SFC = () => {
         <Typography variant="h6">Sources</Typography>
         <ul>
           <li>
-            <a className={classes.link} href="https://www.nice.org.uk/covid-19">NICE</a>
+            <a className={classes.link} href="https://www.nice.org.uk/covid-19">
+              NICE
+            </a>
           </li>
           <li>
-            <a className={classes.link} href="https://www.nhs.uk/conditions/coronavirus-covid-19/">NHS</a>
+            <a className={classes.link} href="https://www.nhs.uk/conditions/coronavirus-covid-19/">
+              NHS
+            </a>
           </li>
           <li>
-            <a className={classes.link} href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019">WHO</a>
+            <a
+              className={classes.link}
+              href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019"
+            >
+              WHO
+            </a>
           </li>
         </ul>
       </Grid>
