@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render the five pages correctly 1`] = `
+<div>
+  <WithStyles(ForwardRef(AppBar))
+    className="makeStyles-appBar-4"
+    position="static"
+  >
+    <WithStyles(ForwardRef(Toolbar))>
+      <WithStyles(ForwardRef(IconButton))
+        aria-label="open drawer"
+        className="makeStyles-menuButton-6"
+        color="inherit"
+        edge="start"
+        onClick={[Function]}
+      >
+        <MenuIcon />
+      </WithStyles(ForwardRef(IconButton))>
+      <WithStyles(ForwardRef(Typography))
+        noWrap={true}
+        variant="h6"
+      >
+        MyNavBar
+      </WithStyles(ForwardRef(Typography))>
+    </WithStyles(ForwardRef(Toolbar))>
+  </WithStyles(ForwardRef(AppBar))>
+  <WithStyles(ForwardRef(Drawer))
+    anchor="left"
+    className="makeStyles-drawer-8"
+    classes={
+      Object {
+        "paper": "makeStyles-drawerPaper-9",
+      }
+    }
+    open={false}
+    variant="persistent"
+  >
+    <div
+      className="makeStyles-drawerHeader-10"
+    >
+      <WithStyles(ForwardRef(IconButton))
+        onClick={[Function]}
+      >
+        <ChevronLeftIcon />
+      </WithStyles(ForwardRef(IconButton))>
+    </div>
+    <WithStyles(ForwardRef(Divider)) />
+    <WithStyles(ForwardRef(List))>
+      <WithStyles(ForwardRef(ListItem))
+        button={true}
+        className="makeStyles-navContainer-2"
+        key="home"
+      >
+        <LocalizedLink
+          className="makeStyles-navButton-3"
+          to="/"
+        >
+          Home
+        </LocalizedLink>
+      </WithStyles(ForwardRef(ListItem))>
+      <WithStyles(ForwardRef(ListItem))
+        button={true}
+        className="makeStyles-navContainer-2"
+        key="about"
+      >
+        <LocalizedLink
+          className="makeStyles-navButton-3"
+          to="/about"
+        >
+          About us
+        </LocalizedLink>
+      </WithStyles(ForwardRef(ListItem))>
+      <WithStyles(ForwardRef(ListItem))
+        button={true}
+        className="makeStyles-navContainer-2"
+        key="partners"
+      >
+        <LocalizedLink
+          className="makeStyles-navButton-3"
+          to="/partners"
+        >
+          Partners
+        </LocalizedLink>
+      </WithStyles(ForwardRef(ListItem))>
+      <WithStyles(ForwardRef(ListItem))
+        button={true}
+        className="makeStyles-navContainer-2"
+        key="media"
+      >
+        <LocalizedLink
+          className="makeStyles-navButton-3"
+          to="/media"
+        >
+          Media
+        </LocalizedLink>
+      </WithStyles(ForwardRef(ListItem))>
+      <WithStyles(ForwardRef(ListItem))
+        button={true}
+        className="makeStyles-navContainer-2"
+        key="involved"
+      >
+        <LocalizedLink
+          className="makeStyles-navButton-3"
+          to="/involved"
+        >
+          Get Involved
+        </LocalizedLink>
+      </WithStyles(ForwardRef(ListItem))>
+    </WithStyles(ForwardRef(List))>
+  </WithStyles(ForwardRef(Drawer))>
+</div>
+`;

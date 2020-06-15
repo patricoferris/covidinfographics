@@ -4,11 +4,13 @@ import { MDXProvider } from '@mdx-js/react'
 import { makeStyles } from '@material-ui/core/styles'
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
-import Button from '@material-ui/core/Button'
 import { Helmet } from 'react-helmet'
 import Typography from '@material-ui/core/Typography'
+import Navigation from './Navigation'
 import locales from '../../config/i18n'
 import MdxLink from './MdxLink'
+
+const pages = ['home', 'about', 'partners', 'media', 'involved']
 
 interface LayoutProps {
   children: React.ReactChild
@@ -34,21 +36,12 @@ const useStyles = makeStyles((theme) => ({
 }))
 
 const Layout: React.SFC<LayoutProps> = ({ children, pageContext: { locale } }) => {
-  const classes = useStyles()
-
   return (
     <LocaleContext.Provider value={{ locale }}>
       <Helmet>
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
       </Helmet>
-      <AppBar position="static">
-        <Toolbar className={classes.topNav}>
-          <Typography variant="h5" className={classes.title}>
-            {locales[locale].defaultTitle}
-          </Typography>
-          <Button color="inherit">Login</Button>
-        </Toolbar>
-      </AppBar>
+      <Navigation title={locales[locale].defaultTitle} pages={pages} />
       <div className="global-wrapper">
         <MDXProvider components={{ a: MdxLink }}>
           <main>{children}</main>

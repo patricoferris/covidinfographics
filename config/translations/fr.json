@@ -1,5 +1,12 @@
 {
-  "index" : {
+  "pages": {
+    "home": "Accueil",
+    "about": "Qui sommes-nous",
+    "partners": "Partenaires",
+    "media": "Média",
+    "involved": "Joignez-nous"
+  },
+  "index": {
     "missionTitle": "Notre Mission",
     "mission": "En tant que groupe de médecins, d'étudiants en médecine et de bénévoles, nous avons créé des infographies pour aider à résumer les points clés de COVID-19 dans une variété de langues afin d'obtenir les bonnes informations, dans un format facile à comprendre, pour ces communautés.",
     "stepOneTitle": "Étape 1",
@@ -9,9 +16,8 @@
     "wellBeing": "Bien-Être",
     "wellBeingText": "On a créé une liste de tous les services offrant un soutien aux groupes BAME dans chaque région du Royaume-Uni.",
     "wellBeingLink": "Cliquez ici pour en trouver un près de chez vous."
-  }, 
+  },
   "resources": {
     "placeholder": "Des resources arrivent bientôt..."
   }
 }
-

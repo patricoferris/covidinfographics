@@ -2,7 +2,7 @@ import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import { LocaleContext } from '../components/Layout'
 
-type translation = Record<string, Record<string, string>>
+export type translation = Record<string, Record<string, string>>
 
 export interface Translations {
   localised: translation
@@ -41,6 +41,13 @@ const query = graphql`
         node {
           name
           translations: childTranslationsJson {
+            pages {
+              home
+              about
+              partners
+              media
+              involved
+            }
             index {
               missionTitle
               mission
