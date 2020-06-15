@@ -32,6 +32,8 @@ exports[`Should render the five pages correctly 1`] = `
         "paper": "makeStyles-drawerPaper-9",
       }
     }
+    onClose={[Function]}
+    onOpen={[Function]}
     open={false}
     variant="persistent"
   >

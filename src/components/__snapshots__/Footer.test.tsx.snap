@@ -23,13 +23,25 @@ exports[`Render footer correctly 1`] = `
     </WithStyles(ForwardRef(Typography))>
     <ul>
       <li>
-        Facebook
+        <a
+          href="https://www.facebook.com/COVID2019Infographics"
+        >
+          Facebook
+        </a>
       </li>
       <li>
-        Twitter
+        <a
+          href="https://twitter.com/19Infographics"
+        >
+          Twitter
+        </a>
       </li>
       <li>
-        Instagram
+        <a
+          href="https://www.instagram.com/covid19_infographics/"
+        >
+          Facebook
+        </a>
       </li>
     </ul>
   </WithStyles(ForwardRef(Grid))>
@@ -45,13 +57,25 @@ exports[`Render footer correctly 1`] = `
     </WithStyles(ForwardRef(Typography))>
     <ul>
       <li>
-        NHS
+        <a
+          href="https://www.nice.org.uk/covid-19"
+        >
+          NICE
+        </a>
       </li>
       <li>
-        NICE
+        <a
+          href="https://www.nhs.uk/conditions/coronavirus-covid-19/"
+        >
+          NHS
+        </a>
       </li>
       <li>
-        WHO
+        <a
+          href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019"
+        >
+          WHO
+        </a>
       </li>
     </ul>
   </WithStyles(ForwardRef(Grid))>

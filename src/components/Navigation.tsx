@@ -103,12 +103,11 @@ export const PureNavigation: React.SFC<PureNavigationProps> = ({ title, pages, t
   const theme: Theme = useTheme()
   const [open, setOpen] = React.useState(false)
 
-  const handleDrawerOpen = () => {
-    setOpen(true)
-  }
-
-  const handleDrawerClose = () => {
-    setOpen(false)
+  const toggleDrawer = (open) => (event) => {
+    if (event && event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
+      return
+    }
+    setOpen(open)
   }
 
   return (
@@ -123,7 +122,7 @@ export const PureNavigation: React.SFC<PureNavigationProps> = ({ title, pages, t
           <IconButton
             color="inherit"
             aria-label="open drawer"
-            onClick={handleDrawerOpen}
+            onClick={toggleDrawer(true)}
             edge="start"
             className={clsx(classes.menuButton, open && classes.hide)}
           >
@@ -139,12 +138,14 @@ export const PureNavigation: React.SFC<PureNavigationProps> = ({ title, pages, t
         variant="persistent"
         anchor="left"
         open={open}
+        onClose={toggleDrawer(false)}
+        onOpen={toggleDrawer(true)}
         classes={{
           paper: classes.drawerPaper,
         }}
       >
         <div className={classes.drawerHeader}>
-          <IconButton onClick={handleDrawerClose}>
+          <IconButton onClick={toggleDrawer(false)}>
             {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
           </IconButton>
         </div>

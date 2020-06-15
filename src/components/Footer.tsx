@@ -24,17 +24,29 @@ const Footer: React.SFC = () => {
       <Grid item sm={12} md={4}>
         <Typography variant="h6">Platforms</Typography>
         <ul>
-          <li>Facebook</li>
-          <li>Twitter</li>
-          <li>Instagram</li>
+          <li>
+            <a href="https://www.facebook.com/COVID2019Infographics">Facebook</a>
+          </li>
+          <li>
+            <a href="https://twitter.com/19Infographics">Twitter</a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/covid19_infographics/">Facebook</a>
+          </li>
         </ul>
       </Grid>
       <Grid item sm={12} md={4}>
         <Typography variant="h6">Sources</Typography>
         <ul>
-          <li>NHS</li>
-          <li>NICE</li>
-          <li>WHO</li>
+          <li>
+            <a href="https://www.nice.org.uk/covid-19">NICE</a>
+          </li>
+          <li>
+            <a href="https://www.nhs.uk/conditions/coronavirus-covid-19/">NHS</a>
+          </li>
+          <li>
+            <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019">WHO</a>
+          </li>
         </ul>
       </Grid>
       <Grid item sm={false} md={2} />
