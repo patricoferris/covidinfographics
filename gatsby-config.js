@@ -22,8 +22,6 @@ module.exports = {
         name: `infographics`,
       },
     },
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
     `gatsby-transformer-json`,
     `gatsby-theme-material-ui`,
     {
@@ -32,8 +30,8 @@ module.exports = {
         enableIdentityWidget: true,
         publicPath: `admin`,
         htmlTitle: `Content Manager`,
-      }
+      },
     },
-    `gatsby-plugin-typescript`
+    `gatsby-plugin-typescript`,
   ],
 }

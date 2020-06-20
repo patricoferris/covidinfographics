@@ -7,6 +7,7 @@ import Selector from '../components/Selector'
 import Grid from '@material-ui/core/Grid'
 import DownloadLinks from '../components/DownloadLinks'
 import localizeText, { LocalisationOptions } from '../utils/localizeText'
+import Foot from '../components/Foot'
 
 const Index: React.SFC = () => {
   const ts = useTranslations()

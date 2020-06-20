@@ -2,9 +2,14 @@
 
 exports[`Render footer correctly 1`] = `
 <WithStyles(ForwardRef(Grid))
-  className="makeStyles-footer-1"
   container={true}
   spacing={3}
+  style={
+    Object {
+      "backgroundColor": "#20232a",
+      "color": "#ffffff",
+    }
+  }
 >
   <WithStyles(ForwardRef(Grid))
     item={true}
@@ -24,26 +29,41 @@ exports[`Render footer correctly 1`] = `
     <ul>
       <li>
         <a
-          className="makeStyles-link-2"
           href="https://www.facebook.com/COVID2019Infographics"
+          style={
+            Object {
+              "color": "#ffffff",
+              "textDecoration": "none",
+            }
+          }
         >
           Facebook
         </a>
       </li>
       <li>
         <a
-          className="makeStyles-link-2"
           href="https://twitter.com/19Infographics"
+          style={
+            Object {
+              "color": "#ffffff",
+              "textDecoration": "none",
+            }
+          }
         >
           Twitter
         </a>
       </li>
       <li>
         <a
-          className="makeStyles-link-2"
           href="https://www.instagram.com/covid19_infographics/"
+          style={
+            Object {
+              "color": "#ffffff",
+              "textDecoration": "none",
+            }
+          }
         >
-          Facebook
+          Instagram
         </a>
       </li>
     </ul>
@@ -61,24 +81,39 @@ exports[`Render footer correctly 1`] = `
     <ul>
       <li>
         <a
-          className="makeStyles-link-2"
           href="https://www.nice.org.uk/covid-19"
+          style={
+            Object {
+              "color": "#ffffff",
+              "textDecoration": "none",
+            }
+          }
         >
           NICE
         </a>
       </li>
       <li>
         <a
-          className="makeStyles-link-2"
           href="https://www.nhs.uk/conditions/coronavirus-covid-19/"
+          style={
+            Object {
+              "color": "#ffffff",
+              "textDecoration": "none",
+            }
+          }
         >
           NHS
         </a>
       </li>
       <li>
         <a
-          className="makeStyles-link-2"
           href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019"
+          style={
+            Object {
+              "color": "#ffffff",
+              "textDecoration": "none",
+            }
+          }
         >
           WHO
         </a>
@@ -108,8 +143,13 @@ exports[`Render footer correctly 1`] = `
     sm={12}
   >
     <a
-      className="makeStyles-link-2"
       href="https://github.com/baizel/covidinfographics"
+      style={
+        Object {
+          "color": "#ffffff",
+          "textDecoration": "none",
+        }
+      }
     >
       Source Code
     </a>

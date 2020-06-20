@@ -6,7 +6,6 @@ import { Helmet } from 'react-helmet'
 import Navigation from './Navigation'
 import locales from '../../config/i18n'
 import MdxLink from './MdxLink'
-import Footer from './Footer'
 import { Paper } from '@material-ui/core'
 
 const pages = ['home', 'about', 'partners', 'media', 'involved']
@@ -54,7 +53,6 @@ const Layout: React.SFC<LayoutProps> = ({ children, pageContext: { locale } }) =
           </MDXProvider>
         </div>
       </Paper>
-      <Footer />
     </LocaleContext.Provider>
   )
 }
