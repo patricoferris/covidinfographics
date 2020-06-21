@@ -24,7 +24,8 @@ const useTranslations = (): Translations => {
   })
 
   // Translations for current locale
-  const { translations } = simplified.filter((lang) => lang.name === locale)[0]
+  const language = simplified.filter((lang) => lang.name === locale)[0]
+  const { translations } = language ? language : simplified.filter((lang) => lang.name === 'en')[0]
 
   // Default English translations
   const { translations: english } = simplified.filter((lang) => lang.name === 'en')[0]

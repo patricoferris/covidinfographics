@@ -18,21 +18,6 @@ interface LayoutProps {
 // Use ContextAPI for creating an active locale
 const LocaleContext = React.createContext({ locale: 'en' })
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  },
-  topNav: {
-    backgroundColor: theme.palette.primary.main,
-  },
-  menuButton: {
-    marginRight: theme.spacing(2),
-  },
-  title: {
-    flexGrow: 1,
-  },
-}))
-
 const Layout: React.SFC<LayoutProps> = ({ children, pageContext: { locale } }) => {
   return (
     <LocaleContext.Provider value={{ locale }}>

@@ -17,16 +17,20 @@ exports[`Clicking on selector reveals options for language 1`] = `
     value="en"
   >
     <WithStyles(ForwardRef(MenuItem))
+      className="makeStyles-item-3"
       key="English"
       value="en"
     >
       English
+         
     </WithStyles(ForwardRef(MenuItem))>
     <WithStyles(ForwardRef(MenuItem))
+      className="makeStyles-item-3"
       key="Français"
       value="fr"
     >
       Français
+         
     </WithStyles(ForwardRef(MenuItem))>
   </WithStyles(ForwardRef(Select))>
   <WithStyles(ForwardRef(FormHelperText))>

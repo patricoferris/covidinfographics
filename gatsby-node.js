@@ -3,36 +3,6 @@ const path = require(`path`)
 const locales = require(`./config/i18n`)
 const { localizedSlug, findKey, removeTrailingSlash } = require(`./src/utils/gatsby-node-helpers`)
 
-exports.onCreatePage = ({ page, actions }) => {
-  const { createPage, deletePage } = actions
-
-  // First delete the incoming page that was automatically created by Gatsby
-  // So everything in src/pages/
-  deletePage(page)
-
-  // Grab the keys ('en' & 'de') of locales and map over them
-  Object.keys(locales).map((lang) => {
-    // Use the values defined in "locales" to construct the path
-    const localizedPath = locales[lang].default ? page.path : `${locales[lang].path}${page.path}`
-
-    return createPage({
-      // Pass on everything from the original page
-      ...page,
-      // Since page.path returns with a trailing slash (e.g. "/de/")
-      // We want to remove that
-      path: removeTrailingSlash(localizedPath),
-      // Pass in the locale as context to every page
-      // This context also gets passed to the src/components/layout file
-      // This should ensure that the locale is available on every page
-      context: {
-        ...page.context,
-        locale: lang,
-        dateFormat: locales[lang].dateFormat,
-      },
-    })
-  })
-}
-
 // As you don't want to manually add the correct language to the frontmatter of each file
 // a new node is created automatically with the filename
 // It's necessary to do that -- otherwise you couldn't filter by language
@@ -63,60 +33,69 @@ exports.onCreateNode = ({ node, actions }) => {
   }
 }
 
+// Generate localized versions of each of the pages (can't use onCreatePage)
 exports.createPages = async ({ graphql, actions }) => {
-  const { createPage } = actions
+  const { createPage, deletePage } = actions
 
-  const postTemplate = require.resolve(`./src/templates/post.tsx`)
-
-  const result = await graphql(`
+  // Get the page templates
+  const pages = await graphql(`
     {
-      blog: allFile(filter: { sourceInstanceName: { eq: "blog" } }) {
+      main: allFile(filter: { sourceInstanceName: { eq: "main" } }) {
         edges {
           node {
-            relativeDirectory
-            childMdx {
-              fields {
-                locale
-                isDefault
-              }
-              frontmatter {
-                title
-              }
-            }
+            relativePath
           }
         }
       }
     }
   `)
 
-  if (result.errors) {
-    console.error(result.errors)
-    return
-  }
+  const pageList = pages.data.main.edges
 
-  const postList = result.data.blog.edges
+  pageList.map((page) => {
+    const template = require.resolve(`./src/main/${page.node.relativePath}`)
+    // Grab the keys ('en' & 'de') of locales and map over them
+    Object.keys(locales).map(async (lang) => {
+      let slug = path.basename(page.node.relativePath, '.tsx')
+      slug = slug === 'index' ? '/' : `/${slug}`
 
-  postList.forEach(({ node: post }) => {
-    // All files for a blogpost are stored in a folder
-    // relativeDirectory is the name of the folder
-    const slug = post.relativeDirectory
+      // Use the values defined in "locales" to construct the path
+      const localizedPath = locales[lang].default ? slug : `${locales[lang].path}${slug}`
 
-    const title = post.childMdx.frontmatter.title
+      const links = await graphql(`
+        {
+          rawData: allFile(
+            filter: {
+              sourceInstanceName: { eq: "infographics" }
+              ext: { eq: ".png" }
+              relativeDirectory: { regex: "/${lang}.*/" }
+            }
+          ) {
+            edges {
+              node {
+                ext
+                name
+                relativeDirectory
+                relativePath
+                publicURL
+              }
+            }
+          }
+        }
+      `)
 
-    // Use the fields created in exports.onCreateNode
-    const locale = post.childMdx.fields.locale
-    const isDefault = post.childMdx.fields.isDefault
+      const downloadlinks = links.data.rawData.edges
 
-    createPage({
-      path: localizedSlug({ isDefault, locale, slug }),
-      component: postTemplate,
-      context: {
-        // Pass both the "title" and "locale" to find a unique file
-        // Only the title would not have been sufficient as articles could have the same title
-        // in different languages, e.g. because an english phrase is also common in german
-        locale,
-        title,
-      },
+      return createPage({
+        path: removeTrailingSlash(localizedPath),
+        component: template,
+        context: {
+          ...page.context,
+          locale: lang,
+          links: downloadlinks,
+          dateFormat: locales[lang].dateFormat,
+        },
+      })
     })
   })
 }

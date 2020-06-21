@@ -11,6 +11,7 @@ interface LocaleProperpties {
   default: boolean
   path: string
   name: string
+  english_name: string
   locale: string
   dateFormat: string
   siteLanguage: string
@@ -31,6 +32,9 @@ const useStyles = makeStyles((theme) => ({
   selectEmpty: {
     marginTop: theme.spacing(2),
   },
+  item: {
+    paddingLeft: '5px',
+  },
 }))
 
 const Selector: React.SFC<SelectorProps> = ({ languages }) => {
@@ -44,6 +48,13 @@ const Selector: React.SFC<SelectorProps> = ({ languages }) => {
     navigate(path)
   }
 
+  const englishTranslation = (lang) => {
+    if (lang.english_name) {
+      return <span style={{ color: 'darkgrey' }}>({lang.english_name})</span>
+    }
+    return ''
+  }
+
   return (
     <FormControl className={classes.formControl}>
       <Select
@@ -55,8 +66,8 @@ const Selector: React.SFC<SelectorProps> = ({ languages }) => {
         inputProps={{ 'aria-label': 'Without label' }}
       >
         {languages.map((lang) => (
-          <MenuItem key={lang.name} value={lang.path}>
-            {lang.name}
+          <MenuItem className={classes.item} key={lang.name} value={lang.path}>
+            {lang.name}&nbsp; &nbsp;{englishTranslation(lang)}
           </MenuItem>
         ))}
       </Select>

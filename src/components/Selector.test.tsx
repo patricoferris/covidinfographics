@@ -1,5 +1,4 @@
 import React from 'react'
-import renderer from 'react-test-renderer'
 import Selector from './Selector'
 import { shallow } from 'enzyme'
 

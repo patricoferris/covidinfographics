@@ -13,10 +13,13 @@ import Divider from '@material-ui/core/Divider'
 import Accordion from './Accordion'
 import CSS from 'csstype'
 import Share from './Share'
+import { capitaliseFirstLetter, removeUnderscores } from '../utils/strings'
+import { Link } from '..main/index'
 
 interface Node {
   ext: string
   name: string
+  relativeDirectory: string
   relativePath: string
   publicURL: string
 }
@@ -35,47 +38,38 @@ const useStyles = makeStyles((theme) => ({
   },
 }))
 
-const topics = ['covid19']
-
-const DownloadLinks: React.SFC<{ style?: CSS.Properties }> = () => {
+const DownloadLinks: React.SFC<{ links: Link[]; style?: CSS.Properties }> = ({ links }) => {
   const classes = useStyles()
-  const {
-    rawData: { edges },
-  }: { rawData: { edges: Edge[] } } = useStaticQuery(
-    graphql`
-      query {
-        rawData: allFile(filter: { sourceInstanceName: { eq: "infographics" } }) {
-          edges {
-            node {
-              ext
-              name
-              relativePath
-              publicURL
-            }
-          }
-        }
-      }
-    `
-  )
-
   // Filter out anything that isn't images
-  const filter: Edge[] = edges.filter((edge) => edge.node.ext === '.png')
   const { locale } = React.useContext(LocaleContext)
 
-  // Extract the nodes based on them being a part of the right locale
-  const infographics: Node[] = filter
-    .filter((info) => info.node.relativePath.split('/')[0] === locale)
-    .map((info) => info.node)
+  const data = {}
+
+  let topics = ['covid19', 'school_advice']
+  topics.map((topic) => {
+    const ls = links.filter((img) => {
+      return img.node.relativeDirectory === `${locale}/${topic}`
+    })
+    data[topic] = ls
+  })
+
+  Object.keys(data).map((topic) => {
+    if (data[topic].length === 0) {
+      delete data[topic]
+    }
+  })
+
+  topics = Object.keys(data)
 
   return (
     <Accordion
-      names={topics}
+      names={topics.map((topic) => capitaliseFirstLetter(removeUnderscores(topic, ' ')))}
       items={topics.map((topic) => {
         return (
           <List key={topic} style={{ width: '100%' }}>
             <Divider />
-            {infographics.map((node) => {
-              const { publicURL, name } = node
+            {data[topic].map((img) => {
+              const { publicURL, name } = img.node
               return (
                 <>
                   <ListItem
@@ -85,7 +79,7 @@ const DownloadLinks: React.SFC<{ style?: CSS.Properties }> = () => {
                   >
                     <ListItemText
                       className={classes.download}
-                      primary={name.split('_').reduce((a, b) => a + ' ' + b)}
+                      primary={capitaliseFirstLetter(removeUnderscores(name, ' '))}
                     />
                     <ListItemSecondaryAction>
                       <IconButton edge="end" aria-label="dowload">
