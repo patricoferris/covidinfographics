@@ -13,8 +13,8 @@ collections:
     slug: 'index'
     media_folder: ''
     public_folder: ''
-    summary: '{{title}}/{{sub}}'
-    path: '{{title}}/{{sub}}/index'
+    summary: '{{locale}}/{{sub}}'
+    path: '{{locale}}/{{sub}}/index'
     editor:
       preview: false
     fields:
