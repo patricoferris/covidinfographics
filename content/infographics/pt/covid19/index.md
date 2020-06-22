@@ -1,5 +1,5 @@
 ---
-locale: en
+locale: pt
 sub: covid19
 infographics:
   - wellbeing.png

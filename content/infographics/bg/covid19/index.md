@@ -1,8 +1,7 @@
 ---
-locale: en
+locale: bg
 sub: covid19
 infographics:
-  - wellbeing.png
   - myths.png
   - self_care.png
   - overview.png

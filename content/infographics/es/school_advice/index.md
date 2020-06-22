@@ -1,5 +1,5 @@
 ---
-locale: en
+locale: es
 sub: school_advice
 infographics:
   - go_back_to_school.png
