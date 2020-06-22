@@ -39,12 +39,13 @@ const useStyles = makeStyles((theme) => ({
 
 const Selector: React.SFC<SelectorProps> = ({ languages }) => {
   const classes = useStyles()
-  const { locale } = React.useContext(LocaleContext)
-  const [language, setLanguage] = React.useState(locale)
+  const ctx = React.useContext(LocaleContext)
+  const [language, setLanguage] = React.useState(ctx.locale)
 
-  const handleChange = (event) => {
+  const handleChange = (event, setLocale) => {
     const path = event.target.value === 'en' ? '/' : `/${event.target.value}`
     setLanguage(event.target.value)
+    setLocale(event.target.value)
     navigate(path)
   }
 
@@ -56,23 +57,27 @@ const Selector: React.SFC<SelectorProps> = ({ languages }) => {
   }
 
   return (
-    <FormControl className={classes.formControl}>
-      <Select
-        id="selector"
-        value={language}
-        onChange={handleChange}
-        displayEmpty
-        className={classes.selectEmpty}
-        inputProps={{ 'aria-label': 'Without label' }}
-      >
-        {languages.map((lang) => (
-          <MenuItem className={classes.item} key={lang.name} value={lang.path}>
-            {lang.name}&nbsp; &nbsp;{englishTranslation(lang)}
-          </MenuItem>
-        ))}
-      </Select>
-      <FormHelperText>Lanuage selector</FormHelperText>
-    </FormControl>
+    <LocaleContext.Consumer>
+      {({ locale, setLocale }) => (
+        <FormControl className={classes.formControl}>
+          <Select
+            id="selector"
+            value={language}
+            onChange={(e) => handleChange(e, setLocale)}
+            displayEmpty
+            className={classes.selectEmpty}
+            inputProps={{ 'aria-label': 'Without label' }}
+          >
+            {languages.map((lang) => (
+              <MenuItem className={classes.item} key={lang.name} value={lang.path}>
+                {lang.name}&nbsp; &nbsp;{englishTranslation(lang)}
+              </MenuItem>
+            ))}
+          </Select>
+          <FormHelperText>Lanuage selector</FormHelperText>
+        </FormControl>
+      )}
+    </LocaleContext.Consumer>
   )
 }
 

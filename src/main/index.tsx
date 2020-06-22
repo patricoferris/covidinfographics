@@ -7,6 +7,7 @@ import Selector from '../components/Selector'
 import Grid from '@material-ui/core/Grid'
 import DownloadLinks from '../components/DownloadLinks'
 import localizeText, { LocalisationOptions } from '../utils/localizeText'
+import { Layout } from '../components/Layout'
 
 export interface Link {
   node: {
@@ -18,7 +19,7 @@ export interface Link {
   }
 }
 
-const Index: React.SFC<{ links: Link[] }> = ({ pageContext: { links } }) => {
+const Index: React.SFC<{ pageContext: { links: Link[] } }> = ({ pageContext: { links } }) => {
   const ts = useTranslations()
 
   const baseOptions: LocalisationOptions = {
@@ -28,7 +29,7 @@ const Index: React.SFC<{ links: Link[] }> = ({ pageContext: { links } }) => {
   }
 
   return (
-    <>
+    <Layout>
       <Grid container spacing={3}>
         <Grid item sm={false} md={1} />
         <Grid item sm={12} md={10} spacing={3}>
@@ -46,14 +47,11 @@ const Index: React.SFC<{ links: Link[] }> = ({ pageContext: { links } }) => {
             title={localizeText({ ...baseOptions, id: 'stepTwoTitle' })}
             content={localizeText({ ...baseOptions, id: 'stepTwo' })}
           >
-            <>
-              <br />
-              <DownloadLinks links={links} style={{ marginTop: '15px' }} />
-            </>
+            <DownloadLinks links={links} style={{ marginTop: '15px' }} />
           </SimpleCard>
         </Grid>
       </Grid>
-    </>
+    </Layout>
   )
 }
 

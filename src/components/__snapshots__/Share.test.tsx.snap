@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Render closed share correctly 1`] = `
-<div>
+<Fragment>
   <WithStyles(ForwardRef(IconButton))
     id="popover-anchor"
     onClick={[Function]}
@@ -29,31 +29,31 @@ exports[`Render closed share correctly 1`] = `
       <WithStyles(ForwardRef(ListItem))
         button={true}
         component="a"
-        href="https://facebook.com/sharer/sharer.php?u=https://c19info-test.netlify.app/testing.png"
+        href="https://facebook.com/sharer/sharer.php?u=https://c19info-test.netlify.apptesting.png"
       >
         Facebook
       </WithStyles(ForwardRef(ListItem))>
       <WithStyles(ForwardRef(ListItem))
         button={true}
         component="a"
-        href="https://twitter.com/intent/tweet/?text=COVID-19%20information%20in%20English&url=https://c19info-test.netlify.app/testing.png"
+        href="https://twitter.com/intent/tweet/?text=COVID-19%20information%20in%20English&url=https://c19info-test.netlify.apptesting.png"
       >
         Twitter
       </WithStyles(ForwardRef(ListItem))>
       <WithStyles(ForwardRef(ListItem))
         button={true}
         component="a"
-        href="mailto:?subject=COVID-19%20information%20in%20English&body=https://c19info-test.netlify.app/testing.png"
+        href="mailto:?subject=COVID-19%20information%20in%20English&body=https://c19info-test.netlify.apptesting.png"
       >
         Email
       </WithStyles(ForwardRef(ListItem))>
     </WithStyles(ForwardRef(List))>
   </WithStyles(ForwardRef(Popover))>
-</div>
+</Fragment>
 `;
 
 exports[`Render opened share correctly 1`] = `
-<div>
+<Fragment>
   <WithStyles(ForwardRef(IconButton))
     aria-describedby="simple-popover"
     id="popover-anchor"
@@ -399,25 +399,25 @@ exports[`Render opened share correctly 1`] = `
       <WithStyles(ForwardRef(ListItem))
         button={true}
         component="a"
-        href="https://facebook.com/sharer/sharer.php?u=https://c19info-test.netlify.app/testing.png"
+        href="https://facebook.com/sharer/sharer.php?u=https://c19info-test.netlify.apptesting.png"
       >
         Facebook
       </WithStyles(ForwardRef(ListItem))>
       <WithStyles(ForwardRef(ListItem))
         button={true}
         component="a"
-        href="https://twitter.com/intent/tweet/?text=COVID-19%20information%20in%20English&url=https://c19info-test.netlify.app/testing.png"
+        href="https://twitter.com/intent/tweet/?text=COVID-19%20information%20in%20English&url=https://c19info-test.netlify.apptesting.png"
       >
         Twitter
       </WithStyles(ForwardRef(ListItem))>
       <WithStyles(ForwardRef(ListItem))
         button={true}
         component="a"
-        href="mailto:?subject=COVID-19%20information%20in%20English&body=https://c19info-test.netlify.app/testing.png"
+        href="mailto:?subject=COVID-19%20information%20in%20English&body=https://c19info-test.netlify.apptesting.png"
       >
         Email
       </WithStyles(ForwardRef(ListItem))>
     </WithStyles(ForwardRef(List))>
   </WithStyles(ForwardRef(Popover))>
-</div>
+</Fragment>
 `;

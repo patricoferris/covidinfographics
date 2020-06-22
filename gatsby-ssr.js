@@ -1,9 +1,11 @@
-import CustomLayout from './wrapPageElement'
+import './src/global.css'
 import React from 'react'
 import Foot from './src/components/Foot'
+import { LocaleProvider } from './src/context/LocaleProvider'
 
-export const wrapPageElement = CustomLayout
-
+export const wrapRootElement = ({ element }) => (
+  <LocaleProvider locale="en">{element}</LocaleProvider>
+)
 export const onRenderBody = ({ setPostBodyComponents }) => {
   setPostBodyComponents([<Foot key="footer" />])
 }

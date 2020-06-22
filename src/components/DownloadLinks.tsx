@@ -1,5 +1,4 @@
 import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
 import { LocaleContext } from './Layout'
 
 import List from '@material-ui/core/List'
@@ -16,18 +15,6 @@ import Share from './Share'
 import { capitaliseFirstLetter, removeUnderscores } from '../utils/strings'
 import { Link } from '..main/index'
 
-interface Node {
-  ext: string
-  name: string
-  relativeDirectory: string
-  relativePath: string
-  publicURL: string
-}
-
-interface Edge {
-  node: Node
-}
-
 const useStyles = makeStyles((theme) => ({
   link: {
     color: 'black',
@@ -38,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }))
 
-const DownloadLinks: React.SFC<{ links: Link[]; style?: CSS.Properties }> = ({ links }) => {
+const DownloadLinks: React.SFC<{ links: Link[]; style?: CSS.Properties }> = ({ links, style }) => {
   const classes = useStyles()
   // Filter out anything that isn't images
   const { locale } = React.useContext(LocaleContext)
@@ -60,15 +47,14 @@ const DownloadLinks: React.SFC<{ links: Link[]; style?: CSS.Properties }> = ({ l
   })
 
   topics = Object.keys(data)
-
   return (
     <Accordion
       names={topics.map((topic) => capitaliseFirstLetter(removeUnderscores(topic, ' ')))}
       items={topics.map((topic) => {
         return (
-          <List key={topic} style={{ width: '100%' }}>
+          <List key={topic} style={{ width: '100%', overflow: 'auto' }}>
             <Divider />
-            {data[topic].map((img) => {
+            {data[topic].map((img, idx) => {
               const { publicURL, name } = img.node
               return (
                 <>
@@ -87,9 +73,7 @@ const DownloadLinks: React.SFC<{ links: Link[]; style?: CSS.Properties }> = ({ l
                           <CloudDownload />
                         </a>
                       </IconButton>
-                      <IconButton edge="end" aria-label="dowload">
-                        <Share url={publicURL} />
-                      </IconButton>
+                      <Share url={publicURL} />
                     </ListItemSecondaryAction>
                   </ListItem>
                   <Divider />

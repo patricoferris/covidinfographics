@@ -6,7 +6,7 @@ interface ShareProps {
   url: string
 }
 
-const domain = 'https://c19info-test.netlify.app/'
+const domain = 'https://c19info-test.netlify.app'
 
 const generateFbPost = (url: string): string => {
   const main = 'https://facebook.com/sharer/sharer.php?u='
@@ -25,6 +25,7 @@ const generateEmail = (url: string): string => {
 
 const Share: React.SFC<ShareProps> = ({ url }) => {
   const [anchorEl, setAnchorEl] = React.useState<HTMLButtonElement | null>(null)
+
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     setAnchorEl(event.currentTarget)
   }
@@ -37,7 +38,7 @@ const Share: React.SFC<ShareProps> = ({ url }) => {
   const id = open ? 'simple-popover' : undefined
 
   return (
-    <div>
+    <>
       <IconButton id="popover-anchor" aria-describedby={id} onClick={handleClick}>
         <ShareIcon />
       </IconButton>
@@ -66,7 +67,7 @@ const Share: React.SFC<ShareProps> = ({ url }) => {
           </ListItem>
         </List>
       </Popover>
-    </div>
+    </>
   )
 }
 

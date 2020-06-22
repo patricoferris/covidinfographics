@@ -1,4 +1,7 @@
-import CustomLayout from "./wrapPageElement"
-import "./src/global.css"
+import './src/global.css'
+import React from 'react'
+import { LocaleProvider } from './src/context/LocaleProvider'
 
-export const wrapPageElement = CustomLayout
+export const wrapRootElement = ({ element }) => (
+  <LocaleProvider locale="en">{element}</LocaleProvider>
+)
