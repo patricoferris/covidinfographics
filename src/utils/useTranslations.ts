@@ -14,7 +14,6 @@ const useTranslations = (): Translations => {
   const { locale } = React.useContext(LocaleContext)
   // Query for the translations
   const { rawData } = useStaticQuery(query)
-
   // Simplify the response from GraphQL
   const simplified = rawData.edges.map((item) => {
     return {
@@ -47,7 +46,7 @@ const query = graphql`
               about
               partners
               media
-              involved
+              contact
             }
             index {
               missionTitle

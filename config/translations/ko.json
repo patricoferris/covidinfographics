@@ -1,11 +1,10 @@
-
 {
   "pages": {
     "home": "Home",
     "about": "About us",
     "partners": "Partners",
     "media": "Media",
-    "involved": "Get Involved"
+    "contact": "Contact"
   },
   "index": {
     "missionTitle": "Our Mission",

@@ -8,6 +8,7 @@ import Grid from '@material-ui/core/Grid'
 import DownloadLinks from '../components/DownloadLinks'
 import localizeText, { LocalisationOptions } from '../utils/localizeText'
 import { Layout } from '../components/Layout'
+import CarouselWrapper from '../components/CarouselWrapper'
 
 export interface Link {
   node: {
@@ -33,6 +34,9 @@ const Index: React.SFC<{ pageContext: { links: Link[] } }> = ({ pageContext: { l
       <Grid container spacing={3}>
         <Grid item sm={false} md={1} />
         <Grid item sm={12} md={10} spacing={3}>
+          <SimpleCard>
+            <CarouselWrapper />
+          </SimpleCard>
           <SimpleCard
             title={localizeText({ ...baseOptions, id: 'missionTitle' })}
             content={localizeText({ ...baseOptions, id: 'mission' })}

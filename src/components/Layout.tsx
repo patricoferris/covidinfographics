@@ -6,7 +6,7 @@ import locales from '../../config/i18n'
 import { Paper } from '@material-ui/core'
 import LocaleContext from '../context/LocaleProvider'
 
-const pages = ['home', 'about', 'partners', 'media', 'involved']
+const pages = ['home', 'about', 'partners', 'media', 'contact']
 
 interface LayoutProps {
   children: React.ReactChild

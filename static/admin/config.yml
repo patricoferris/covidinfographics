@@ -21,3 +21,72 @@ collections:
       - { label: 'Locale', name: 'locale', widget: 'string' }
       - { label: 'Subcategory', name: 'sub', widget: 'string' }
       - { label: "Infographics", name: "infographics", widget: "list", summary: '{{fields.image}}', field: {label: Image, name: image, widget: image}}
+  # - name: 'index'
+  #   label: 'Index-pages'
+  #   folder: 'content/pages'
+  #   create: true
+  #   summary: '{{locale}}/index'
+  #   path: '{{locale}}/index'
+  #   fields: 
+  #     - { label: 'Locale', name: 'locale', widget: 'string'}
+  #     - { label: 'Title', name: 'title', widget: 'string' }
+  #     - { label: Image, name: image, widget: image }
+  #     - { label: 'Primary Text', name: 'primaryText', widget: 'string' }
+  #     - { label: 'Text Image', name: textImage, width: image}
+  - name: 'about'
+    label: 'About-pages'
+    folder: 'content/pages'
+    create: true
+    slug: '{{locale}}/about/index'
+    summary: '{{locale}}/about'
+    path: '{{locale}}/about/index'
+    fields: 
+      - { label: 'Locale', name: 'locale', widget: 'string'}
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: Image, name: image, widget: image }
+      - { label: 'Primary Text', name: 'primaryText', widget: 'string' }
+      - { label: 'Text Image', name: 'primaryImage', widget: image}
+  - name: 'partners'
+    label: 'Partners-pages'
+    folder: 'content/pages'
+    create: true
+    slug: '{{locale}}/partners/index'
+    summary: '{{locale}}/partners'
+    path: '{{locale}}/partners/index'
+    fields: 
+      - { label: 'Locale', name: 'locale', widget: 'string'}
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Partners', name: 'partners', widget: 'list', summary: '{{fields.partner}}', fields: [{label: 'Partner', name: 'partner', widget: 'string'}, {label: 'Partner Explanation', name: 'text', widget: 'string'}, {label: 'Partner Image', name: 'image', widget: image}]}
+  - name: 'resources'
+    label: 'Resources-pages'
+    folder: 'content/resources'
+    create: true
+    slug: '{{locale}}/resources/index'
+    summary: '{{locale}}/resources'
+    path: '{{locale}}/resources/index'
+    fields: 
+      - { label: 'Locale', name: 'locale', widget: 'string'}
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Primary Text', name: 'primaryText', widget: 'string' }
+      - { label: 'Primary Image', name: 'primaryImage', widget: image}
+  - name: 'media'
+    label: 'Media-pages'
+    folder: 'content/pages'
+    create: true
+    slug: '{{locale}}/media'
+    summary: '{{locale}}/media/index'
+    path: '{{locale}}/media/index'
+    fields: 
+      - { label: 'Locale', name: 'locale', widget: 'string'}
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Features', name: 'features', widget: 'list', summary: '{{fields.featureTitle}}', fields: [{label: 'Feature Title', name: 'featureTitle', widget: 'string'}, {label: 'Feature Text', name: 'featureText', widget: 'string'}, {label: 'Partner Image', name: 'image', widget: image}]}
+  - name: 'contact'
+    label: 'Contact-pages'
+    folder: 'content/pages'
+    create: true
+    slug: '{{locale}}/contact/index'
+    summary: '{{locale}}/contact'
+    path: '{{locale}}/contact/index'
+    fields: 
+      - { label: 'Locale', name: 'locale', widget: 'string'}
+      - { label: 'Contact Tagline', name: 'title', widget: 'string' }  
