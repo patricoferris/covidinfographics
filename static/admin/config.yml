@@ -2,8 +2,8 @@ backend:
   name: git-gateway
   branch: pwa 
 
-media_folder: 'static/img'
-public_folder: /img
+media_folder: 'static/images'
+public_folder: /images
 
 collections:
   - name: 'infographics'
@@ -21,18 +21,6 @@ collections:
       - { label: 'Locale', name: 'locale', widget: 'string' }
       - { label: 'Subcategory', name: 'sub', widget: 'string' }
       - { label: "Infographics", name: "infographics", widget: "list", summary: '{{fields.image}}', field: {label: Image, name: image, widget: image}}
-  # - name: 'index'
-  #   label: 'Index-pages'
-  #   folder: 'content/pages'
-  #   create: true
-  #   summary: '{{locale}}/index'
-  #   path: '{{locale}}/index'
-  #   fields: 
-  #     - { label: 'Locale', name: 'locale', widget: 'string'}
-  #     - { label: 'Title', name: 'title', widget: 'string' }
-  #     - { label: Image, name: image, widget: image }
-  #     - { label: 'Primary Text', name: 'primaryText', widget: 'string' }
-  #     - { label: 'Text Image', name: textImage, width: image}
   - name: 'about'
     label: 'About-pages'
     folder: 'content/pages'

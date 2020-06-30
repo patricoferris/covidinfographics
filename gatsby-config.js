@@ -1,8 +1,12 @@
 module.exports = {
   plugins: [
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/static/images`,
+        name: 'images',
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -40,6 +44,22 @@ module.exports = {
     },
     `gatsby-transformer-json`,
     `gatsby-theme-material-ui`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          'gatsby-remark-relative-images',
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 590,
+            },
+          },
+        ],
+      },
+    },
     {
       resolve: `gatsby-plugin-netlify-cms`,
       options: {
@@ -49,5 +69,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-typescript`,
+    `gatsby-plugin-netlify`,
   ],
 }
