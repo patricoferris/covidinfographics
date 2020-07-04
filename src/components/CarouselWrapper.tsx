@@ -34,11 +34,13 @@ const CarouselWrapper: React.SFC = () => {
   )
 
   return (
-    <Carousel>
-      {edges.map(({ node }) => {
-        return <Item key={node} fluid={node.childImageSharp.fluid} />
-      })}
-    </Carousel>
+    <div>
+      <Carousel>
+        {edges.map(({ node }) => {
+          return <Item key={node} fluid={node.childImageSharp.fluid} />
+        })}
+      </Carousel>
+    </div>
   )
 }
 
