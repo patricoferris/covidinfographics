@@ -17,6 +17,8 @@ import {
   List,
   ListItem,
   SwipeableDrawer,
+  Grid,
+  Hidden,
 } from '@material-ui/core'
 import { makeStyles, useTheme } from '@material-ui/core/styles'
 import MenuIcon from '@material-ui/icons/Menu'
@@ -33,10 +35,19 @@ const useStyles = makeStyles((theme: Theme) => ({
   root: {
     display: 'flex',
   },
+  flexContainer: {
+    display: 'flex',
+    flexDirection: 'row',
+    padding: 0,
+  },
   navContainer: {
     padding: '0px',
   },
   navButton: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignContent: 'center',
+    color: 'white',
     width: '100%',
     height: '100%',
     textDecoration: 'none',
@@ -119,47 +130,71 @@ export const PureNavigation: React.SFC<PureNavigationProps> = ({ title, pages, t
         })}
       >
         <Toolbar>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            onClick={toggleDrawer(true)}
-            edge="start"
-            className={clsx(classes.menuButton, open && classes.hide)}
-          >
-            <MenuIcon />
-          </IconButton>
-          <Typography variant="h6" noWrap>
-            {title}
-          </Typography>
+          <Hidden mdUp>
+            <IconButton
+              color="inherit"
+              aria-label="open drawer"
+              onClick={toggleDrawer(true)}
+              edge="start"
+              className={clsx(classes.menuButton, open && classes.hide)}
+            >
+              <MenuIcon />
+            </IconButton>
+          </Hidden>
+          <Grid container spacing={3}>
+            <Grid item md={6}>
+              <Typography variant="h6" noWrap>
+                {title}
+              </Typography>
+            </Grid>
+            <Hidden smDown>
+              <Grid md={6}>
+                <List className={classes.flexContainer}>
+                  {pages.map((page) => (
+                    <ListItem className={classes.navContainer} key={page} button>
+                      <LocalizedLink
+                        className={classes.navButton}
+                        to={`/${page !== 'home' ? page : ''}`}
+                      >
+                        {localizeText({ translations: ts, category: 'pages', id: page })}
+                      </LocalizedLink>
+                    </ListItem>
+                  ))}
+                </List>
+              </Grid>
+            </Hidden>
+          </Grid>
         </Toolbar>
       </AppBar>
-      <SwipeableDrawer
-        className={classes.drawer}
-        variant="persistent"
-        anchor="left"
-        open={open}
-        onClose={toggleDrawer(false)}
-        onOpen={toggleDrawer(true)}
-        classes={{
-          paper: classes.drawerPaper,
-        }}
-      >
-        <div className={classes.drawerHeader}>
-          <IconButton onClick={toggleDrawer(false)}>
-            {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
-          </IconButton>
-        </div>
-        <Divider />
-        <List>
-          {pages.map((page) => (
-            <ListItem className={classes.navContainer} key={page} button>
-              <LocalizedLink className={classes.navButton} to={`/${page !== 'home' ? page : ''}`}>
-                {localizeText({ translations: ts, category: 'pages', id: page })}
-              </LocalizedLink>
-            </ListItem>
-          ))}
-        </List>
-      </SwipeableDrawer>
+      <Hidden mdUp>
+        <SwipeableDrawer
+          className={classes.drawer}
+          variant="persistent"
+          anchor="left"
+          open={open}
+          onClose={toggleDrawer(false)}
+          onOpen={toggleDrawer(true)}
+          classes={{
+            paper: classes.drawerPaper,
+          }}
+        >
+          <div className={classes.drawerHeader}>
+            <IconButton onClick={toggleDrawer(false)}>
+              {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
+            </IconButton>
+          </div>
+          <Divider />
+          <List>
+            {pages.map((page) => (
+              <ListItem className={classes.navContainer} key={page} button>
+                <LocalizedLink className={classes.navButton} to={`/${page !== 'home' ? page : ''}`}>
+                  {localizeText({ translations: ts, category: 'pages', id: page })}
+                </LocalizedLink>
+              </ListItem>
+            ))}
+          </List>
+        </SwipeableDrawer>
+      </Hidden>
     </div>
   )
 }

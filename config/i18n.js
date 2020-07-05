@@ -7,7 +7,7 @@ module.exports = {
     dateFormat: `DD/MM/YYYY`,
     siteLanguage: `en`,
     ogLanguage: `en_UK`,
-    defaultTitle: `COVID19 Infographics`,
+    defaultTitle: `Community Health Information Project`,
     defaultDescription: `The COVID19 website`,
   },
   fr: {
@@ -31,7 +31,7 @@ module.exports = {
     dateFormat: 'DD-MM-YYYY',
     siteLanguage: 'sk',
     ogLanguage: 'sk',
-    defaultTitle: 'COVID19 Infographics',
+    defaultTitle: 'Community Health Information Project',
     defaultDescription: 'The COVID19 website',
   },
   ur: {
@@ -43,7 +43,7 @@ module.exports = {
     dateFormat: 'DD-MM-YYYY',
     siteLanguage: 'ur',
     ogLanguage: 'ur',
-    defaultTitle: 'COVID19 Infographics',
+    defaultTitle: 'Community Health Information Project',
     defaultDescription: 'The COVID19 website',
   },
   sw: {
@@ -55,7 +55,7 @@ module.exports = {
     dateFormat: 'DD-MM-YYYY',
     siteLanguage: 'sw',
     ogLanguage: 'sw',
-    defaultTitle: 'COVID19 Infographics',
+    defaultTitle: 'Community Health Information Project',
     defaultDescription: 'The COVID19 website',
   },
   pl: {
@@ -67,7 +67,7 @@ module.exports = {
     dateFormat: 'DD-MM-YYYY',
     siteLanguage: 'pl',
     ogLanguage: 'pl',
-    defaultTitle: 'COVID19 Infographics',
+    defaultTitle: 'Community Health Information Project',
     defaultDescription: 'The COVID19 website',
   },
   syl: {
@@ -79,7 +79,7 @@ module.exports = {
     dateFormat: 'DD-MM-YYYY',
     siteLanguage: 'syl',
     ogLanguage: 'syl',
-    defaultTitle: 'COVID19 Infographics',
+    defaultTitle: 'Community Health Information Project',
     defaultDescription: 'The COVID19 website',
   },
   vi: {
@@ -91,7 +91,7 @@ module.exports = {
     dateFormat: 'DD-MM-YYYY',
     siteLanguage: 'vi',
     ogLanguage: 'vi',
-    defaultTitle: 'COVID19 Infographics',
+    defaultTitle: 'Community Health Information Project',
     defaultDescription: 'The COVID19 website',
   },
   sv: {
@@ -103,7 +103,7 @@ module.exports = {
     dateFormat: 'DD-MM-YYYY',
     siteLanguage: 'sv',
     ogLanguage: 'sv',
-    defaultTitle: 'COVID19 Infographics',
+    defaultTitle: 'Community Health Information Project',
     defaultDescription: 'The COVID19 website',
   },
   he: {
@@ -115,7 +115,7 @@ module.exports = {
     dateFormat: 'DD-MM-YYYY',
     siteLanguage: 'he',
     ogLanguage: 'he',
-    defaultTitle: 'COVID19 Infographics',
+    defaultTitle: 'Community Health Information Project',
     defaultDescription: 'The COVID19 website',
   },
   gu: {
@@ -127,7 +127,7 @@ module.exports = {
     dateFormat: 'DD-MM-YYYY',
     siteLanguage: 'gu',
     ogLanguage: 'gu',
-    defaultTitle: 'COVID19 Infographics',
+    defaultTitle: 'Community Health Information Project',
     defaultDescription: 'The COVID19 website',
   },
   ja: {
@@ -139,7 +139,7 @@ module.exports = {
     dateFormat: 'DD-MM-YYYY',
     siteLanguage: 'ja',
     ogLanguage: 'ja',
-    defaultTitle: 'COVID19 Infographics',
+    defaultTitle: 'Community Health Information Project',
     defaultDescription: 'The COVID19 website',
   },
   it: {
@@ -151,7 +151,7 @@ module.exports = {
     dateFormat: 'DD-MM-YYYY',
     siteLanguage: 'it',
     ogLanguage: 'it',
-    defaultTitle: 'COVID19 Infographics',
+    defaultTitle: 'Community Health Information Project',
     defaultDescription: 'The COVID19 website',
   },
   cs: {
@@ -163,7 +163,7 @@ module.exports = {
     dateFormat: 'DD-MM-YYYY',
     siteLanguage: 'cs',
     ogLanguage: 'cs',
-    defaultTitle: 'COVID19 Infographics',
+    defaultTitle: 'Community Health Information Project',
     defaultDescription: 'The COVID19 website',
   },
   ru: {
@@ -175,7 +175,7 @@ module.exports = {
     dateFormat: 'DD-MM-YYYY',
     siteLanguage: 'ru',
     ogLanguage: 'ru',
-    defaultTitle: 'COVID19 Infographics',
+    defaultTitle: 'Community Health Information Project',
     defaultDescription: 'The COVID19 website',
   },
   ro: {
@@ -187,7 +187,7 @@ module.exports = {
     dateFormat: 'DD-MM-YYYY',
     siteLanguage: 'ro',
     ogLanguage: 'ro',
-    defaultTitle: 'COVID19 Infographics',
+    defaultTitle: 'Community Health Information Project',
     defaultDescription: 'The COVID19 website',
   },
   yo: {
@@ -199,7 +199,7 @@ module.exports = {
     dateFormat: 'DD-MM-YYYY',
     siteLanguage: 'yo',
     ogLanguage: 'yo',
-    defaultTitle: 'COVID19 Infographics',
+    defaultTitle: 'Community Health Information Project',
     defaultDescription: 'The COVID19 website',
   },
   so: {
@@ -211,7 +211,7 @@ module.exports = {
     dateFormat: 'DD-MM-YYYY',
     siteLanguage: 'so',
     ogLanguage: 'so',
-    defaultTitle: 'COVID19 Infographics',
+    defaultTitle: 'Community Health Information Project',
     defaultDescription: 'The COVID19 website',
   },
   pt: {
@@ -223,7 +223,7 @@ module.exports = {
     dateFormat: 'DD-MM-YYYY',
     siteLanguage: 'pt',
     ogLanguage: 'pt',
-    defaultTitle: 'COVID19 Infographics',
+    defaultTitle: 'Community Health Information Project',
     defaultDescription: 'The COVID19 website',
   },
   uk: {
@@ -235,7 +235,7 @@ module.exports = {
     dateFormat: 'DD-MM-YYYY',
     siteLanguage: 'uk',
     ogLanguage: 'uk',
-    defaultTitle: 'COVID19 Infographics',
+    defaultTitle: 'Community Health Information Project',
     defaultDescription: 'The COVID19 website',
   },
   pa: {
@@ -247,7 +247,7 @@ module.exports = {
     dateFormat: 'DD-MM-YYYY',
     siteLanguage: 'pa',
     ogLanguage: 'pa',
-    defaultTitle: 'COVID19 Infographics',
+    defaultTitle: 'Community Health Information Project',
     defaultDescription: 'The COVID19 website',
   },
   si: {
@@ -259,7 +259,7 @@ module.exports = {
     dateFormat: 'DD-MM-YYYY',
     siteLanguage: 'si',
     ogLanguage: 'si',
-    defaultTitle: 'COVID19 Infographics',
+    defaultTitle: 'Community Health Information Project',
     defaultDescription: 'The COVID19 website',
   },
   ml: {
@@ -271,7 +271,7 @@ module.exports = {
     dateFormat: 'DD-MM-YYYY',
     siteLanguage: 'ml',
     ogLanguage: 'ml',
-    defaultTitle: 'COVID19 Infographics',
+    defaultTitle: 'Community Health Information Project',
     defaultDescription: 'The COVID19 website',
   },
   ku: {
@@ -283,7 +283,7 @@ module.exports = {
     dateFormat: 'DD-MM-YYYY',
     siteLanguage: 'ku',
     ogLanguage: 'ku',
-    defaultTitle: 'COVID19 Infographics',
+    defaultTitle: 'Community Health Information Project',
     defaultDescription: 'The COVID19 website',
   },
   ar: {
@@ -295,7 +295,7 @@ module.exports = {
     dateFormat: 'DD-MM-YYYY',
     siteLanguage: 'ar',
     ogLanguage: 'ar',
-    defaultTitle: 'COVID19 Infographics',
+    defaultTitle: 'Community Health Information Project',
     defaultDescription: 'The COVID19 website',
   },
   nl: {
@@ -307,7 +307,7 @@ module.exports = {
     dateFormat: 'DD-MM-YYYY',
     siteLanguage: 'nl',
     ogLanguage: 'nl',
-    defaultTitle: 'COVID19 Infographics',
+    defaultTitle: 'Community Health Information Project',
     defaultDescription: 'The COVID19 website',
   },
   bg: {
@@ -319,7 +319,7 @@ module.exports = {
     dateFormat: 'DD-MM-YYYY',
     siteLanguage: 'bg',
     ogLanguage: 'bg',
-    defaultTitle: 'COVID19 Infographics',
+    defaultTitle: 'Community Health Information Project',
     defaultDescription: 'The COVID19 website',
   },
   bn: {
@@ -331,7 +331,7 @@ module.exports = {
     dateFormat: 'DD-MM-YYYY',
     siteLanguage: 'bn',
     ogLanguage: 'bn',
-    defaultTitle: 'COVID19 Infographics',
+    defaultTitle: 'Community Health Information Project',
     defaultDescription: 'The COVID19 website',
   },
   hi: {
@@ -343,7 +343,7 @@ module.exports = {
     dateFormat: 'DD-MM-YYYY',
     siteLanguage: 'hi',
     ogLanguage: 'hi',
-    defaultTitle: 'COVID19 Infographics',
+    defaultTitle: 'Community Health Information Project',
     defaultDescription: 'The COVID19 website',
   },
   de: {
@@ -355,7 +355,7 @@ module.exports = {
     dateFormat: 'DD-MM-YYYY',
     siteLanguage: 'de',
     ogLanguage: 'de',
-    defaultTitle: 'COVID19 Infographics',
+    defaultTitle: 'Community Health Information Project',
     defaultDescription: 'The COVID19 website',
   },
   ko: {
@@ -367,7 +367,7 @@ module.exports = {
     dateFormat: 'DD-MM-YYYY',
     siteLanguage: 'ko',
     ogLanguage: 'ko',
-    defaultTitle: 'COVID19 Infographics',
+    defaultTitle: 'Community Health Information Project',
     defaultDescription: 'The COVID19 website',
   },
   es: {
@@ -379,7 +379,7 @@ module.exports = {
     dateFormat: 'DD-MM-YYYY',
     siteLanguage: 'es',
     ogLanguage: 'es',
-    defaultTitle: 'COVID19 Infographics',
+    defaultTitle: 'Community Health Information Project',
     defaultDescription: 'The COVID19 website',
   },
   fa: {
@@ -391,7 +391,7 @@ module.exports = {
     dateFormat: 'DD-MM-YYYY',
     siteLanguage: 'fa',
     ogLanguage: 'fa',
-    defaultTitle: 'COVID19 Infographics',
+    defaultTitle: 'Community Health Information Project',
     defaultDescription: 'The COVID19 website',
   },
   lt: {
@@ -403,7 +403,7 @@ module.exports = {
     dateFormat: 'DD-MM-YYYY',
     siteLanguage: 'lt',
     ogLanguage: 'lt',
-    defaultTitle: 'COVID19 Infographics',
+    defaultTitle: 'Community Health Information Project',
     defaultDescription: 'The COVID19 website',
   },
   ta: {
@@ -415,7 +415,7 @@ module.exports = {
     dateFormat: 'DD-MM-YYYY',
     siteLanguage: 'ta',
     ogLanguage: 'ta',
-    defaultTitle: 'COVID19 Infographics',
+    defaultTitle: 'Community Health Information Project',
     defaultDescription: 'The COVID19 website',
   },
   tr: {
@@ -427,7 +427,7 @@ module.exports = {
     dateFormat: 'DD-MM-YYYY',
     siteLanguage: 'tr',
     ogLanguage: 'tr',
-    defaultTitle: 'COVID19 Infographics',
+    defaultTitle: 'Community Health Information Project',
     defaultDescription: 'The COVID19 website',
   },
   zht: {
@@ -439,7 +439,7 @@ module.exports = {
     dateFormat: 'DD-MM-YYYY',
     siteLanguage: 'zht',
     ogLanguage: 'zht',
-    defaultTitle: 'COVID19 Infographics',
+    defaultTitle: 'Community Health Information Project',
     defaultDescription: 'The COVID19 website',
   },
   zhs: {
@@ -451,7 +451,7 @@ module.exports = {
     dateFormat: 'DD-MM-YYYY',
     siteLanguage: 'zhs',
     ogLanguage: 'zhs',
-    defaultTitle: 'COVID19 Infographics',
+    defaultTitle: 'Community Health Information Project',
     defaultDescription: 'The COVID19 website',
   },
 }

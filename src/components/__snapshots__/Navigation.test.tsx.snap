@@ -3,112 +3,202 @@
 exports[`Should render the five pages correctly 1`] = `
 <div>
   <WithStyles(ForwardRef(AppBar))
-    className="makeStyles-appBar-4"
+    className="makeStyles-appBar-5"
     position="static"
   >
     <WithStyles(ForwardRef(Toolbar))>
-      <WithStyles(ForwardRef(IconButton))
-        aria-label="open drawer"
-        className="makeStyles-menuButton-6"
-        color="inherit"
-        edge="start"
-        onClick={[Function]}
+      <Hidden
+        mdUp={true}
       >
-        <MenuIcon />
-      </WithStyles(ForwardRef(IconButton))>
-      <WithStyles(ForwardRef(Typography))
-        noWrap={true}
-        variant="h6"
+        <WithStyles(ForwardRef(IconButton))
+          aria-label="open drawer"
+          className="makeStyles-menuButton-7"
+          color="inherit"
+          edge="start"
+          onClick={[Function]}
+        >
+          <MenuIcon />
+        </WithStyles(ForwardRef(IconButton))>
+      </Hidden>
+      <WithStyles(ForwardRef(Grid))
+        container={true}
+        spacing={3}
       >
-        MyNavBar
-      </WithStyles(ForwardRef(Typography))>
+        <WithStyles(ForwardRef(Grid))
+          item={true}
+          md={6}
+        >
+          <WithStyles(ForwardRef(Typography))
+            noWrap={true}
+            variant="h6"
+          >
+            MyNavBar
+          </WithStyles(ForwardRef(Typography))>
+        </WithStyles(ForwardRef(Grid))>
+        <Hidden
+          smDown={true}
+        >
+          <WithStyles(ForwardRef(Grid))
+            md={6}
+          >
+            <WithStyles(ForwardRef(List))
+              className="makeStyles-flexContainer-2"
+            >
+              <WithStyles(ForwardRef(ListItem))
+                button={true}
+                className="makeStyles-navContainer-3"
+                key="home"
+              >
+                <LocalizedLink
+                  className="makeStyles-navButton-4"
+                  to="/"
+                >
+                  Home
+                </LocalizedLink>
+              </WithStyles(ForwardRef(ListItem))>
+              <WithStyles(ForwardRef(ListItem))
+                button={true}
+                className="makeStyles-navContainer-3"
+                key="about"
+              >
+                <LocalizedLink
+                  className="makeStyles-navButton-4"
+                  to="/about"
+                >
+                  About us
+                </LocalizedLink>
+              </WithStyles(ForwardRef(ListItem))>
+              <WithStyles(ForwardRef(ListItem))
+                button={true}
+                className="makeStyles-navContainer-3"
+                key="partners"
+              >
+                <LocalizedLink
+                  className="makeStyles-navButton-4"
+                  to="/partners"
+                >
+                  Partners
+                </LocalizedLink>
+              </WithStyles(ForwardRef(ListItem))>
+              <WithStyles(ForwardRef(ListItem))
+                button={true}
+                className="makeStyles-navContainer-3"
+                key="media"
+              >
+                <LocalizedLink
+                  className="makeStyles-navButton-4"
+                  to="/media"
+                >
+                  Media
+                </LocalizedLink>
+              </WithStyles(ForwardRef(ListItem))>
+              <WithStyles(ForwardRef(ListItem))
+                button={true}
+                className="makeStyles-navContainer-3"
+                key="involved"
+              >
+                <LocalizedLink
+                  className="makeStyles-navButton-4"
+                  to="/involved"
+                >
+                  Get Involved
+                </LocalizedLink>
+              </WithStyles(ForwardRef(ListItem))>
+            </WithStyles(ForwardRef(List))>
+          </WithStyles(ForwardRef(Grid))>
+        </Hidden>
+      </WithStyles(ForwardRef(Grid))>
     </WithStyles(ForwardRef(Toolbar))>
   </WithStyles(ForwardRef(AppBar))>
-  <ForwardRef(SwipeableDrawer)
-    anchor="left"
-    className="makeStyles-drawer-8"
-    classes={
-      Object {
-        "paper": "makeStyles-drawerPaper-9",
-      }
-    }
-    onClose={[Function]}
-    onOpen={[Function]}
-    open={false}
-    variant="persistent"
+  <Hidden
+    mdUp={true}
   >
-    <div
-      className="makeStyles-drawerHeader-10"
+    <ForwardRef(SwipeableDrawer)
+      anchor="left"
+      className="makeStyles-drawer-9"
+      classes={
+        Object {
+          "paper": "makeStyles-drawerPaper-10",
+        }
+      }
+      onClose={[Function]}
+      onOpen={[Function]}
+      open={false}
+      variant="persistent"
     >
-      <WithStyles(ForwardRef(IconButton))
-        onClick={[Function]}
+      <div
+        className="makeStyles-drawerHeader-11"
       >
-        <ChevronLeftIcon />
-      </WithStyles(ForwardRef(IconButton))>
-    </div>
-    <WithStyles(ForwardRef(Divider)) />
-    <WithStyles(ForwardRef(List))>
-      <WithStyles(ForwardRef(ListItem))
-        button={true}
-        className="makeStyles-navContainer-2"
-        key="home"
-      >
-        <LocalizedLink
-          className="makeStyles-navButton-3"
-          to="/"
+        <WithStyles(ForwardRef(IconButton))
+          onClick={[Function]}
         >
-          Home
-        </LocalizedLink>
-      </WithStyles(ForwardRef(ListItem))>
-      <WithStyles(ForwardRef(ListItem))
-        button={true}
-        className="makeStyles-navContainer-2"
-        key="about"
-      >
-        <LocalizedLink
-          className="makeStyles-navButton-3"
-          to="/about"
+          <ChevronLeftIcon />
+        </WithStyles(ForwardRef(IconButton))>
+      </div>
+      <WithStyles(ForwardRef(Divider)) />
+      <WithStyles(ForwardRef(List))>
+        <WithStyles(ForwardRef(ListItem))
+          button={true}
+          className="makeStyles-navContainer-3"
+          key="home"
         >
-          About us
-        </LocalizedLink>
-      </WithStyles(ForwardRef(ListItem))>
-      <WithStyles(ForwardRef(ListItem))
-        button={true}
-        className="makeStyles-navContainer-2"
-        key="partners"
-      >
-        <LocalizedLink
-          className="makeStyles-navButton-3"
-          to="/partners"
+          <LocalizedLink
+            className="makeStyles-navButton-4"
+            to="/"
+          >
+            Home
+          </LocalizedLink>
+        </WithStyles(ForwardRef(ListItem))>
+        <WithStyles(ForwardRef(ListItem))
+          button={true}
+          className="makeStyles-navContainer-3"
+          key="about"
         >
-          Partners
-        </LocalizedLink>
-      </WithStyles(ForwardRef(ListItem))>
-      <WithStyles(ForwardRef(ListItem))
-        button={true}
-        className="makeStyles-navContainer-2"
-        key="media"
-      >
-        <LocalizedLink
-          className="makeStyles-navButton-3"
-          to="/media"
+          <LocalizedLink
+            className="makeStyles-navButton-4"
+            to="/about"
+          >
+            About us
+          </LocalizedLink>
+        </WithStyles(ForwardRef(ListItem))>
+        <WithStyles(ForwardRef(ListItem))
+          button={true}
+          className="makeStyles-navContainer-3"
+          key="partners"
         >
-          Media
-        </LocalizedLink>
-      </WithStyles(ForwardRef(ListItem))>
-      <WithStyles(ForwardRef(ListItem))
-        button={true}
-        className="makeStyles-navContainer-2"
-        key="involved"
-      >
-        <LocalizedLink
-          className="makeStyles-navButton-3"
-          to="/involved"
+          <LocalizedLink
+            className="makeStyles-navButton-4"
+            to="/partners"
+          >
+            Partners
+          </LocalizedLink>
+        </WithStyles(ForwardRef(ListItem))>
+        <WithStyles(ForwardRef(ListItem))
+          button={true}
+          className="makeStyles-navContainer-3"
+          key="media"
         >
-          Get Involved
-        </LocalizedLink>
-      </WithStyles(ForwardRef(ListItem))>
-    </WithStyles(ForwardRef(List))>
-  </ForwardRef(SwipeableDrawer)>
+          <LocalizedLink
+            className="makeStyles-navButton-4"
+            to="/media"
+          >
+            Media
+          </LocalizedLink>
+        </WithStyles(ForwardRef(ListItem))>
+        <WithStyles(ForwardRef(ListItem))
+          button={true}
+          className="makeStyles-navContainer-3"
+          key="involved"
+        >
+          <LocalizedLink
+            className="makeStyles-navButton-4"
+            to="/involved"
+          >
+            Get Involved
+          </LocalizedLink>
+        </WithStyles(ForwardRef(ListItem))>
+      </WithStyles(ForwardRef(List))>
+    </ForwardRef(SwipeableDrawer)>
+  </Hidden>
 </div>
 `;
