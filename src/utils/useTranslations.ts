@@ -45,6 +45,7 @@ const query = graphql`
               home
               about
               partners
+              resources
               media
               contact
             }

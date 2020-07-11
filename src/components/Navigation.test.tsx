@@ -3,7 +3,7 @@ import { Translations } from '../utils/useTranslations'
 import { shallow } from 'enzyme'
 import { PureNavigation } from './Navigation'
 
-const pages = ['home', 'about', 'partners', 'media', 'involved']
+const pages = ['home', 'about', 'partners', 'resources', 'media', 'involved']
 
 const translations: Translations = {
   localised: {
@@ -11,6 +11,7 @@ const translations: Translations = {
       home: 'Home',
       about: 'About us',
       partners: 'Partners',
+      resources: 'Resources',
       media: 'Media',
       involved: 'Get Involved',
     },

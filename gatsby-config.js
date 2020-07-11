@@ -42,6 +42,13 @@ module.exports = {
         name: `carousel`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content`,
+        name: `content`,
+      },
+    },
     `gatsby-transformer-json`,
     `gatsby-theme-material-ui`,
     `gatsby-transformer-sharp`,

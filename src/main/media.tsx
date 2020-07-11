@@ -1,9 +1,19 @@
 import React from 'react'
 import { Layout } from '../components/Layout'
+import localised from '../utils/text'
 
-const Media: React.SFC = () => (
+type MediaContent = Record<string, unknown>
+
+interface MediaProps {
+  pageContext: {
+    local: MediaContent
+    english: MediaContent
+  }
+}
+
+const Media: React.SFC<MediaProps> = ({ pageContext: { local, english } }) => (
   <Layout>
-    <React.Fragment>Media coming soon...</React.Fragment>
+    {localised(local, english, 'title')}
   </Layout>
 )
 

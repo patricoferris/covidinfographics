@@ -78,3 +78,611 @@ collections:
     fields: 
       - { label: 'Locale', name: 'locale', widget: 'string'}
       - { label: 'Contact Tagline', name: 'title', widget: 'string' }  
+  - name: 'en'
+    label: 'en'
+    folder: 'content/en'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    summary: '{{catgeory}}/{{sub}}'
+    path: '{{catgeory}}/{{sub}}/index'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Category', name: 'category', widget: 'string' }
+      - { label: 'Subcategory', name: 'sub', widget: 'string' }
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Category Summary', name: 'body', widget: 'markdown'}
+  - name: 'fr'
+    label: 'fr'
+    folder: 'content/fr'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    summary: '{{catgeory}}/{{sub}}'
+    path: '{{catgeory}}/{{sub}}/index'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Category', name: 'category', widget: 'string' }
+      - { label: 'Subcategory', name: 'sub', widget: 'string' }
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Category Summary', name: 'body', widget: 'markdown'}
+  - name: 'sk'
+    label: 'sk'
+    folder: 'content/sk'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    summary: '{{catgeory}}/{{sub}}'
+    path: '{{catgeory}}/{{sub}}/index'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Category', name: 'category', widget: 'string' }
+      - { label: 'Subcategory', name: 'sub', widget: 'string' }
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Category Summary', name: 'body', widget: 'markdown'}
+  - name: 'ur'
+    label: 'ur'
+    folder: 'content/ur'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    summary: '{{catgeory}}/{{sub}}'
+    path: '{{catgeory}}/{{sub}}/index'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Category', name: 'category', widget: 'string' }
+      - { label: 'Subcategory', name: 'sub', widget: 'string' }
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Category Summary', name: 'body', widget: 'markdown'}
+  - name: 'sw'
+    label: 'sw'
+    folder: 'content/sw'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    summary: '{{catgeory}}/{{sub}}'
+    path: '{{catgeory}}/{{sub}}/index'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Category', name: 'category', widget: 'string' }
+      - { label: 'Subcategory', name: 'sub', widget: 'string' }
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Category Summary', name: 'body', widget: 'markdown'}
+  - name: 'pl'
+    label: 'pl'
+    folder: 'content/pl'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    summary: '{{catgeory}}/{{sub}}'
+    path: '{{catgeory}}/{{sub}}/index'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Category', name: 'category', widget: 'string' }
+      - { label: 'Subcategory', name: 'sub', widget: 'string' }
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Category Summary', name: 'body', widget: 'markdown'}
+  - name: 'syl'
+    label: 'syl'
+    folder: 'content/syl'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    summary: '{{catgeory}}/{{sub}}'
+    path: '{{catgeory}}/{{sub}}/index'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Category', name: 'category', widget: 'string' }
+      - { label: 'Subcategory', name: 'sub', widget: 'string' }
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Category Summary', name: 'body', widget: 'markdown'}
+  - name: 'vi'
+    label: 'vi'
+    folder: 'content/vi'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    summary: '{{catgeory}}/{{sub}}'
+    path: '{{catgeory}}/{{sub}}/index'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Category', name: 'category', widget: 'string' }
+      - { label: 'Subcategory', name: 'sub', widget: 'string' }
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Category Summary', name: 'body', widget: 'markdown'}
+  - name: 'sv'
+    label: 'sv'
+    folder: 'content/sv'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    summary: '{{catgeory}}/{{sub}}'
+    path: '{{catgeory}}/{{sub}}/index'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Category', name: 'category', widget: 'string' }
+      - { label: 'Subcategory', name: 'sub', widget: 'string' }
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Category Summary', name: 'body', widget: 'markdown'}
+  - name: 'he'
+    label: 'he'
+    folder: 'content/he'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    summary: '{{catgeory}}/{{sub}}'
+    path: '{{catgeory}}/{{sub}}/index'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Category', name: 'category', widget: 'string' }
+      - { label: 'Subcategory', name: 'sub', widget: 'string' }
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Category Summary', name: 'body', widget: 'markdown'}
+  - name: 'gu'
+    label: 'gu'
+    folder: 'content/gu'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    summary: '{{catgeory}}/{{sub}}'
+    path: '{{catgeory}}/{{sub}}/index'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Category', name: 'category', widget: 'string' }
+      - { label: 'Subcategory', name: 'sub', widget: 'string' }
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Category Summary', name: 'body', widget: 'markdown'}
+  - name: 'ja'
+    label: 'ja'
+    folder: 'content/ja'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    summary: '{{catgeory}}/{{sub}}'
+    path: '{{catgeory}}/{{sub}}/index'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Category', name: 'category', widget: 'string' }
+      - { label: 'Subcategory', name: 'sub', widget: 'string' }
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Category Summary', name: 'body', widget: 'markdown'}
+  - name: 'it'
+    label: 'it'
+    folder: 'content/it'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    summary: '{{catgeory}}/{{sub}}'
+    path: '{{catgeory}}/{{sub}}/index'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Category', name: 'category', widget: 'string' }
+      - { label: 'Subcategory', name: 'sub', widget: 'string' }
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Category Summary', name: 'body', widget: 'markdown'}
+  - name: 'cs'
+    label: 'cs'
+    folder: 'content/cs'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    summary: '{{catgeory}}/{{sub}}'
+    path: '{{catgeory}}/{{sub}}/index'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Category', name: 'category', widget: 'string' }
+      - { label: 'Subcategory', name: 'sub', widget: 'string' }
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Category Summary', name: 'body', widget: 'markdown'}
+  - name: 'ru'
+    label: 'ru'
+    folder: 'content/ru'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    summary: '{{catgeory}}/{{sub}}'
+    path: '{{catgeory}}/{{sub}}/index'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Category', name: 'category', widget: 'string' }
+      - { label: 'Subcategory', name: 'sub', widget: 'string' }
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Category Summary', name: 'body', widget: 'markdown'}
+  - name: 'ro'
+    label: 'ro'
+    folder: 'content/ro'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    summary: '{{catgeory}}/{{sub}}'
+    path: '{{catgeory}}/{{sub}}/index'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Category', name: 'category', widget: 'string' }
+      - { label: 'Subcategory', name: 'sub', widget: 'string' }
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Category Summary', name: 'body', widget: 'markdown'}
+  - name: 'yo'
+    label: 'yo'
+    folder: 'content/yo'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    summary: '{{catgeory}}/{{sub}}'
+    path: '{{catgeory}}/{{sub}}/index'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Category', name: 'category', widget: 'string' }
+      - { label: 'Subcategory', name: 'sub', widget: 'string' }
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Category Summary', name: 'body', widget: 'markdown'}
+  - name: 'so'
+    label: 'so'
+    folder: 'content/so'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    summary: '{{catgeory}}/{{sub}}'
+    path: '{{catgeory}}/{{sub}}/index'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Category', name: 'category', widget: 'string' }
+      - { label: 'Subcategory', name: 'sub', widget: 'string' }
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Category Summary', name: 'body', widget: 'markdown'}
+  - name: 'pt'
+    label: 'pt'
+    folder: 'content/pt'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    summary: '{{catgeory}}/{{sub}}'
+    path: '{{catgeory}}/{{sub}}/index'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Category', name: 'category', widget: 'string' }
+      - { label: 'Subcategory', name: 'sub', widget: 'string' }
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Category Summary', name: 'body', widget: 'markdown'}
+  - name: 'uk'
+    label: 'uk'
+    folder: 'content/uk'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    summary: '{{catgeory}}/{{sub}}'
+    path: '{{catgeory}}/{{sub}}/index'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Category', name: 'category', widget: 'string' }
+      - { label: 'Subcategory', name: 'sub', widget: 'string' }
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Category Summary', name: 'body', widget: 'markdown'}
+  - name: 'pa'
+    label: 'pa'
+    folder: 'content/pa'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    summary: '{{catgeory}}/{{sub}}'
+    path: '{{catgeory}}/{{sub}}/index'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Category', name: 'category', widget: 'string' }
+      - { label: 'Subcategory', name: 'sub', widget: 'string' }
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Category Summary', name: 'body', widget: 'markdown'}
+  - name: 'si'
+    label: 'si'
+    folder: 'content/si'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    summary: '{{catgeory}}/{{sub}}'
+    path: '{{catgeory}}/{{sub}}/index'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Category', name: 'category', widget: 'string' }
+      - { label: 'Subcategory', name: 'sub', widget: 'string' }
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Category Summary', name: 'body', widget: 'markdown'}
+  - name: 'ml'
+    label: 'ml'
+    folder: 'content/ml'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    summary: '{{catgeory}}/{{sub}}'
+    path: '{{catgeory}}/{{sub}}/index'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Category', name: 'category', widget: 'string' }
+      - { label: 'Subcategory', name: 'sub', widget: 'string' }
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Category Summary', name: 'body', widget: 'markdown'}
+  - name: 'ku'
+    label: 'ku'
+    folder: 'content/ku'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    summary: '{{catgeory}}/{{sub}}'
+    path: '{{catgeory}}/{{sub}}/index'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Category', name: 'category', widget: 'string' }
+      - { label: 'Subcategory', name: 'sub', widget: 'string' }
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Category Summary', name: 'body', widget: 'markdown'}
+  - name: 'ar'
+    label: 'ar'
+    folder: 'content/ar'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    summary: '{{catgeory}}/{{sub}}'
+    path: '{{catgeory}}/{{sub}}/index'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Category', name: 'category', widget: 'string' }
+      - { label: 'Subcategory', name: 'sub', widget: 'string' }
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Category Summary', name: 'body', widget: 'markdown'}
+  - name: 'nl'
+    label: 'nl'
+    folder: 'content/nl'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    summary: '{{catgeory}}/{{sub}}'
+    path: '{{catgeory}}/{{sub}}/index'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Category', name: 'category', widget: 'string' }
+      - { label: 'Subcategory', name: 'sub', widget: 'string' }
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Category Summary', name: 'body', widget: 'markdown'}
+  - name: 'bg'
+    label: 'bg'
+    folder: 'content/bg'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    summary: '{{catgeory}}/{{sub}}'
+    path: '{{catgeory}}/{{sub}}/index'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Category', name: 'category', widget: 'string' }
+      - { label: 'Subcategory', name: 'sub', widget: 'string' }
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Category Summary', name: 'body', widget: 'markdown'}
+  - name: 'bn'
+    label: 'bn'
+    folder: 'content/bn'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    summary: '{{catgeory}}/{{sub}}'
+    path: '{{catgeory}}/{{sub}}/index'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Category', name: 'category', widget: 'string' }
+      - { label: 'Subcategory', name: 'sub', widget: 'string' }
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Category Summary', name: 'body', widget: 'markdown'}
+  - name: 'hi'
+    label: 'hi'
+    folder: 'content/hi'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    summary: '{{catgeory}}/{{sub}}'
+    path: '{{catgeory}}/{{sub}}/index'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Category', name: 'category', widget: 'string' }
+      - { label: 'Subcategory', name: 'sub', widget: 'string' }
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Category Summary', name: 'body', widget: 'markdown'}
+  - name: 'de'
+    label: 'de'
+    folder: 'content/de'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    summary: '{{catgeory}}/{{sub}}'
+    path: '{{catgeory}}/{{sub}}/index'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Category', name: 'category', widget: 'string' }
+      - { label: 'Subcategory', name: 'sub', widget: 'string' }
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Category Summary', name: 'body', widget: 'markdown'}
+  - name: 'ko'
+    label: 'ko'
+    folder: 'content/ko'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    summary: '{{catgeory}}/{{sub}}'
+    path: '{{catgeory}}/{{sub}}/index'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Category', name: 'category', widget: 'string' }
+      - { label: 'Subcategory', name: 'sub', widget: 'string' }
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Category Summary', name: 'body', widget: 'markdown'}
+  - name: 'es'
+    label: 'es'
+    folder: 'content/es'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    summary: '{{catgeory}}/{{sub}}'
+    path: '{{catgeory}}/{{sub}}/index'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Category', name: 'category', widget: 'string' }
+      - { label: 'Subcategory', name: 'sub', widget: 'string' }
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Category Summary', name: 'body', widget: 'markdown'}
+  - name: 'fa'
+    label: 'fa'
+    folder: 'content/fa'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    summary: '{{catgeory}}/{{sub}}'
+    path: '{{catgeory}}/{{sub}}/index'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Category', name: 'category', widget: 'string' }
+      - { label: 'Subcategory', name: 'sub', widget: 'string' }
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Category Summary', name: 'body', widget: 'markdown'}
+  - name: 'lt'
+    label: 'lt'
+    folder: 'content/lt'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    summary: '{{catgeory}}/{{sub}}'
+    path: '{{catgeory}}/{{sub}}/index'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Category', name: 'category', widget: 'string' }
+      - { label: 'Subcategory', name: 'sub', widget: 'string' }
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Category Summary', name: 'body', widget: 'markdown'}
+  - name: 'ta'
+    label: 'ta'
+    folder: 'content/ta'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    summary: '{{catgeory}}/{{sub}}'
+    path: '{{catgeory}}/{{sub}}/index'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Category', name: 'category', widget: 'string' }
+      - { label: 'Subcategory', name: 'sub', widget: 'string' }
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Category Summary', name: 'body', widget: 'markdown'}
+  - name: 'tr'
+    label: 'tr'
+    folder: 'content/tr'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    summary: '{{catgeory}}/{{sub}}'
+    path: '{{catgeory}}/{{sub}}/index'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Category', name: 'category', widget: 'string' }
+      - { label: 'Subcategory', name: 'sub', widget: 'string' }
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Category Summary', name: 'body', widget: 'markdown'}
+  - name: 'zht'
+    label: 'zht'
+    folder: 'content/zht'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    summary: '{{catgeory}}/{{sub}}'
+    path: '{{catgeory}}/{{sub}}/index'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Category', name: 'category', widget: 'string' }
+      - { label: 'Subcategory', name: 'sub', widget: 'string' }
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Category Summary', name: 'body', widget: 'markdown'}
+  - name: 'zhs'
+    label: 'zhs'
+    folder: 'content/zhs'
+    create: true
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    summary: '{{catgeory}}/{{sub}}'
+    path: '{{catgeory}}/{{sub}}/index'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Category', name: 'category', widget: 'string' }
+      - { label: 'Subcategory', name: 'sub', widget: 'string' }
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Category Summary', name: 'body', widget: 'markdown'}

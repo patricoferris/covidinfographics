@@ -92,6 +92,32 @@ exports.createPages = async ({ graphql, actions }) => {
           // Use the values defined in "locales" to construct the path
           const localizedPath = locales[lang].default ? slug : `${locales[lang].path}${slug}`
 
+          const allLinks = await graphql(`
+              {
+                rawData: allFile(
+                  filter: {
+                    sourceInstanceName: { eq: "content" }
+                    relativePath: { regex: "/${lang}//" }
+                  }
+                ) {
+                  edges {
+                    node {
+                      relativePath
+                      publicURL
+                    }
+                  }
+                }
+              }
+            `)
+
+          // Get unique set of topics
+          const topics = new Set(
+            allLinks.data.rawData.edges.map((edge) => {
+              const relPath = edge.node.relativePath
+              return relPath.split('/')[1]
+            })
+          )
+
           // Different pages need different things
           if (base === 'index') {
             // Make Graphql query for download links... will likely change in the future
@@ -163,6 +189,60 @@ exports.createPages = async ({ graphql, actions }) => {
                 english,
                 dateFormat: locales[lang].dateFormat,
               },
+            })
+          } else if (base === 'resources') {
+            const innerQuery = `title
+            primaryText`
+            const { local, english } = await languageHelper(graphql, 'resources', lang, innerQuery)
+            createPage({
+              path: removeTrailingSlash(localizedPath),
+              component: template,
+              context: {
+                ...page.context,
+                locale: lang,
+                local,
+                english,
+                topics,
+                dateFormat: locales[lang].dateFormat,
+              },
+            })
+          } else if (base === 'media') {
+            const innerQuery = `title
+            features {
+              featureTitle
+              featureText
+              ${imageQuery}
+            }`
+            const { local, english } = await languageHelper(graphql, 'media', lang, innerQuery)
+            createPage({
+              path: removeTrailingSlash(localizedPath),
+              component: template,
+              context: {
+                ...page.context,
+                locale: lang,
+                local,
+                english,
+                dateFormat: locales[lang].dateFormat,
+              },
+            })
+          } else if (base === 'content') {
+            // Create a content page for each topic
+            topics.forEach((topic) => {
+              const links = allLinks.data.rawData.edges.filter((edge) => {
+                const relPath = edge.node.relativePath
+                return relPath.split('/')[1] === topic
+              })
+
+              createPage({
+                path: removeTrailingSlash(`${localizedPath}/${topic}`),
+                component: template,
+                context: {
+                  ...page.context,
+                  locale: lang,
+                  links,
+                  dateFormat: locales[lang].dateFormat,
+                },
+              })
             })
           } else if (base === 'contact') {
             const innerQuery = `title`

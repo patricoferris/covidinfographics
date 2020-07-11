@@ -83,6 +83,18 @@ exports[`Should render the five pages correctly 1`] = `
               <WithStyles(ForwardRef(ListItem))
                 button={true}
                 className="makeStyles-navContainer-3"
+                key="resources"
+              >
+                <LocalizedLink
+                  className="makeStyles-navButton-4"
+                  to="/resources"
+                >
+                  Resources
+                </LocalizedLink>
+              </WithStyles(ForwardRef(ListItem))>
+              <WithStyles(ForwardRef(ListItem))
+                button={true}
+                className="makeStyles-navContainer-3"
                 key="media"
               >
                 <LocalizedLink
@@ -171,6 +183,18 @@ exports[`Should render the five pages correctly 1`] = `
             to="/partners"
           >
             Partners
+          </LocalizedLink>
+        </WithStyles(ForwardRef(ListItem))>
+        <WithStyles(ForwardRef(ListItem))
+          button={true}
+          className="makeStyles-navContainer-3"
+          key="resources"
+        >
+          <LocalizedLink
+            className="makeStyles-navButton-4"
+            to="/resources"
+          >
+            Resources
           </LocalizedLink>
         </WithStyles(ForwardRef(ListItem))>
         <WithStyles(ForwardRef(ListItem))
