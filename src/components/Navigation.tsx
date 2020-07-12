@@ -42,12 +42,24 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
   navContainer: {
     padding: '0px',
+    color: 'black',
   },
   navButton: {
     display: 'flex',
     justifyContent: 'center',
     alignContent: 'center',
     color: 'white',
+    width: '100%',
+    height: '100%',
+    textDecoration: 'none',
+    boxShadow: 'none',
+    padding: `${theme.spacing(2)}px ${theme.spacing(1)}px`,
+  },
+  navDrawerButton: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignContent: 'center',
+    color: 'black',
     width: '100%',
     height: '100%',
     textDecoration: 'none',
@@ -143,9 +155,16 @@ export const PureNavigation: React.SFC<PureNavigationProps> = ({ title, pages, t
           </Hidden>
           <Grid container spacing={3}>
             <Grid item md={6}>
-              <Typography variant="h6" noWrap>
-                {title}
-              </Typography>
+              <Hidden smDown>
+                <Typography variant="h6" noWrap>
+                  {title}
+                </Typography>
+              </Hidden>
+              <Hidden mdUp>
+                <Typography variant="h6" noWrap>
+                  CHIP
+                </Typography>
+              </Hidden>
             </Grid>
             <Hidden smDown>
               <Grid md={6}>
@@ -187,7 +206,10 @@ export const PureNavigation: React.SFC<PureNavigationProps> = ({ title, pages, t
           <List>
             {pages.map((page) => (
               <ListItem className={classes.navContainer} key={page} button>
-                <LocalizedLink className={classes.navButton} to={`/${page !== 'home' ? page : ''}`}>
+                <LocalizedLink
+                  className={classes.navDrawerButton}
+                  to={`/${page !== 'home' ? page : ''}`}
+                >
                   {localizeText({ translations: ts, category: 'pages', id: page })}
                 </LocalizedLink>
               </ListItem>
