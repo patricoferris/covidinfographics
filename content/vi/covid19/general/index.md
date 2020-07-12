@@ -1,6 +1,6 @@
 ---
-locale: vi
-sub: covid19
+category: covid19
+sub: general
 infographics:
   - overview.png
   - index.md

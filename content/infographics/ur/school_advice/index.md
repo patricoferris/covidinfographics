@@ -1,5 +1,5 @@
 ---
-locale: ur
+category: covid19
 sub: school_advice
 infographics:
   - go_back_to_school.png

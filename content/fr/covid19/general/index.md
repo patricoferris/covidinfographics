@@ -1,6 +1,6 @@
 ---
-locale: fr
-sub: covid19
+category: covid19
+sub: general
 infographics:
   - self_care.png
   - overview.png

@@ -1,5 +1,5 @@
 ---
-locale: fr
+category: covid19
 title: "CHIP: Community Health Information Project"
 image: /images/oauth.png
 primaryText: Un projet pour parteger l'information sur la santé (je ne peux pas

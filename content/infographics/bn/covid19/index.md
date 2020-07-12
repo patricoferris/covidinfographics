@@ -1,6 +1,6 @@
 ---
-locale: bn
-sub: covid19
+category: covid19
+sub: general
 infographics:
   - wellbeing.png
   - myths.png

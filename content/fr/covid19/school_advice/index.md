@@ -1,5 +1,5 @@
 ---
-locale: fr
+category: covid19
 sub: school_advice
 infographics:
   - age_group.png

@@ -1,5 +1,5 @@
 ---
-locale: en
+category: covid19
 title: CHIP
 partners:
   - partner: Rory
