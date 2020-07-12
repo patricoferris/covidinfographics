@@ -85,8 +85,8 @@ collections:
     slug: 'index'
     media_folder: ''
     public_folder: ''
-    summary: '{{catgeory}}/{{sub}}'
-    path: '{{catgeory}}/{{sub}}/index'
+    summary: '{{category}}/{{sub}}'
+    path: '{{category}}/{{sub}}/index'
     editor:
       preview: false
     fields:
@@ -101,8 +101,8 @@ collections:
     slug: 'index'
     media_folder: ''
     public_folder: ''
-    summary: '{{catgeory}}/{{sub}}'
-    path: '{{catgeory}}/{{sub}}/index'
+    summary: '{{category}}/{{sub}}'
+    path: '{{category}}/{{sub}}/index'
     editor:
       preview: false
     fields:
@@ -117,8 +117,8 @@ collections:
     slug: 'index'
     media_folder: ''
     public_folder: ''
-    summary: '{{catgeory}}/{{sub}}'
-    path: '{{catgeory}}/{{sub}}/index'
+    summary: '{{category}}/{{sub}}'
+    path: '{{category}}/{{sub}}/index'
     editor:
       preview: false
     fields:
@@ -133,8 +133,8 @@ collections:
     slug: 'index'
     media_folder: ''
     public_folder: ''
-    summary: '{{catgeory}}/{{sub}}'
-    path: '{{catgeory}}/{{sub}}/index'
+    summary: '{{category}}/{{sub}}'
+    path: '{{category}}/{{sub}}/index'
     editor:
       preview: false
     fields:
@@ -149,8 +149,8 @@ collections:
     slug: 'index'
     media_folder: ''
     public_folder: ''
-    summary: '{{catgeory}}/{{sub}}'
-    path: '{{catgeory}}/{{sub}}/index'
+    summary: '{{category}}/{{sub}}'
+    path: '{{category}}/{{sub}}/index'
     editor:
       preview: false
     fields:
@@ -165,8 +165,8 @@ collections:
     slug: 'index'
     media_folder: ''
     public_folder: ''
-    summary: '{{catgeory}}/{{sub}}'
-    path: '{{catgeory}}/{{sub}}/index'
+    summary: '{{category}}/{{sub}}'
+    path: '{{category}}/{{sub}}/index'
     editor:
       preview: false
     fields:
@@ -181,8 +181,8 @@ collections:
     slug: 'index'
     media_folder: ''
     public_folder: ''
-    summary: '{{catgeory}}/{{sub}}'
-    path: '{{catgeory}}/{{sub}}/index'
+    summary: '{{category}}/{{sub}}'
+    path: '{{category}}/{{sub}}/index'
     editor:
       preview: false
     fields:
@@ -197,8 +197,8 @@ collections:
     slug: 'index'
     media_folder: ''
     public_folder: ''
-    summary: '{{catgeory}}/{{sub}}'
-    path: '{{catgeory}}/{{sub}}/index'
+    summary: '{{category}}/{{sub}}'
+    path: '{{category}}/{{sub}}/index'
     editor:
       preview: false
     fields:
@@ -213,8 +213,8 @@ collections:
     slug: 'index'
     media_folder: ''
     public_folder: ''
-    summary: '{{catgeory}}/{{sub}}'
-    path: '{{catgeory}}/{{sub}}/index'
+    summary: '{{category}}/{{sub}}'
+    path: '{{category}}/{{sub}}/index'
     editor:
       preview: false
     fields:
@@ -229,8 +229,8 @@ collections:
     slug: 'index'
     media_folder: ''
     public_folder: ''
-    summary: '{{catgeory}}/{{sub}}'
-    path: '{{catgeory}}/{{sub}}/index'
+    summary: '{{category}}/{{sub}}'
+    path: '{{category}}/{{sub}}/index'
     editor:
       preview: false
     fields:
@@ -245,8 +245,8 @@ collections:
     slug: 'index'
     media_folder: ''
     public_folder: ''
-    summary: '{{catgeory}}/{{sub}}'
-    path: '{{catgeory}}/{{sub}}/index'
+    summary: '{{category}}/{{sub}}'
+    path: '{{category}}/{{sub}}/index'
     editor:
       preview: false
     fields:
@@ -261,8 +261,8 @@ collections:
     slug: 'index'
     media_folder: ''
     public_folder: ''
-    summary: '{{catgeory}}/{{sub}}'
-    path: '{{catgeory}}/{{sub}}/index'
+    summary: '{{category}}/{{sub}}'
+    path: '{{category}}/{{sub}}/index'
     editor:
       preview: false
     fields:
@@ -277,8 +277,8 @@ collections:
     slug: 'index'
     media_folder: ''
     public_folder: ''
-    summary: '{{catgeory}}/{{sub}}'
-    path: '{{catgeory}}/{{sub}}/index'
+    summary: '{{category}}/{{sub}}'
+    path: '{{category}}/{{sub}}/index'
     editor:
       preview: false
     fields:
@@ -293,8 +293,8 @@ collections:
     slug: 'index'
     media_folder: ''
     public_folder: ''
-    summary: '{{catgeory}}/{{sub}}'
-    path: '{{catgeory}}/{{sub}}/index'
+    summary: '{{category}}/{{sub}}'
+    path: '{{category}}/{{sub}}/index'
     editor:
       preview: false
     fields:
@@ -309,8 +309,8 @@ collections:
     slug: 'index'
     media_folder: ''
     public_folder: ''
-    summary: '{{catgeory}}/{{sub}}'
-    path: '{{catgeory}}/{{sub}}/index'
+    summary: '{{category}}/{{sub}}'
+    path: '{{category}}/{{sub}}/index'
     editor:
       preview: false
     fields:
@@ -325,8 +325,8 @@ collections:
     slug: 'index'
     media_folder: ''
     public_folder: ''
-    summary: '{{catgeory}}/{{sub}}'
-    path: '{{catgeory}}/{{sub}}/index'
+    summary: '{{category}}/{{sub}}'
+    path: '{{category}}/{{sub}}/index'
     editor:
       preview: false
     fields:
@@ -341,8 +341,8 @@ collections:
     slug: 'index'
     media_folder: ''
     public_folder: ''
-    summary: '{{catgeory}}/{{sub}}'
-    path: '{{catgeory}}/{{sub}}/index'
+    summary: '{{category}}/{{sub}}'
+    path: '{{category}}/{{sub}}/index'
     editor:
       preview: false
     fields:
@@ -357,8 +357,8 @@ collections:
     slug: 'index'
     media_folder: ''
     public_folder: ''
-    summary: '{{catgeory}}/{{sub}}'
-    path: '{{catgeory}}/{{sub}}/index'
+    summary: '{{category}}/{{sub}}'
+    path: '{{category}}/{{sub}}/index'
     editor:
       preview: false
     fields:
@@ -373,8 +373,8 @@ collections:
     slug: 'index'
     media_folder: ''
     public_folder: ''
-    summary: '{{catgeory}}/{{sub}}'
-    path: '{{catgeory}}/{{sub}}/index'
+    summary: '{{category}}/{{sub}}'
+    path: '{{category}}/{{sub}}/index'
     editor:
       preview: false
     fields:
@@ -389,8 +389,8 @@ collections:
     slug: 'index'
     media_folder: ''
     public_folder: ''
-    summary: '{{catgeory}}/{{sub}}'
-    path: '{{catgeory}}/{{sub}}/index'
+    summary: '{{category}}/{{sub}}'
+    path: '{{category}}/{{sub}}/index'
     editor:
       preview: false
     fields:
@@ -405,8 +405,8 @@ collections:
     slug: 'index'
     media_folder: ''
     public_folder: ''
-    summary: '{{catgeory}}/{{sub}}'
-    path: '{{catgeory}}/{{sub}}/index'
+    summary: '{{category}}/{{sub}}'
+    path: '{{category}}/{{sub}}/index'
     editor:
       preview: false
     fields:
@@ -421,8 +421,8 @@ collections:
     slug: 'index'
     media_folder: ''
     public_folder: ''
-    summary: '{{catgeory}}/{{sub}}'
-    path: '{{catgeory}}/{{sub}}/index'
+    summary: '{{category}}/{{sub}}'
+    path: '{{category}}/{{sub}}/index'
     editor:
       preview: false
     fields:
@@ -437,8 +437,8 @@ collections:
     slug: 'index'
     media_folder: ''
     public_folder: ''
-    summary: '{{catgeory}}/{{sub}}'
-    path: '{{catgeory}}/{{sub}}/index'
+    summary: '{{category}}/{{sub}}'
+    path: '{{category}}/{{sub}}/index'
     editor:
       preview: false
     fields:
@@ -453,8 +453,8 @@ collections:
     slug: 'index'
     media_folder: ''
     public_folder: ''
-    summary: '{{catgeory}}/{{sub}}'
-    path: '{{catgeory}}/{{sub}}/index'
+    summary: '{{category}}/{{sub}}'
+    path: '{{category}}/{{sub}}/index'
     editor:
       preview: false
     fields:
@@ -469,8 +469,8 @@ collections:
     slug: 'index'
     media_folder: ''
     public_folder: ''
-    summary: '{{catgeory}}/{{sub}}'
-    path: '{{catgeory}}/{{sub}}/index'
+    summary: '{{category}}/{{sub}}'
+    path: '{{category}}/{{sub}}/index'
     editor:
       preview: false
     fields:
@@ -485,8 +485,8 @@ collections:
     slug: 'index'
     media_folder: ''
     public_folder: ''
-    summary: '{{catgeory}}/{{sub}}'
-    path: '{{catgeory}}/{{sub}}/index'
+    summary: '{{category}}/{{sub}}'
+    path: '{{category}}/{{sub}}/index'
     editor:
       preview: false
     fields:
@@ -501,8 +501,8 @@ collections:
     slug: 'index'
     media_folder: ''
     public_folder: ''
-    summary: '{{catgeory}}/{{sub}}'
-    path: '{{catgeory}}/{{sub}}/index'
+    summary: '{{category}}/{{sub}}'
+    path: '{{category}}/{{sub}}/index'
     editor:
       preview: false
     fields:
@@ -517,8 +517,8 @@ collections:
     slug: 'index'
     media_folder: ''
     public_folder: ''
-    summary: '{{catgeory}}/{{sub}}'
-    path: '{{catgeory}}/{{sub}}/index'
+    summary: '{{category}}/{{sub}}'
+    path: '{{category}}/{{sub}}/index'
     editor:
       preview: false
     fields:
@@ -533,8 +533,8 @@ collections:
     slug: 'index'
     media_folder: ''
     public_folder: ''
-    summary: '{{catgeory}}/{{sub}}'
-    path: '{{catgeory}}/{{sub}}/index'
+    summary: '{{category}}/{{sub}}'
+    path: '{{category}}/{{sub}}/index'
     editor:
       preview: false
     fields:
@@ -549,8 +549,8 @@ collections:
     slug: 'index'
     media_folder: ''
     public_folder: ''
-    summary: '{{catgeory}}/{{sub}}'
-    path: '{{catgeory}}/{{sub}}/index'
+    summary: '{{category}}/{{sub}}'
+    path: '{{category}}/{{sub}}/index'
     editor:
       preview: false
     fields:
@@ -565,8 +565,8 @@ collections:
     slug: 'index'
     media_folder: ''
     public_folder: ''
-    summary: '{{catgeory}}/{{sub}}'
-    path: '{{catgeory}}/{{sub}}/index'
+    summary: '{{category}}/{{sub}}'
+    path: '{{category}}/{{sub}}/index'
     editor:
       preview: false
     fields:
@@ -581,8 +581,8 @@ collections:
     slug: 'index'
     media_folder: ''
     public_folder: ''
-    summary: '{{catgeory}}/{{sub}}'
-    path: '{{catgeory}}/{{sub}}/index'
+    summary: '{{category}}/{{sub}}'
+    path: '{{category}}/{{sub}}/index'
     editor:
       preview: false
     fields:
@@ -597,8 +597,8 @@ collections:
     slug: 'index'
     media_folder: ''
     public_folder: ''
-    summary: '{{catgeory}}/{{sub}}'
-    path: '{{catgeory}}/{{sub}}/index'
+    summary: '{{category}}/{{sub}}'
+    path: '{{category}}/{{sub}}/index'
     editor:
       preview: false
     fields:
@@ -613,8 +613,8 @@ collections:
     slug: 'index'
     media_folder: ''
     public_folder: ''
-    summary: '{{catgeory}}/{{sub}}'
-    path: '{{catgeory}}/{{sub}}/index'
+    summary: '{{category}}/{{sub}}'
+    path: '{{category}}/{{sub}}/index'
     editor:
       preview: false
     fields:
@@ -629,8 +629,8 @@ collections:
     slug: 'index'
     media_folder: ''
     public_folder: ''
-    summary: '{{catgeory}}/{{sub}}'
-    path: '{{catgeory}}/{{sub}}/index'
+    summary: '{{category}}/{{sub}}'
+    path: '{{category}}/{{sub}}/index'
     editor:
       preview: false
     fields:
@@ -645,8 +645,8 @@ collections:
     slug: 'index'
     media_folder: ''
     public_folder: ''
-    summary: '{{catgeory}}/{{sub}}'
-    path: '{{catgeory}}/{{sub}}/index'
+    summary: '{{category}}/{{sub}}'
+    path: '{{category}}/{{sub}}/index'
     editor:
       preview: false
     fields:
@@ -661,8 +661,8 @@ collections:
     slug: 'index'
     media_folder: ''
     public_folder: ''
-    summary: '{{catgeory}}/{{sub}}'
-    path: '{{catgeory}}/{{sub}}/index'
+    summary: '{{category}}/{{sub}}'
+    path: '{{category}}/{{sub}}/index'
     editor:
       preview: false
     fields:
@@ -677,8 +677,8 @@ collections:
     slug: 'index'
     media_folder: ''
     public_folder: ''
-    summary: '{{catgeory}}/{{sub}}'
-    path: '{{catgeory}}/{{sub}}/index'
+    summary: '{{category}}/{{sub}}'
+    path: '{{category}}/{{sub}}/index'
     editor:
       preview: false
     fields:
@@ -686,3 +686,4 @@ collections:
       - { label: 'Subcategory', name: 'sub', widget: 'string' }
       - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
       - { label: 'Category Summary', name: 'body', widget: 'markdown'}
+

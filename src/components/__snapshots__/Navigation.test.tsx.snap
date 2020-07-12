@@ -3,7 +3,7 @@
 exports[`Should render the five pages correctly 1`] = `
 <div>
   <WithStyles(ForwardRef(AppBar))
-    className="makeStyles-appBar-5"
+    className="makeStyles-appBar-6"
     position="static"
   >
     <WithStyles(ForwardRef(Toolbar))>
@@ -12,7 +12,7 @@ exports[`Should render the five pages correctly 1`] = `
       >
         <WithStyles(ForwardRef(IconButton))
           aria-label="open drawer"
-          className="makeStyles-menuButton-7"
+          className="makeStyles-menuButton-8"
           color="inherit"
           edge="start"
           onClick={[Function]}
@@ -28,12 +28,26 @@ exports[`Should render the five pages correctly 1`] = `
           item={true}
           md={6}
         >
-          <WithStyles(ForwardRef(Typography))
-            noWrap={true}
-            variant="h6"
+          <Hidden
+            smDown={true}
           >
-            MyNavBar
-          </WithStyles(ForwardRef(Typography))>
+            <WithStyles(ForwardRef(Typography))
+              noWrap={true}
+              variant="h6"
+            >
+              MyNavBar
+            </WithStyles(ForwardRef(Typography))>
+          </Hidden>
+          <Hidden
+            mdUp={true}
+          >
+            <WithStyles(ForwardRef(Typography))
+              noWrap={true}
+              variant="h6"
+            >
+              CHIP
+            </WithStyles(ForwardRef(Typography))>
+          </Hidden>
         </WithStyles(ForwardRef(Grid))>
         <Hidden
           smDown={true}
@@ -127,10 +141,10 @@ exports[`Should render the five pages correctly 1`] = `
   >
     <ForwardRef(SwipeableDrawer)
       anchor="left"
-      className="makeStyles-drawer-9"
+      className="makeStyles-drawer-10"
       classes={
         Object {
-          "paper": "makeStyles-drawerPaper-10",
+          "paper": "makeStyles-drawerPaper-11",
         }
       }
       onClose={[Function]}
@@ -139,7 +153,7 @@ exports[`Should render the five pages correctly 1`] = `
       variant="persistent"
     >
       <div
-        className="makeStyles-drawerHeader-11"
+        className="makeStyles-drawerHeader-12"
       >
         <WithStyles(ForwardRef(IconButton))
           onClick={[Function]}
@@ -155,7 +169,7 @@ exports[`Should render the five pages correctly 1`] = `
           key="home"
         >
           <LocalizedLink
-            className="makeStyles-navButton-4"
+            className="makeStyles-navDrawerButton-5"
             to="/"
           >
             Home
@@ -167,7 +181,7 @@ exports[`Should render the five pages correctly 1`] = `
           key="about"
         >
           <LocalizedLink
-            className="makeStyles-navButton-4"
+            className="makeStyles-navDrawerButton-5"
             to="/about"
           >
             About us
@@ -179,7 +193,7 @@ exports[`Should render the five pages correctly 1`] = `
           key="partners"
         >
           <LocalizedLink
-            className="makeStyles-navButton-4"
+            className="makeStyles-navDrawerButton-5"
             to="/partners"
           >
             Partners
@@ -191,7 +205,7 @@ exports[`Should render the five pages correctly 1`] = `
           key="resources"
         >
           <LocalizedLink
-            className="makeStyles-navButton-4"
+            className="makeStyles-navDrawerButton-5"
             to="/resources"
           >
             Resources
@@ -203,7 +217,7 @@ exports[`Should render the five pages correctly 1`] = `
           key="media"
         >
           <LocalizedLink
-            className="makeStyles-navButton-4"
+            className="makeStyles-navDrawerButton-5"
             to="/media"
           >
             Media
@@ -215,7 +229,7 @@ exports[`Should render the five pages correctly 1`] = `
           key="involved"
         >
           <LocalizedLink
-            className="makeStyles-navButton-4"
+            className="makeStyles-navDrawerButton-5"
             to="/involved"
           >
             Get Involved

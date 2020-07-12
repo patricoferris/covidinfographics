@@ -10,8 +10,8 @@ const genConfig = (locale) => {
     slug: 'index'
     media_folder: ''
     public_folder: ''
-    summary: '{{catgeory}}/{{sub}}'
-    path: '{{catgeory}}/{{sub}}/index'
+    summary: '{{category}}/{{sub}}'
+    path: '{{category}}/{{sub}}/index'
     editor:
       preview: false
     fields:
