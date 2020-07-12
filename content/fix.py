@@ -8,12 +8,17 @@ for r, d, f in os.walk(thisdir):
   for file in f:
     if file.endswith(".md"):
       with open(os.path.join(r, file), "r") as f:
+        new = []
         c = f.read()
         s = c.split("\n")
-        print(os.path.join(r, file))
-        s[1] = "category: covid19"
-        if s[2] == "sub: covid19":
-          s[2] = "sub: general"
+        for line in s: 
+          if line[-3:] == "png" and line[2:3] == "-":
+            new.append("  - alttext: A COVID19 Infographic")
+            new.append("    image: " + line.split("- ")[1])
+          else:
+            if line != "  - index.md":
+              new.append(line)
+        print("\n".join(new))
         f.close()
-        with open(os.path.join(r, file), "w+") as w:
-          w.write(("\n".join(s)))
+        with open(os.path.join(r, file), "w+") as f:
+          f.write("\n".join(new))

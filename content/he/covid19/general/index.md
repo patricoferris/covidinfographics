@@ -2,10 +2,14 @@
 category: covid19
 sub: general
 infographics:
-  - wellbeing.png
-  - myths.png
-  - self_care.png
-  - overview.png
-  - spread_and_prevention.png
-  - index.md
+  - alttext: A COVID19 Infographic
+    image: wellbeing.png
+  - alttext: A COVID19 Infographic
+    image: myths.png
+  - alttext: A COVID19 Infographic
+    image: self_care.png
+  - alttext: A COVID19 Infographic
+    image: overview.png
+  - alttext: A COVID19 Infographic
+    image: spread_and_prevention.png
 ---

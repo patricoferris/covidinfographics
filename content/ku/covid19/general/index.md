@@ -2,7 +2,8 @@
 category: covid19
 sub: general
 infographics:
-  - self_care.png
-  - overview.png
-  - index.md
+  - alttext: A COVID19 Infographic
+    image: self_care.png
+  - alttext: A COVID19 Infographic
+    image: overview.png
 ---

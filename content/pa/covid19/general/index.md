@@ -2,7 +2,8 @@
 category: covid19
 sub: general
 infographics:
-  - myths.png
-  - overview.png
-  - index.md
+  - alttext: A COVID19 Infographic
+    image: myths.png
+  - alttext: A COVID19 Infographic
+    image: overview.png
 ---
