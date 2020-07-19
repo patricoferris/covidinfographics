@@ -37,7 +37,7 @@ const Layout: React.SFC<LayoutProps> = ({ children }) => {
               style={{
                 flexGrow: 1,
               }}
-              elevation={3}
+              elevation={1}
             >
               <Navigation title={locales[locale].defaultTitle} pages={pages} />
               <div className="global-wrapper">

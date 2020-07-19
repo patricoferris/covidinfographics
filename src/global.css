@@ -50,9 +50,9 @@ body {
 }
 
 .global-wrapper {
-  max-width: 1000px;
+  max-width: 2000px;
   margin: 0 auto;
-  padding: 3rem 1.5rem;
+  padding: 3rem 0rem;
 }
 
 .global-header {

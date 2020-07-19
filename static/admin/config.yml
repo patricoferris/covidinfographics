@@ -21,13 +21,30 @@ collections:
       - { label: 'Locale', name: 'locale', widget: 'string' }
       - { label: 'Subcategory', name: 'sub', widget: 'string' }
       - { label: "Infographics", name: "infographics", widget: "list", summary: '{{fields.image}}', field: {label: Image, name: image, widget: image}}
+  - name: 'index'
+    label: 'Index-pages'
+    folder: 'content/pages/'
+    create: true
+    slug: '{{locale}}/index/index'
+    summary: '{{locale}}/index'
+    path: '{{locale}}/index/index'
+    fields: 
+      - { label: 'Locale', name: 'locale', widget: 'string'}
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Welcome Message', name: 'message', widget: 'string'}
+      - { label: 'Main image', name: 'title-bg-img', widget: image }
+      - { label: 'Who we are title', name: 'about-title', widget: 'string' }
+      - { label: 'Who we are message', name: 'about-message', widget: 'string'}
+      - { label: 'Who we are image', name: 'about-image', widget: image }
+      - { label: 'Primary Text', name: 'primaryText', widget: 'string' }
+      - { label: 'Text Image', name: 'primaryImage', widget: image}
   - name: 'about'
     label: 'About-pages'
     folder: 'content/pages'
     create: true
-    slug: '{{locale}}/about/index'
+    slug: '{{locale}}/about/about'
     summary: '{{locale}}/about'
-    path: '{{locale}}/about/index'
+    path: '{{locale}}/about/about'
     fields: 
       - { label: 'Locale', name: 'locale', widget: 'string'}
       - { label: 'Title', name: 'title', widget: 'string' }
@@ -38,9 +55,9 @@ collections:
     label: 'Partners-pages'
     folder: 'content/pages'
     create: true
-    slug: '{{locale}}/partners/index'
+    slug: '{{locale}}/partners/partners'
     summary: '{{locale}}/partners'
-    path: '{{locale}}/partners/index'
+    path: '{{locale}}/partners/partners'
     fields: 
       - { label: 'Locale', name: 'locale', widget: 'string'}
       - { label: 'Title', name: 'title', widget: 'string' }
@@ -49,9 +66,9 @@ collections:
     label: 'Resources-pages'
     folder: 'content/resources'
     create: true
-    slug: '{{locale}}/resources/index'
+    slug: '{{locale}}/resources/resources'
     summary: '{{locale}}/resources'
-    path: '{{locale}}/resources/index'
+    path: '{{locale}}/resources/resources'
     fields: 
       - { label: 'Locale', name: 'locale', widget: 'string'}
       - { label: 'Title', name: 'title', widget: 'string' }
@@ -61,9 +78,9 @@ collections:
     label: 'Media-pages'
     folder: 'content/pages'
     create: true
-    slug: '{{locale}}/media'
-    summary: '{{locale}}/media/index'
-    path: '{{locale}}/media/index'
+    slug: '{{locale}}/media/media'
+    summary: '{{locale}}/media'
+    path: '{{locale}}/media/media'
     fields: 
       - { label: 'Locale', name: 'locale', widget: 'string'}
       - { label: 'Title', name: 'title', widget: 'string' }
@@ -72,9 +89,9 @@ collections:
     label: 'Contact-pages'
     folder: 'content/pages'
     create: true
-    slug: '{{locale}}/contact/index'
+    slug: '{{locale}}/contact/contact'
     summary: '{{locale}}/contact'
-    path: '{{locale}}/contact/index'
+    path: '{{locale}}/contact/contact'
     fields: 
       - { label: 'Locale', name: 'locale', widget: 'string'}
       - { label: 'Contact Tagline', name: 'title', widget: 'string' }  

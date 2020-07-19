@@ -120,47 +120,15 @@ exports.createPages = async ({ graphql, actions }) => {
 
           // Different pages need different things
           if (base === 'index') {
-            // Make Graphql query for download links... will likely change in the future
-            const links = await graphql(`
-            {
-              rawData: allFile(
-                filter: {
-                  sourceInstanceName: { eq: "infographics" }
-                  ext: { eq: ".png" }
-                  relativeDirectory: { regex: "/${lang}.*/" }
-                }
-              ) {
-                edges {
-                  node {
-                    ext
-                    name
-                    relativeDirectory
-                    relativePath
-                    publicURL
-                  }
-                }
-              }
-            }
-            `)
-            const downloadlinks = links.data.rawData.edges
-            createPage({
-              path: removeTrailingSlash(localizedPath),
-              component: template,
-              context: {
-                ...page.context,
-                locale: lang,
-                links: downloadlinks,
-                dateFormat: locales[lang].dateFormat,
-              },
-            })
+            const innerQuery = ``
           } else if (base === 'partners') {
             const innerQuery = `title
-          partners {
-            partner
-            text
-            ${imageQuery}
-          }
-          `
+              partners {
+                partner
+                text
+                ${imageQuery}
+              }
+              `
             const { local, english } = await languageHelper(graphql, 'partners', lang, innerQuery)
             createPage({
               path: removeTrailingSlash(localizedPath),
@@ -175,9 +143,9 @@ exports.createPages = async ({ graphql, actions }) => {
             })
           } else if (base === 'about') {
             const innerQuery = `title 
-          primaryText 
-          ${imageQuery}
-         `
+              primaryText 
+              ${imageQuery}
+            `
             const { local, english } = await languageHelper(graphql, 'about', lang, innerQuery)
             createPage({
               path: removeTrailingSlash(localizedPath),

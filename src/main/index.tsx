@@ -9,6 +9,7 @@ import DownloadLinks from '../components/DownloadLinks'
 import localizeText, { LocalisationOptions } from '../utils/localizeText'
 import { Layout } from '../components/Layout'
 import CarouselWrapper from '../components/CarouselWrapper'
+import { useStaticQuery, graphql } from 'gatsby'
 
 export interface Link {
   node: {
@@ -23,6 +24,12 @@ export interface Link {
 const Index: React.SFC<{ pageContext: { links: Link[] } }> = ({ pageContext: { links } }) => {
   const ts = useTranslations()
 
+
+
+  // const images = edges.map(({ node }) => {
+  //   return (node.childImageSharp.fluid)
+  // })
+
   const baseOptions: LocalisationOptions = {
     translations: ts,
     category: 'index',
@@ -31,9 +38,16 @@ const Index: React.SFC<{ pageContext: { links: Link[] } }> = ({ pageContext: { l
 
   return (
     <Layout>
-      <Grid container spacing={3}>
+      <Grid container>
         <Grid item sm={false} md={1} />
-        <Grid item sm={12} md={10} spacing={3}>
+        <Grid item sm={12} md={10}>
+          <div style={{ width: "100%" }}>
+            <Img
+              style={{ maxHeight: '300px' }}
+              imgStyle={{ objectPosition: '0% 0%' }}
+              fluid={image.childImageSharp.fluid}
+            />
+          </div>
           <SimpleCard>
             <CarouselWrapper />
           </SimpleCard>

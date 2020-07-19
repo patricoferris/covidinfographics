@@ -48,7 +48,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     display: 'flex',
     justifyContent: 'center',
     alignContent: 'center',
-    color: 'white',
+    color: 'black',
     width: '100%',
     height: '100%',
     textDecoration: 'none',
@@ -137,6 +137,7 @@ export const PureNavigation: React.SFC<PureNavigationProps> = ({ title, pages, t
     <div>
       <AppBar
         position="static"
+        elevation={3}
         className={clsx(classes.appBar, {
           [classes.appBarShift]: open,
         })}
