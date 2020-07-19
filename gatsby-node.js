@@ -24,7 +24,7 @@ const languageHelper = async (graphql, page, locale, frontmatterContent) => {
   const content = await graphql(`
     {
       local: allMarkdownRemark(
-        filter: { fileAbsolutePath: { regex: "/(pages\\/${locale}\\/${page}\\/index)/" } }
+        filter: { fileAbsolutePath: { regex: "/(pages\\/${page}\\/${locale}\\/index)/" } }
       ) {
         edges {
           node {
@@ -35,7 +35,7 @@ const languageHelper = async (graphql, page, locale, frontmatterContent) => {
         }
       }
       english: allMarkdownRemark(
-        filter: { fileAbsolutePath: { regex: "/(pages\\/en\\/${page}\\/index)/" } }
+        filter: { fileAbsolutePath: { regex: "/(pages\\/${page}\\/en\\/index)/" } }
       ) {
         edges {
           node {

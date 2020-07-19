@@ -1,4 +1,5 @@
 ---
+locale: en
 category: covid19
 title: Media
 features:
