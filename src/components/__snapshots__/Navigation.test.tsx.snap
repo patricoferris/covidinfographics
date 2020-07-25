@@ -4,6 +4,7 @@ exports[`Should render the five pages correctly 1`] = `
 <div>
   <WithStyles(ForwardRef(AppBar))
     className="makeStyles-appBar-6"
+    elevation={3}
     position="static"
   >
     <WithStyles(ForwardRef(Toolbar))>
