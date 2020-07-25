@@ -12,9 +12,7 @@ interface MediaProps {
 }
 
 const Media: React.SFC<MediaProps> = ({ pageContext: { local, english } }) => (
-  <Layout>
-    {localised(local, english, 'title')}
-  </Layout>
+  <Layout>{localised(local, english, 'title')}</Layout>
 )
 
 export default Media

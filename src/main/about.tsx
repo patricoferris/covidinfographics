@@ -16,18 +16,20 @@ interface AboutProps {
 const About: React.SFC<AboutProps> = ({ pageContext: { local, english } }) => {
   return (
     <Layout>
-      <Grid container spacing={3}>
-        <Grid item sm={false} md={1} />
-        <Grid item sm={12} md={10} spacing={3}>
-          <Typography variant="h4">{localised(local, english, 'title')}</Typography>
+      <div className="global-wrapper">
+        <Grid container spacing={3}>
+          <Grid item sm={false} md={1} />
+          <Grid item sm={12} md={10} spacing={3}>
+            <Typography variant="h4">{localised(local, english, 'title')}</Typography>
+          </Grid>
+          <Grid item sm={12} md={5} spacing={3}>
+            <Typography variant="body1">{localised(local, english, 'primaryText')}</Typography>
+          </Grid>
+          <Grid item sm={12} md={5} spacing={3}>
+            <Img fluid={localised(local, english, 'image').childImageSharp.fluid} />
+          </Grid>
         </Grid>
-        <Grid item sm={12} md={5} spacing={3}>
-          <Typography variant="body1">{localised(local, english, 'primaryText')}</Typography>
-        </Grid>
-        <Grid item sm={12} md={5} spacing={3}>
-          <Img fluid={localised(local, english, 'image').childImageSharp.fluid} />
-        </Grid>
-      </Grid>
+      </div>
     </Layout>
   )
 }

@@ -40,9 +40,7 @@ const Layout: React.SFC<LayoutProps> = ({ children }) => {
               elevation={1}
             >
               <Navigation title={locales[locale].defaultTitle} pages={pages} />
-              <div className="global-wrapper">
-                <main>{children}</main>
-              </div>
+              <main>{children}</main>
             </Paper>
             <Foot key="footer" />
           </div>

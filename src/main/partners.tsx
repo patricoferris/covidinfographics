@@ -15,31 +15,33 @@ interface PartnersProps {
 
 const Partners: React.SFC<PartnersProps> = ({ pageContext: { local, english } }) => (
   <Layout>
-    <Grid container spacing={3}>
-      <Grid item sm={false} md={1} />
-      <Grid item sm={12} md={10} spacing={3}>
-        <Typography variant="h4">{localised(local, english, 'title')}</Typography>
+    <div className="global-wrapper">
+      <Grid container spacing={3}>
+        <Grid item sm={false} md={1} />
+        <Grid item sm={12} md={10} spacing={3}>
+          <Typography variant="h4">{localised(local, english, 'title')}</Typography>
+        </Grid>
+        <Grid item sm={false} md={1} />
+        {localised(local, english, 'partners').map(({ partner, text, image }) => {
+          return (
+            <>
+              <Grid item sm={false} md={1}></Grid>
+              <Grid container sm={12} md={5} spacing={3} direction="column" justify="center">
+                <Typography variant="h6">{partner}</Typography>
+                <Typography variant="body1">{text}</Typography>
+              </Grid>
+              <Grid item sm={12} md={5} spacing={3}>
+                <Img
+                  style={{ maxHeight: '300px' }}
+                  imgStyle={{ objectPosition: '0% 0%' }}
+                  fluid={image.childImageSharp.fluid}
+                />
+              </Grid>
+            </>
+          )
+        })}
       </Grid>
-      <Grid item sm={false} md={1} />
-      {localised(local, english, 'partners').map(({ partner, text, image }) => {
-        return (
-          <>
-            <Grid item sm={false} md={1}></Grid>
-            <Grid container sm={12} md={5} spacing={3} direction="column" justify="center">
-              <Typography variant="h6">{partner}</Typography>
-              <Typography variant="body1">{text}</Typography>
-            </Grid>
-            <Grid item sm={12} md={5} spacing={3}>
-              <Img
-                style={{ maxHeight: '300px' }}
-                imgStyle={{ objectPosition: '0% 0%' }}
-                fluid={image.childImageSharp.fluid}
-              />
-            </Grid>
-          </>
-        )
-      })}
-    </Grid>
+    </div>
   </Layout>
 )
 

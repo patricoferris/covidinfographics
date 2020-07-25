@@ -24,6 +24,7 @@ collections:
   - name: 'index'
     label: 'Index-pages'
     folder: 'content/pages/index'
+    media_folder: '/static/images'
     create: true
     slug: 'index'
     summary: '{{locale}}'
@@ -31,16 +32,16 @@ collections:
     fields: 
       - { label: 'Locale', name: 'locale', widget: 'string'}
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Welcome Message', name: 'message', widget: 'string'}
-      - { label: 'Main image', name: 'title-bg-img', widget: image }
-      - { label: 'Who we are title', name: 'about-title', widget: 'string' }
-      - { label: 'Who we are message', name: 'about-message', widget: 'string'}
-      - { label: 'Who we are image', name: 'about-image', widget: image }
-      - { label: 'Primary Text', name: 'primaryText', widget: 'string' }
-      - { label: 'Text Image', name: 'primaryImage', widget: image}
+      - { label: 'Welcome Message', name: 'message', widget: 'text'}
+      - { label: 'Tagline' , name: 'tagline', widget: 'string' }
+      - { label: 'Main image', name: 'titleBgImg', widget: image }
+      - { label: 'Who we are title', name: 'aboutTitle', widget: 'string' }
+      - { label: 'Who we are message', name: 'aboutMessage', widget: 'text'}
+      - { label: 'Who we are image', name: 'aboutImage', widget: image }
   - name: 'about'
     label: 'About-pages'
     folder: 'content/pages/about'
+    media_folder: '/static/images'
     create: true
     slug: '{{locale}}/index'
     summary: '{{locale}}'
@@ -49,11 +50,12 @@ collections:
       - { label: 'Locale', name: 'locale', widget: 'string'}
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: Image, name: image, widget: image }
-      - { label: 'Primary Text', name: 'primaryText', widget: 'string' }
+      - { label: 'Primary Text', name: 'primaryText', widget: 'text' }
       - { label: 'Text Image', name: 'primaryImage', widget: image}
   - name: 'partners'
     label: 'Partners-pages'
     folder: 'content/pages/partners'
+    media_folder: '/static/images'
     create: true
     slug: '{{locale}}/index'
     summary: '{{locale}}'
@@ -61,10 +63,11 @@ collections:
     fields: 
       - { label: 'Locale', name: 'locale', widget: 'string'}
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Partners', name: 'partners', widget: 'list', summary: '{{fields.partner}}', fields: [{label: 'Partner', name: 'partner', widget: 'string'}, {label: 'Partner Explanation', name: 'text', widget: 'string'}, {label: 'Partner Image', name: 'image', widget: image}]}
+      - { label: 'Partners', name: 'partners', widget: 'list', summary: '{{fields.partner}}', fields: [{label: 'Partner', name: 'partner', widget: 'string'}, {label: 'Partner Explanation', name: 'text', widget: 'text'}, {label: 'Partner Image', name: 'image', widget: image}]}
   - name: 'resources'
     label: 'Resources-pages'
     folder: 'content/pages/resources'
+    media_folder: '/static/images'
     create: true
     slug: '{{locale}}/index'
     summary: '{{locale}}/resources'
@@ -72,11 +75,12 @@ collections:
     fields: 
       - { label: 'Locale', name: 'locale', widget: 'string'}
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Primary Text', name: 'primaryText', widget: 'string' }
+      - { label: 'Primary Text', name: 'primaryText', widget: 'text' }
       - { label: 'Primary Image', name: 'primaryImage', widget: image}
   - name: 'media'
     label: 'Media-pages'
     folder: 'content/pages/media'
+    media_folder: '/static/images'
     create: true
     slug: '{{locale}}/index'
     summary: '{{locale}}'
@@ -84,17 +88,18 @@ collections:
     fields: 
       - { label: 'Locale', name: 'locale', widget: 'string'}
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Features', name: 'features', widget: 'list', summary: '{{fields.featureTitle}}', fields: [{label: 'Feature Title', name: 'featureTitle', widget: 'string'}, {label: 'Feature Text', name: 'featureText', widget: 'string'}, {label: 'Partner Image', name: 'image', widget: image}]}
+      - { label: 'Features', name: 'features', widget: 'list', summary: '{{fields.featureTitle}}', fields: [{label: 'Feature Title', name: 'featureTitle', widget: 'string'}, {label: 'Feature Text', name: 'featureText', widget: 'text'}, {label: 'Partner Image', name: 'image', widget: image}]}
   - name: 'contact'
     label: 'Contact-pages'
     folder: 'content/pages/contact'
+    media_folder: '/static/images'
     create: true
     slug: '{{locale}}/index'
     summary: '{{locale}}'
     path: '{{locale}}/index'
     fields: 
       - { label: 'Locale', name: 'locale', widget: 'string'}
-      - { label: 'Contact Tagline', name: 'title', widget: 'string' }  
+      - { label: 'Contact Tagline', name: 'title', widget: 'text' }  
   - name: 'en'
     label: 'en'
     folder: 'content/en'

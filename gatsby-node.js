@@ -8,7 +8,7 @@ exports.onCreateNode = ({ node }) => {
   fmImagesToRelative(node)
 }
 
-const imageQuery = `image {
+const imageQuery = `
   childImageSharp {
     fluid {
      sizes
@@ -17,8 +17,7 @@ const imageQuery = `image {
      base64
      src
     }
-  }
-}`
+  }`
 
 const languageHelper = async (graphql, page, locale, frontmatterContent) => {
   const content = await graphql(`
@@ -47,7 +46,10 @@ const languageHelper = async (graphql, page, locale, frontmatterContent) => {
       }
     }
   `)
+  if (!content.data) {
 
+    console.log(content)
+  }
   const { local, english } = content.data
   if (local.edges[0]) {
     return {
@@ -120,13 +122,47 @@ exports.createPages = async ({ graphql, actions }) => {
 
           // Different pages need different things
           if (base === 'index') {
-            const innerQuery = ``
+            const innerQuery = `locale
+            title
+            message
+            tagline
+            titleBgImg {
+              childImageSharp {
+                fluid(quality: 90, maxWidth: 1920) {
+                  srcSet
+                  aspectRatio
+                  base64
+                  sizes
+                  srcWebp
+                  src
+                }
+              }
+            }
+            aboutTitle
+            aboutMessage
+            aboutImage {
+              ${imageQuery}
+            }`
+            const { local, english } = await languageHelper(graphql, 'index', lang, innerQuery)
+            createPage({
+              path: removeTrailingSlash(localizedPath),
+              component: template,
+              context: {
+                ...page.context,
+                locale: lang,
+                local,
+                english,
+                dateFormat: locales[lang].dateFormat,
+              },
+            })
           } else if (base === 'partners') {
             const innerQuery = `title
               partners {
                 partner
                 text
-                ${imageQuery}
+                image {
+                  ${imageQuery}
+                }
               }
               `
             const { local, english } = await languageHelper(graphql, 'partners', lang, innerQuery)
@@ -144,7 +180,9 @@ exports.createPages = async ({ graphql, actions }) => {
           } else if (base === 'about') {
             const innerQuery = `title 
               primaryText 
-              ${imageQuery}
+              image { 
+                ${imageQuery}
+              }
             `
             const { local, english } = await languageHelper(graphql, 'about', lang, innerQuery)
             createPage({
@@ -179,7 +217,9 @@ exports.createPages = async ({ graphql, actions }) => {
             features {
               featureTitle
               featureText
-              ${imageQuery}
+              image {
+                ${imageQuery}
+              }
             }`
             const { local, english } = await languageHelper(graphql, 'media', lang, innerQuery)
             createPage({

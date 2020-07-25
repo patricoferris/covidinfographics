@@ -1,72 +1,74 @@
 import React from 'react'
-import locales from '../../config/i18n'
-import SimpleCard from '../components/Card'
-import useTranslations from '../utils/useTranslations'
-import Selector from '../components/Selector'
+import Img from 'gatsby-image'
 
 import Grid from '@material-ui/core/Grid'
-import DownloadLinks from '../components/DownloadLinks'
-import localizeText, { LocalisationOptions } from '../utils/localizeText'
+import { makeStyles } from '@material-ui/core/styles'
 import { Layout } from '../components/Layout'
-import CarouselWrapper from '../components/CarouselWrapper'
-import { useStaticQuery, graphql } from 'gatsby'
+import localised from '../utils/text'
 
-export interface Link {
-  node: {
-    ext: string
-    name: string
-    relativeDirectory: string
-    relativePath: string
-    publicURL: string
+import BackgroundImage from 'gatsby-background-image'
+import { Typography } from '@material-ui/core'
+
+type IndexContents = Record<string, unknown>
+
+interface IndexProps {
+  pageContext: {
+    local: IndexContents
+    english: IndexContents
   }
 }
 
-const Index: React.SFC<{ pageContext: { links: Link[] } }> = ({ pageContext: { links } }) => {
-  const ts = useTranslations()
+const useStyles = makeStyles((theme) => ({
+  imageTextContainer: {
+    display: 'flex',
+    flexDirection: 'column',
+    width: '100%',
+    height: '100%',
+    justifyContent: 'center',
+    alignItems: 'center',
+    alignContent: 'center',
+  },
+  bgImage: {
+    width: '100%',
+    height: '500px',
+    backgroundAttachment: 'fixed',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+  },
+  textMain: {
+    backgroundColor: 'rgba(0, 0, 0, 0.55)',
+    padding: '0.5rem',
+    fontWeight: 600,
+    color: 'white',
+    borderRadius: '2px',
+  },
+}))
 
-
-
-  // const images = edges.map(({ node }) => {
-  //   return (node.childImageSharp.fluid)
-  // })
-
-  const baseOptions: LocalisationOptions = {
-    translations: ts,
-    category: 'index',
-    id: 'missionTitle',
-  }
-
+const Index: React.SFC<IndexProps> = ({ pageContext: { local, english } }) => {
+  const classes = useStyles()
   return (
     <Layout>
       <Grid container>
-        <Grid item sm={false} md={1} />
-        <Grid item sm={12} md={10}>
-          <div style={{ width: "100%" }}>
-            <Img
-              style={{ maxHeight: '300px' }}
-              imgStyle={{ objectPosition: '0% 0%' }}
-              fluid={image.childImageSharp.fluid}
-            />
-          </div>
-          <SimpleCard>
-            <CarouselWrapper />
-          </SimpleCard>
-          <SimpleCard
-            title={localizeText({ ...baseOptions, id: 'missionTitle' })}
-            content={localizeText({ ...baseOptions, id: 'mission' })}
-          />
-          <SimpleCard
-            title={localizeText({ ...baseOptions, id: 'stepOneTitle' })}
-            content={localizeText({ ...baseOptions, id: 'stepOne' })}
+        <Grid item sm={12} md={12}>
+          <BackgroundImage
+            className={classes.bgImage}
+            fixed={localised(local, english, 'titleBgImg').childImageSharp.fluid}
           >
-            <Selector languages={Object.keys(locales).map((locale) => locales[locale])} />
-          </SimpleCard>
-          <SimpleCard
-            title={localizeText({ ...baseOptions, id: 'stepTwoTitle' })}
-            content={localizeText({ ...baseOptions, id: 'stepTwo' })}
-          >
-            <DownloadLinks links={links} style={{ marginTop: '15px' }} />
-          </SimpleCard>
+            <div className={classes.imageTextContainer}>
+              <div className={classes.textMain} style={{ width: '60%' }}>
+                <Typography variant="h1">{localised(local, english, 'title')}</Typography>
+                <Typography variant="h6">{localised(local, english, 'message')}</Typography>
+              </div>
+            </div>
+          </BackgroundImage>
+        </Grid>
+        <Grid item sm={12} md={12}>
+          <Typography style={{ fontWeight: '700', color: 'white' }} variant="h1">
+            {localised(local, english, 'title')}
+          </Typography>
+          <Typography style={{ color: 'white' }} variant="h1">
+            {localised(local, english, 'message')}
+          </Typography>
         </Grid>
       </Grid>
     </Layout>

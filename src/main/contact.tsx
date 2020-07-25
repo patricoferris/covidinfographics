@@ -15,13 +15,15 @@ interface ContactProps {
 
 const Contact: React.SFC<ContactProps> = ({ pageContext: { local, english } }) => (
   <Layout>
-    <Grid container spacing={3}>
-      <Grid item sm={false} md={1} />
-      <Grid item sm={12} md={10} spacing={3}>
-        <Typography variant="h5">{localised(local, english, 'title')}</Typography>
-        <Form />
+    <div className="global-wrapper">
+      <Grid container spacing={3}>
+        <Grid item sm={false} md={1} />
+        <Grid item sm={12} md={10} spacing={3}>
+          <Typography variant="h5">{localised(local, english, 'title')}</Typography>
+          <Form />
+        </Grid>
       </Grid>
-    </Grid>
+    </div>
   </Layout>
 )
 

@@ -1,5 +1,5 @@
 ---
-locale: en
+locale: fr
 category: covid19
 title: "CHIP: Community Health Information Project"
 image: /images/oauth.png
