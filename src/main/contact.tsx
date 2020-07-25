@@ -17,8 +17,8 @@ const Contact: React.SFC<ContactProps> = ({ pageContext: { local, english } }) =
   <Layout>
     <div className="global-wrapper">
       <Grid container spacing={3}>
-        <Grid item sm={false} md={1} />
-        <Grid item sm={12} md={10} spacing={3}>
+        <Grid item xs={1} sm={1} md={3} />
+        <Grid item xs={1} sm={10} md={6} spacing={3}>
           <Typography variant="h5">{localised(local, english, 'title')}</Typography>
           <Form />
         </Grid>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Typography, Grid } from '@material-ui/core'
+import { Typography, Grid, Hidden } from '@material-ui/core'
 
 const Foot: React.SFC = () => {
   const link = {
@@ -16,8 +16,8 @@ const Foot: React.SFC = () => {
       container
       spacing={3}
     >
-      <Grid item sm={false} md={2} />
-      <Grid item sm={12} md={4}>
+      <Grid item xs={1} sm={1} md={2} />
+      <Grid item xs={10} sm={10} md={4}>
         <Typography variant="h6">Platforms</Typography>
         <ul>
           <li>
@@ -37,7 +37,11 @@ const Foot: React.SFC = () => {
           </li>
         </ul>
       </Grid>
-      <Grid item sm={12} md={4}>
+      <Hidden mdUp>
+        <Grid item xs={1} sm={1} md={2} />
+        <Grid item xs={1} sm={1} md={2} />
+      </Hidden>
+      <Grid item xs={10} sm={10} md={4}>
         <Typography variant="h6">Sources</Typography>
         <ul>
           <li>
@@ -57,12 +61,12 @@ const Foot: React.SFC = () => {
           </li>
         </ul>
       </Grid>
-      <Grid item sm={false} md={2} />
-      <Grid item sm={false} md={2} />
-      <Grid item sm={12} md={4}>
+      <Grid item xs={1} sm={1} md={2} />
+      <Grid item xs={2} sm={1} md={2} />
+      <Grid item xs={4} sm={4} md={4}>
         &copy; 2020 Copyright
       </Grid>
-      <Grid item sm={12} md={4}>
+      <Grid item xs={4} sm={4} md={4}>
         <a style={link} href="https://github.com/baizel/covidinfographics">
           Source Code
         </a>

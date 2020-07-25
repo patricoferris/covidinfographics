@@ -2,6 +2,7 @@ import React from 'react'
 import Img from 'gatsby-image'
 
 import Grid from '@material-ui/core/Grid'
+import Hidden from '@material-ui/core/Hidden'
 import { makeStyles } from '@material-ui/core/styles'
 import { Layout } from '../components/Layout'
 import localised from '../utils/text'
@@ -26,6 +27,7 @@ const useStyles = makeStyles((theme) => ({
     width: '100%',
     height: '100%',
     justifyContent: 'center',
+    minHeight: '500px',
     alignItems: 'center',
     alignContent: 'center',
   },
@@ -48,6 +50,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 600,
     color: 'white',
     borderRadius: '2px',
+    maxWidth: '800px',
   },
   aboutText: {
     display: 'flex',
@@ -72,10 +75,18 @@ const Index: React.SFC<IndexProps> = ({ pageContext: { local, english } }) => {
             fixed={localised(local, english, 'titleBgImg').childImageSharp.fluid}
           >
             <div className={classes.imageTextContainer}>
-              <div className={classes.textMain} style={{ width: '60%' }}>
-                <Typography variant="h1">{localised(local, english, 'title')}</Typography>
-                <Typography variant="h6">{localised(local, english, 'message')}</Typography>
-              </div>
+              <Hidden smDown>
+                <div className={classes.textMain} style={{ width: '60%' }}>
+                  <Typography style={{ marginBottom: '20px' }} variant="h2">{localised(local, english, 'title')}</Typography>
+                  <Typography variant="h6">{localised(local, english, 'message')}</Typography>
+                </div>
+              </Hidden>
+              <Hidden mdUp>
+                <div className={classes.textMain} style={{ width: '90%' }}>
+                  <Typography variant="h4">{localised(local, english, 'title')}</Typography>
+                  <Typography variant="body1">{localised(local, english, 'message')}</Typography>
+                </div>
+              </Hidden>
             </div>
           </BackgroundImage>
         </Grid>
@@ -83,19 +94,26 @@ const Index: React.SFC<IndexProps> = ({ pageContext: { local, english } }) => {
         <Grid item sm={false} md={1} />
         <Grid item sm={12} md={5}>
           <div className={classes.aboutText}>
-            <Typography style={{ marginBottom: '1.2rem' }} variant="h3">{localised(local, english, 'aboutTitle')}</Typography>
-            <Typography style={{ marginBottom: '1.2rem' }} variant="body1">{localised(local, english, 'aboutMessage')}</Typography>
-            <Button variant="outlined">
-              <LocalizedLink to={'/about'}>About</LocalizedLink>
-            </Button>
+            <Typography style={{ marginBottom: '1.2rem' }} variant="h3">
+              {localised(local, english, 'aboutTitle')}
+            </Typography>
+            <Typography style={{ marginBottom: '1.2rem' }} variant="body1">
+              {localised(local, english, 'aboutMessage')}
+            </Typography>
+            <LocalizedLink to={'/about'}>
+              <Button variant="outlined">About</Button>
+            </LocalizedLink>
           </div>
         </Grid>
         <Grid item sm={12} md={5}>
-          <BackgroundImage className={classes.aboutImage} fluid={localised(local, english, 'titleBgImg').childImageSharp.fluid} />
+          <BackgroundImage
+            className={classes.aboutImage}
+            fluid={localised(local, english, 'titleBgImg').childImageSharp.fluid}
+          />
         </Grid>
         <Grid style={{ height: '100px' }} item sm={false} md={12} />
       </Grid>
-    </Layout>
+    </Layout >
   )
 }
 

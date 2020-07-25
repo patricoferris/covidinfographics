@@ -14,12 +14,14 @@ exports[`Render footer correctly 1`] = `
   <WithStyles(ForwardRef(Grid))
     item={true}
     md={2}
-    sm={false}
+    sm={1}
+    xs={1}
   />
   <WithStyles(ForwardRef(Grid))
     item={true}
     md={4}
-    sm={12}
+    sm={10}
+    xs={10}
   >
     <WithStyles(ForwardRef(Typography))
       variant="h6"
@@ -68,10 +70,27 @@ exports[`Render footer correctly 1`] = `
       </li>
     </ul>
   </WithStyles(ForwardRef(Grid))>
+  <Hidden
+    mdUp={true}
+  >
+    <WithStyles(ForwardRef(Grid))
+      item={true}
+      md={2}
+      sm={1}
+      xs={1}
+    />
+    <WithStyles(ForwardRef(Grid))
+      item={true}
+      md={2}
+      sm={1}
+      xs={1}
+    />
+  </Hidden>
   <WithStyles(ForwardRef(Grid))
     item={true}
     md={4}
-    sm={12}
+    sm={10}
+    xs={10}
   >
     <WithStyles(ForwardRef(Typography))
       variant="h6"
@@ -123,24 +142,28 @@ exports[`Render footer correctly 1`] = `
   <WithStyles(ForwardRef(Grid))
     item={true}
     md={2}
-    sm={false}
+    sm={1}
+    xs={1}
   />
   <WithStyles(ForwardRef(Grid))
     item={true}
     md={2}
-    sm={false}
+    sm={1}
+    xs={2}
   />
   <WithStyles(ForwardRef(Grid))
     item={true}
     md={4}
-    sm={12}
+    sm={4}
+    xs={4}
   >
     © 2020 Copyright
   </WithStyles(ForwardRef(Grid))>
   <WithStyles(ForwardRef(Grid))
     item={true}
     md={4}
-    sm={12}
+    sm={4}
+    xs={4}
   >
     <a
       href="https://github.com/baizel/covidinfographics"
