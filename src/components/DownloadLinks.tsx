@@ -10,10 +10,9 @@ import CloudDownload from '@material-ui/icons/CloudDownload'
 import { makeStyles } from '@material-ui/core/styles'
 import Divider from '@material-ui/core/Divider'
 import Accordion from './Accordion'
-import CSS from 'csstype'
 import Share from './Share'
 import { capitaliseFirstLetter, removeUnderscores } from '../utils/strings'
-import { Link } from '..main/index'
+import { Link } from '../main/index'
 
 const useStyles = makeStyles((theme) => ({
   link: {
@@ -21,40 +20,44 @@ const useStyles = makeStyles((theme) => ({
     textDecoraction: 'none',
   },
   download: {
-    color: theme.palette.primary.main,
+    color: 'black',
   },
 }))
 
-const DownloadLinks: React.SFC<{ links: Link[]; style?: CSS.Properties }> = ({ links, style }) => {
+interface DownloadProps {
+  data: {
+    topic: string
+    links: Link[]
+  }
+}
+
+const DownloadLinks: React.SFC<DownloadProps> = ({ data: { topic, links } }) => {
   const classes = useStyles()
-  // Filter out anything that isn't images
   const { locale } = React.useContext(LocaleContext)
+
+  let subTopics = links.map((link) => {
+    return link.node.relativePath.split('/')[2]
+  })
+
+  subTopics = subTopics.filter((v, i) => subTopics.indexOf(v) === i)
 
   const data = {}
 
-  let topics = ['covid19', 'school_advice']
-  topics.map((topic) => {
+  subTopics.map((sub) => {
     const ls = links.filter((img) => {
-      return img.node.relativeDirectory === `${locale}/${topic}`
+      return img.node.relativeDirectory === `${locale}/${topic}/${sub}`
     })
-    data[topic] = ls
+    data[sub] = ls
   })
 
-  Object.keys(data).map((topic) => {
-    if (data[topic].length === 0) {
-      delete data[topic]
-    }
-  })
-
-  topics = Object.keys(data)
   return (
     <Accordion
-      names={topics.map((topic) => capitaliseFirstLetter(removeUnderscores(topic, ' ')))}
-      items={topics.map((topic) => {
+      names={subTopics.map((sub) => capitaliseFirstLetter(removeUnderscores(sub, ' ')))}
+      items={subTopics.map((sub) => {
         return (
-          <List key={topic} style={{ width: '100%', overflow: 'auto' }}>
+          <List key={sub} style={{ width: '100%', overflow: 'auto' }}>
             <Divider />
-            {data[topic].map((img, idx) => {
+            {data[sub].map((img, idx) => {
               const { publicURL, name } = img.node
               return (
                 <>

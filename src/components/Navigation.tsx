@@ -2,6 +2,8 @@
 
 import React from 'react'
 import LocalizedLink from './LocalizedLink'
+import Selector from './Selector'
+import locales from '../../config/i18n'
 import useTranslations, { Translations } from '../utils/useTranslations'
 
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft'
@@ -155,21 +157,27 @@ export const PureNavigation: React.SFC<PureNavigationProps> = ({ title, pages, t
             </IconButton>
           </Hidden>
           <Grid container spacing={3}>
-            <Grid item md={6}>
+            <Grid item xs={12} sm={12} md={5}>
               <Hidden smDown>
                 <Typography variant="h6" noWrap>
                   {title}
                 </Typography>
               </Hidden>
               <Hidden mdUp>
-                <Typography variant="h6" noWrap>
-                  CHIP
-                </Typography>
+                <div style={{ display: 'flex', width: '100%', justifyContent: 'space-between' }}>
+                  <Typography variant="h6" noWrap>
+                    CHIP
+                  </Typography>
+                  <Selector languages={Object.keys(locales).map((locale) => locales[locale])} />
+                </div>
               </Hidden>
             </Grid>
             <Hidden smDown>
-              <Grid md={6}>
+              <Grid item md={7}>
                 <List className={classes.flexContainer}>
+                  <ListItem className={classes.navContainer}>
+                    <Selector languages={Object.keys(locales).map((locale) => locales[locale])} />
+                  </ListItem>
                   {pages.map((page) => (
                     <ListItem className={classes.navContainer} key={page} button>
                       <LocalizedLink

@@ -13,6 +13,16 @@ import LocalizedLink from '../components/LocalizedLink'
 
 type IndexContents = Record<string, unknown>
 
+export interface Link {
+  node: {
+    ext: string
+    name: string
+    relativeDirectory: string
+    relativePath: string
+    publicURL: string
+  }
+}
+
 interface IndexProps {
   pageContext: {
     local: IndexContents

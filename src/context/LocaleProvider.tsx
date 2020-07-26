@@ -11,16 +11,25 @@ interface LocaleProviderState {
 
 // Use ContextAPI for creating an active locale
 const LocaleContext = React.createContext({
-  locale: 'en',
-  setLocale: (locale: string) => console.log(locale),
+  locale: 'window.location.href',
+  setLocale: (locale: string) => console.log(window.location.href),
 })
+
+const initState = () => {
+  if (window.location.href.split('/')[3]) {
+    if (window.location.href.split('/')[3].length <= 3) {
+      return window.location.href.split('/')[3]
+    }
+  }
+  return 'en'
+}
 
 class LocaleProvider extends React.Component<LocaleProviderProps, LocaleProviderState> {
   constructor(props) {
     super(props)
 
     this.state = {
-      locale: 'en',
+      locale: initState(),
     }
   }
 

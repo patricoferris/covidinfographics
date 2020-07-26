@@ -26,11 +26,7 @@ interface SelectorProps {
 
 const useStyles = makeStyles((theme) => ({
   formControl: {
-    margin: theme.spacing(1),
     minWidth: 120,
-  },
-  selectEmpty: {
-    marginTop: theme.spacing(2),
   },
   item: {
     paddingLeft: '5px',
@@ -74,7 +70,7 @@ const Selector: React.SFC<SelectorProps> = ({ languages }) => {
               </MenuItem>
             ))}
           </Select>
-          <FormHelperText>Lanuage selector</FormHelperText>
+          {/* <FormHelperText>Lanuage selector</FormHelperText> */}
         </FormControl>
       )}
     </LocaleContext.Consumer>

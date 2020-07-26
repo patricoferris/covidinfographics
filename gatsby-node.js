@@ -104,7 +104,9 @@ exports.createPages = async ({ graphql, actions }) => {
                 ) {
                   edges {
                     node {
+                      name
                       relativePath
+                      relativeDirectory
                       publicURL
                     }
                   }
@@ -248,6 +250,7 @@ exports.createPages = async ({ graphql, actions }) => {
                   ...page.context,
                   locale: lang,
                   links,
+                  topic,
                   dateFormat: locales[lang].dateFormat,
                 },
               })
