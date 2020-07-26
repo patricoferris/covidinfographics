@@ -130,7 +130,7 @@ exports.createPages = async ({ graphql, actions }) => {
             tagline
             titleBgImg {
               childImageSharp {
-                fluid(quality: 90, maxWidth: 1920) {
+                fluid(quality: 90, maxWidth: 1400) {
                   srcSet
                   aspectRatio
                   base64

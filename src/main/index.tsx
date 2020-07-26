@@ -44,7 +44,6 @@ const useStyles = makeStyles((theme) => ({
   bgImage: {
     width: '100%',
     height: '500px',
-    backgroundAttachment: 'fixed',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
   },
@@ -115,11 +114,13 @@ const Index: React.SFC<IndexProps> = ({ pageContext: { local, english } }) => {
             </LocalizedLink>
           </div>
         </Grid>
-        <Grid item sm={12} md={5}>
-          <BackgroundImage
-            className={classes.aboutImage}
-            fluid={localised(local, english, 'titleBgImg').childImageSharp.fluid}
-          />
+        <Grid item xs={12} sm={12} md={5}>
+          <div style={{ width: '100%' }}>
+            <BackgroundImage
+              className={classes.aboutImage}
+              fluid={localised(local, english, 'titleBgImg').childImageSharp.fluid}
+            />
+          </div>
         </Grid>
         <Grid style={{ height: '100px' }} item sm={false} md={12} />
       </Grid>
