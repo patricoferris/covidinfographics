@@ -1,181 +1,191 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Render footer correctly 1`] = `
-<WithStyles(ForwardRef(Grid))
-  container={true}
-  spacing={3}
+<div
   style={
     Object {
       "backgroundColor": "#20232a",
       "color": "#ffffff",
+      "height": "100%",
     }
   }
 >
   <WithStyles(ForwardRef(Grid))
-    item={true}
-    md={2}
-    sm={1}
-    xs={1}
-  />
-  <WithStyles(ForwardRef(Grid))
-    item={true}
-    md={4}
-    sm={10}
-    xs={10}
-  >
-    <WithStyles(ForwardRef(Typography))
-      variant="h6"
-    >
-      Platforms
-    </WithStyles(ForwardRef(Typography))>
-    <ul>
-      <li>
-        <a
-          href="https://www.facebook.com/COVID2019Infographics"
-          style={
-            Object {
-              "color": "#ffffff",
-              "textDecoration": "none",
-            }
-          }
-        >
-          Facebook
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://twitter.com/19Infographics"
-          style={
-            Object {
-              "color": "#ffffff",
-              "textDecoration": "none",
-            }
-          }
-        >
-          Twitter
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://www.instagram.com/covid19_infographics/"
-          style={
-            Object {
-              "color": "#ffffff",
-              "textDecoration": "none",
-            }
-          }
-        >
-          Instagram
-        </a>
-      </li>
-    </ul>
-  </WithStyles(ForwardRef(Grid))>
-  <Hidden
-    mdUp={true}
-  >
-    <WithStyles(ForwardRef(Grid))
-      item={true}
-      md={2}
-      sm={1}
-      xs={1}
-    />
-    <WithStyles(ForwardRef(Grid))
-      item={true}
-      md={2}
-      sm={1}
-      xs={1}
-    />
-  </Hidden>
-  <WithStyles(ForwardRef(Grid))
-    item={true}
-    md={4}
-    sm={10}
-    xs={10}
-  >
-    <WithStyles(ForwardRef(Typography))
-      variant="h6"
-    >
-      Sources
-    </WithStyles(ForwardRef(Typography))>
-    <ul>
-      <li>
-        <a
-          href="https://www.nice.org.uk/covid-19"
-          style={
-            Object {
-              "color": "#ffffff",
-              "textDecoration": "none",
-            }
-          }
-        >
-          NICE
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://www.nhs.uk/conditions/coronavirus-covid-19/"
-          style={
-            Object {
-              "color": "#ffffff",
-              "textDecoration": "none",
-            }
-          }
-        >
-          NHS
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019"
-          style={
-            Object {
-              "color": "#ffffff",
-              "textDecoration": "none",
-            }
-          }
-        >
-          WHO
-        </a>
-      </li>
-    </ul>
-  </WithStyles(ForwardRef(Grid))>
-  <WithStyles(ForwardRef(Grid))
-    item={true}
-    md={2}
-    sm={1}
-    xs={1}
-  />
-  <WithStyles(ForwardRef(Grid))
-    item={true}
-    md={2}
-    sm={1}
-    xs={2}
-  />
-  <WithStyles(ForwardRef(Grid))
-    item={true}
-    md={4}
-    sm={4}
-    xs={4}
-  >
-    © 2020 Copyright
-  </WithStyles(ForwardRef(Grid))>
-  <WithStyles(ForwardRef(Grid))
-    item={true}
-    md={4}
-    sm={4}
-    xs={4}
-  >
-    <a
-      href="https://github.com/baizel/covidinfographics"
-      style={
-        Object {
-          "color": "#ffffff",
-          "textDecoration": "none",
-        }
+    container={true}
+    spacing={3}
+    style={
+      Object {
+        "backgroundColor": "#20232a",
+        "color": "#ffffff",
       }
+    }
+  >
+    <WithStyles(ForwardRef(Grid))
+      item={true}
+      md={2}
+      sm={1}
+      xs={1}
+    />
+    <WithStyles(ForwardRef(Grid))
+      item={true}
+      md={4}
+      sm={10}
+      xs={10}
     >
-      Source Code
-    </a>
+      <WithStyles(ForwardRef(Typography))
+        variant="h6"
+      >
+        Platforms
+      </WithStyles(ForwardRef(Typography))>
+      <ul>
+        <li>
+          <a
+            href="https://www.facebook.com/COVID2019Infographics"
+            style={
+              Object {
+                "color": "#ffffff",
+                "textDecoration": "none",
+              }
+            }
+          >
+            Facebook
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://twitter.com/19Infographics"
+            style={
+              Object {
+                "color": "#ffffff",
+                "textDecoration": "none",
+              }
+            }
+          >
+            Twitter
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/covid19_infographics/"
+            style={
+              Object {
+                "color": "#ffffff",
+                "textDecoration": "none",
+              }
+            }
+          >
+            Instagram
+          </a>
+        </li>
+      </ul>
+    </WithStyles(ForwardRef(Grid))>
+    <Hidden
+      mdUp={true}
+    >
+      <WithStyles(ForwardRef(Grid))
+        item={true}
+        md={2}
+        sm={1}
+        xs={1}
+      />
+      <WithStyles(ForwardRef(Grid))
+        item={true}
+        md={2}
+        sm={1}
+        xs={1}
+      />
+    </Hidden>
+    <WithStyles(ForwardRef(Grid))
+      item={true}
+      md={4}
+      sm={10}
+      xs={10}
+    >
+      <WithStyles(ForwardRef(Typography))
+        variant="h6"
+      >
+        Sources
+      </WithStyles(ForwardRef(Typography))>
+      <ul>
+        <li>
+          <a
+            href="https://www.nice.org.uk/covid-19"
+            style={
+              Object {
+                "color": "#ffffff",
+                "textDecoration": "none",
+              }
+            }
+          >
+            NICE
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.nhs.uk/conditions/coronavirus-covid-19/"
+            style={
+              Object {
+                "color": "#ffffff",
+                "textDecoration": "none",
+              }
+            }
+          >
+            NHS
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019"
+            style={
+              Object {
+                "color": "#ffffff",
+                "textDecoration": "none",
+              }
+            }
+          >
+            WHO
+          </a>
+        </li>
+      </ul>
+    </WithStyles(ForwardRef(Grid))>
+    <WithStyles(ForwardRef(Grid))
+      item={true}
+      md={2}
+      sm={1}
+      xs={1}
+    />
+    <WithStyles(ForwardRef(Grid))
+      item={true}
+      md={2}
+      sm={1}
+      xs={2}
+    />
+    <WithStyles(ForwardRef(Grid))
+      item={true}
+      md={4}
+      sm={4}
+      xs={4}
+    >
+      © 2020 Copyright
+    </WithStyles(ForwardRef(Grid))>
+    <WithStyles(ForwardRef(Grid))
+      item={true}
+      md={4}
+      sm={4}
+      xs={4}
+    >
+      <a
+        href="https://github.com/baizel/covidinfographics"
+        style={
+          Object {
+            "color": "#ffffff",
+            "textDecoration": "none",
+          }
+        }
+      >
+        Source Code
+      </a>
+    </WithStyles(ForwardRef(Grid))>
   </WithStyles(ForwardRef(Grid))>
-</WithStyles(ForwardRef(Grid))>
+</div>
 `;
