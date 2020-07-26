@@ -29,8 +29,14 @@ class LocaleProvider extends React.Component<LocaleProviderProps, LocaleProvider
     super(props)
 
     this.state = {
-      locale: initState(),
+      locale: 'en',
     }
+  }
+
+  componentDidMount() {
+    this.setState({
+      locale: initState(),
+    })
   }
 
   setLocale = (locale: string): void => {
