@@ -3,17 +3,19 @@
 exports[`Should render the five pages correctly 1`] = `
 <div>
   <WithStyles(ForwardRef(AppBar))
-    className="makeStyles-appBar-6"
+    className="makeStyles-appBar-10"
     elevation={3}
     position="static"
   >
-    <WithStyles(ForwardRef(Toolbar))>
+    <WithStyles(ForwardRef(Toolbar))
+      className="makeStyles-toolBar-3"
+    >
       <Hidden
         mdUp={true}
       >
         <WithStyles(ForwardRef(IconButton))
           aria-label="open drawer"
-          className="makeStyles-menuButton-8"
+          className="makeStyles-menuButton-12"
           color="inherit"
           edge="start"
           onClick={[Function]}
@@ -31,497 +33,513 @@ exports[`Should render the five pages correctly 1`] = `
           sm={12}
           xs={12}
         >
-          <Hidden
-            smDown={true}
+          <LocalizedLink
+            to="/"
           >
-            <WithStyles(ForwardRef(Typography))
-              noWrap={true}
-              variant="h6"
+            <Hidden
+              smDown={true}
             >
-              MyNavBar
-            </WithStyles(ForwardRef(Typography))>
-          </Hidden>
-          <Hidden
-            mdUp={true}
-          >
-            <div
-              style={
-                Object {
-                  "display": "flex",
-                  "justifyContent": "space-between",
-                  "width": "100%",
-                }
-              }
-            >
-              <WithStyles(ForwardRef(Typography))
-                noWrap={true}
-                variant="h6"
+              <div
+                className="makeStyles-title-6"
               >
-                CHIP
-              </WithStyles(ForwardRef(Typography))>
-              <Selector
-                languages={
-                  Array [
-                    Object {
-                      "dateFormat": "DD/MM/YYYY",
-                      "default": true,
-                      "defaultDescription": "The COVID19 website",
-                      "defaultTitle": "Community Health Information Project",
-                      "locale": "en-UK",
-                      "name": "English",
-                      "ogLanguage": "en_UK",
-                      "path": "en",
-                      "siteLanguage": "en",
-                    },
-                    Object {
-                      "dateFormat": "DD.MM.YYYY",
-                      "default": false,
-                      "defaultDescription": "Le site de COVID19",
-                      "defaultTitle": "Infographie de COVID19",
-                      "english_name": "French",
-                      "locale": "fr-FR",
-                      "name": "Français",
-                      "ogLanguage": "fr_FR",
-                      "path": "fr",
-                      "siteLanguage": "fr",
-                    },
-                    Object {
-                      "dateFormat": "DD-MM-YYYY",
-                      "default": false,
-                      "defaultDescription": "The COVID19 website",
-                      "defaultTitle": "Community Health Information Project",
-                      "english_name": "Slovak",
-                      "locale": "sk",
-                      "name": "Slovenčina",
-                      "ogLanguage": "sk",
-                      "path": "sk",
-                      "siteLanguage": "sk",
-                    },
-                    Object {
-                      "dateFormat": "DD-MM-YYYY",
-                      "default": false,
-                      "defaultDescription": "The COVID19 website",
-                      "defaultTitle": "Community Health Information Project",
-                      "english_name": "Urdu",
-                      "locale": "ur",
-                      "name": "اردو",
-                      "ogLanguage": "ur",
-                      "path": "ur",
-                      "siteLanguage": "ur",
-                    },
-                    Object {
-                      "dateFormat": "DD-MM-YYYY",
-                      "default": false,
-                      "defaultDescription": "The COVID19 website",
-                      "defaultTitle": "Community Health Information Project",
-                      "english_name": "Swahili",
-                      "locale": "sw",
-                      "name": "Kiswahili",
-                      "ogLanguage": "sw",
-                      "path": "sw",
-                      "siteLanguage": "sw",
-                    },
-                    Object {
-                      "dateFormat": "DD-MM-YYYY",
-                      "default": false,
-                      "defaultDescription": "The COVID19 website",
-                      "defaultTitle": "Community Health Information Project",
-                      "english_name": "Polish",
-                      "locale": "pl",
-                      "name": "język polski",
-                      "ogLanguage": "pl",
-                      "path": "pl",
-                      "siteLanguage": "pl",
-                    },
-                    Object {
-                      "dateFormat": "DD-MM-YYYY",
-                      "default": false,
-                      "defaultDescription": "The COVID19 website",
-                      "defaultTitle": "Community Health Information Project",
-                      "english_name": "French",
-                      "locale": "syl",
-                      "name": "Français",
-                      "ogLanguage": "syl",
-                      "path": "syl",
-                      "siteLanguage": "syl",
-                    },
-                    Object {
-                      "dateFormat": "DD-MM-YYYY",
-                      "default": false,
-                      "defaultDescription": "The COVID19 website",
-                      "defaultTitle": "Community Health Information Project",
-                      "english_name": "Vietnamese",
-                      "locale": "vi",
-                      "name": "Tiếng Việt",
-                      "ogLanguage": "vi",
-                      "path": "vi",
-                      "siteLanguage": "vi",
-                    },
-                    Object {
-                      "dateFormat": "DD-MM-YYYY",
-                      "default": false,
-                      "defaultDescription": "The COVID19 website",
-                      "defaultTitle": "Community Health Information Project",
-                      "english_name": "Swedish",
-                      "locale": "sv",
-                      "name": "Svenska",
-                      "ogLanguage": "sv",
-                      "path": "sv",
-                      "siteLanguage": "sv",
-                    },
-                    Object {
-                      "dateFormat": "DD-MM-YYYY",
-                      "default": false,
-                      "defaultDescription": "The COVID19 website",
-                      "defaultTitle": "Community Health Information Project",
-                      "english_name": "Hebrew",
-                      "locale": "he",
-                      "name": "עברית",
-                      "ogLanguage": "he",
-                      "path": "he",
-                      "siteLanguage": "he",
-                    },
-                    Object {
-                      "dateFormat": "DD-MM-YYYY",
-                      "default": false,
-                      "defaultDescription": "The COVID19 website",
-                      "defaultTitle": "Community Health Information Project",
-                      "english_name": "Gujarati",
-                      "locale": "gu",
-                      "name": "ગુજરાતી",
-                      "ogLanguage": "gu",
-                      "path": "gu",
-                      "siteLanguage": "gu",
-                    },
-                    Object {
-                      "dateFormat": "DD-MM-YYYY",
-                      "default": false,
-                      "defaultDescription": "The COVID19 website",
-                      "defaultTitle": "Community Health Information Project",
-                      "english_name": "Japanese",
-                      "locale": "ja",
-                      "name": "日本語",
-                      "ogLanguage": "ja",
-                      "path": "ja",
-                      "siteLanguage": "ja",
-                    },
-                    Object {
-                      "dateFormat": "DD-MM-YYYY",
-                      "default": false,
-                      "defaultDescription": "The COVID19 website",
-                      "defaultTitle": "Community Health Information Project",
-                      "english_name": "Italian",
-                      "locale": "it",
-                      "name": "Italiano",
-                      "ogLanguage": "it",
-                      "path": "it",
-                      "siteLanguage": "it",
-                    },
-                    Object {
-                      "dateFormat": "DD-MM-YYYY",
-                      "default": false,
-                      "defaultDescription": "The COVID19 website",
-                      "defaultTitle": "Community Health Information Project",
-                      "english_name": "Czech",
-                      "locale": "cs",
-                      "name": "čeština",
-                      "ogLanguage": "cs",
-                      "path": "cs",
-                      "siteLanguage": "cs",
-                    },
-                    Object {
-                      "dateFormat": "DD-MM-YYYY",
-                      "default": false,
-                      "defaultDescription": "The COVID19 website",
-                      "defaultTitle": "Community Health Information Project",
-                      "english_name": "Russian",
-                      "locale": "ru",
-                      "name": "русский",
-                      "ogLanguage": "ru",
-                      "path": "ru",
-                      "siteLanguage": "ru",
-                    },
-                    Object {
-                      "dateFormat": "DD-MM-YYYY",
-                      "default": false,
-                      "defaultDescription": "The COVID19 website",
-                      "defaultTitle": "Community Health Information Project",
-                      "english_name": "Romanian",
-                      "locale": "ro",
-                      "name": "Română",
-                      "ogLanguage": "ro",
-                      "path": "ro",
-                      "siteLanguage": "ro",
-                    },
-                    Object {
-                      "dateFormat": "DD-MM-YYYY",
-                      "default": false,
-                      "defaultDescription": "The COVID19 website",
-                      "defaultTitle": "Community Health Information Project",
-                      "english_name": "Yoruba",
-                      "locale": "yo",
-                      "name": "Yorùbá",
-                      "ogLanguage": "yo",
-                      "path": "yo",
-                      "siteLanguage": "yo",
-                    },
-                    Object {
-                      "dateFormat": "DD-MM-YYYY",
-                      "default": false,
-                      "defaultDescription": "The COVID19 website",
-                      "defaultTitle": "Community Health Information Project",
-                      "english_name": "Somali",
-                      "locale": "so",
-                      "name": "Soomaaliga",
-                      "ogLanguage": "so",
-                      "path": "so",
-                      "siteLanguage": "so",
-                    },
-                    Object {
-                      "dateFormat": "DD-MM-YYYY",
-                      "default": false,
-                      "defaultDescription": "The COVID19 website",
-                      "defaultTitle": "Community Health Information Project",
-                      "english_name": "Portuguese",
-                      "locale": "pt",
-                      "name": "Português",
-                      "ogLanguage": "pt",
-                      "path": "pt",
-                      "siteLanguage": "pt",
-                    },
-                    Object {
-                      "dateFormat": "DD-MM-YYYY",
-                      "default": false,
-                      "defaultDescription": "The COVID19 website",
-                      "defaultTitle": "Community Health Information Project",
-                      "english_name": "Ukrainian",
-                      "locale": "uk",
-                      "name": "Українська",
-                      "ogLanguage": "uk",
-                      "path": "uk",
-                      "siteLanguage": "uk",
-                    },
-                    Object {
-                      "dateFormat": "DD-MM-YYYY",
-                      "default": false,
-                      "defaultDescription": "The COVID19 website",
-                      "defaultTitle": "Community Health Information Project",
-                      "english_name": "Punjabi",
-                      "locale": "pa",
-                      "name": "ਪੰਜਾਬੀ",
-                      "ogLanguage": "pa",
-                      "path": "pa",
-                      "siteLanguage": "pa",
-                    },
-                    Object {
-                      "dateFormat": "DD-MM-YYYY",
-                      "default": false,
-                      "defaultDescription": "The COVID19 website",
-                      "defaultTitle": "Community Health Information Project",
-                      "english_name": "Sinhala",
-                      "locale": "si",
-                      "name": "සිංහල",
-                      "ogLanguage": "si",
-                      "path": "si",
-                      "siteLanguage": "si",
-                    },
-                    Object {
-                      "dateFormat": "DD-MM-YYYY",
-                      "default": false,
-                      "defaultDescription": "The COVID19 website",
-                      "defaultTitle": "Community Health Information Project",
-                      "english_name": "Malayalam",
-                      "locale": "ml",
-                      "name": "മലയാളം",
-                      "ogLanguage": "ml",
-                      "path": "ml",
-                      "siteLanguage": "ml",
-                    },
-                    Object {
-                      "dateFormat": "DD-MM-YYYY",
-                      "default": false,
-                      "defaultDescription": "The COVID19 website",
-                      "defaultTitle": "Community Health Information Project",
-                      "english_name": "Kurdish",
-                      "locale": "ku",
-                      "name": "Kurdî",
-                      "ogLanguage": "ku",
-                      "path": "ku",
-                      "siteLanguage": "ku",
-                    },
-                    Object {
-                      "dateFormat": "DD-MM-YYYY",
-                      "default": false,
-                      "defaultDescription": "The COVID19 website",
-                      "defaultTitle": "Community Health Information Project",
-                      "english_name": "Arabic",
-                      "locale": "ar",
-                      "name": "العربية",
-                      "ogLanguage": "ar",
-                      "path": "ar",
-                      "siteLanguage": "ar",
-                    },
-                    Object {
-                      "dateFormat": "DD-MM-YYYY",
-                      "default": false,
-                      "defaultDescription": "The COVID19 website",
-                      "defaultTitle": "Community Health Information Project",
-                      "english_name": "Dutch",
-                      "locale": "nl",
-                      "name": "Nederlands",
-                      "ogLanguage": "nl",
-                      "path": "nl",
-                      "siteLanguage": "nl",
-                    },
-                    Object {
-                      "dateFormat": "DD-MM-YYYY",
-                      "default": false,
-                      "defaultDescription": "The COVID19 website",
-                      "defaultTitle": "Community Health Information Project",
-                      "english_name": "Bulgarian",
-                      "locale": "bg",
-                      "name": "български",
-                      "ogLanguage": "bg",
-                      "path": "bg",
-                      "siteLanguage": "bg",
-                    },
-                    Object {
-                      "dateFormat": "DD-MM-YYYY",
-                      "default": false,
-                      "defaultDescription": "The COVID19 website",
-                      "defaultTitle": "Community Health Information Project",
-                      "english_name": "Bengali",
-                      "locale": "bn",
-                      "name": "বাংলা",
-                      "ogLanguage": "bn",
-                      "path": "bn",
-                      "siteLanguage": "bn",
-                    },
-                    Object {
-                      "dateFormat": "DD-MM-YYYY",
-                      "default": false,
-                      "defaultDescription": "The COVID19 website",
-                      "defaultTitle": "Community Health Information Project",
-                      "english_name": "Hindi",
-                      "locale": "hi",
-                      "name": "हिन्दी",
-                      "ogLanguage": "hi",
-                      "path": "hi",
-                      "siteLanguage": "hi",
-                    },
-                    Object {
-                      "dateFormat": "DD-MM-YYYY",
-                      "default": false,
-                      "defaultDescription": "The COVID19 website",
-                      "defaultTitle": "Community Health Information Project",
-                      "english_name": "German",
-                      "locale": "de",
-                      "name": "Deutsch",
-                      "ogLanguage": "de",
-                      "path": "de",
-                      "siteLanguage": "de",
-                    },
-                    Object {
-                      "dateFormat": "DD-MM-YYYY",
-                      "default": false,
-                      "defaultDescription": "The COVID19 website",
-                      "defaultTitle": "Community Health Information Project",
-                      "english_name": "Korean",
-                      "locale": "ko",
-                      "name": "한국어",
-                      "ogLanguage": "ko",
-                      "path": "ko",
-                      "siteLanguage": "ko",
-                    },
-                    Object {
-                      "dateFormat": "DD-MM-YYYY",
-                      "default": false,
-                      "defaultDescription": "The COVID19 website",
-                      "defaultTitle": "Community Health Information Project",
-                      "english_name": "Spanish",
-                      "locale": "es",
-                      "name": "Español",
-                      "ogLanguage": "es",
-                      "path": "es",
-                      "siteLanguage": "es",
-                    },
-                    Object {
-                      "dateFormat": "DD-MM-YYYY",
-                      "default": false,
-                      "defaultDescription": "The COVID19 website",
-                      "defaultTitle": "Community Health Information Project",
-                      "english_name": "Persian",
-                      "locale": "fa",
-                      "name": "فارسی",
-                      "ogLanguage": "fa",
-                      "path": "fa",
-                      "siteLanguage": "fa",
-                    },
-                    Object {
-                      "dateFormat": "DD-MM-YYYY",
-                      "default": false,
-                      "defaultDescription": "The COVID19 website",
-                      "defaultTitle": "Community Health Information Project",
-                      "english_name": "Lithuanian",
-                      "locale": "lt",
-                      "name": "lietuvių kalba",
-                      "ogLanguage": "lt",
-                      "path": "lt",
-                      "siteLanguage": "lt",
-                    },
-                    Object {
-                      "dateFormat": "DD-MM-YYYY",
-                      "default": false,
-                      "defaultDescription": "The COVID19 website",
-                      "defaultTitle": "Community Health Information Project",
-                      "english_name": "Tamil",
-                      "locale": "ta",
-                      "name": "தமிழ்",
-                      "ogLanguage": "ta",
-                      "path": "ta",
-                      "siteLanguage": "ta",
-                    },
-                    Object {
-                      "dateFormat": "DD-MM-YYYY",
-                      "default": false,
-                      "defaultDescription": "The COVID19 website",
-                      "defaultTitle": "Community Health Information Project",
-                      "english_name": "Turkish",
-                      "locale": "tr",
-                      "name": "Türkçe",
-                      "ogLanguage": "tr",
-                      "path": "tr",
-                      "siteLanguage": "tr",
-                    },
-                    Object {
-                      "dateFormat": "DD-MM-YYYY",
-                      "default": false,
-                      "defaultDescription": "The COVID19 website",
-                      "defaultTitle": "Community Health Information Project",
-                      "english_name": "Chinese Traditional",
-                      "locale": "zht",
-                      "name": "中文",
-                      "ogLanguage": "zht",
-                      "path": "zht",
-                      "siteLanguage": "zht",
-                    },
-                    Object {
-                      "dateFormat": "DD-MM-YYYY",
-                      "default": false,
-                      "defaultDescription": "The COVID19 website",
-                      "defaultTitle": "Community Health Information Project",
-                      "english_name": "Chinese Simplified",
-                      "locale": "zhs",
-                      "name": "中文",
-                      "ogLanguage": "zhs",
-                      "path": "zhs",
-                      "siteLanguage": "zhs",
-                    },
-                  ]
+                <img
+                  alt="Covid19 Logo"
+                  className="makeStyles-logo-5"
+                  height="64"
+                  src="test-file-stub"
+                  width="64"
+                />
+                <WithStyles(ForwardRef(Typography))
+                  className="makeStyles-titleText-7"
+                  noWrap={true}
+                  variant="h6"
+                >
+                  MyNavBar
+                </WithStyles(ForwardRef(Typography))>
+              </div>
+            </Hidden>
+            <Hidden
+              mdUp={true}
+            >
+              <div
+                style={
+                  Object {
+                    "display": "flex",
+                    "justifyContent": "space-between",
+                    "width": "100%",
+                  }
                 }
-              />
-            </div>
-          </Hidden>
+              >
+                <WithStyles(ForwardRef(Typography))
+                  noWrap={true}
+                  variant="h6"
+                >
+                  CHIP
+                </WithStyles(ForwardRef(Typography))>
+                <Selector
+                  languages={
+                    Array [
+                      Object {
+                        "dateFormat": "DD/MM/YYYY",
+                        "default": true,
+                        "defaultDescription": "The COVID19 website",
+                        "defaultTitle": "Community Health Information Project",
+                        "locale": "en-UK",
+                        "name": "English",
+                        "ogLanguage": "en_UK",
+                        "path": "en",
+                        "siteLanguage": "en",
+                      },
+                      Object {
+                        "dateFormat": "DD.MM.YYYY",
+                        "default": false,
+                        "defaultDescription": "Le site de COVID19",
+                        "defaultTitle": "Infographie de COVID19",
+                        "english_name": "French",
+                        "locale": "fr-FR",
+                        "name": "Français",
+                        "ogLanguage": "fr_FR",
+                        "path": "fr",
+                        "siteLanguage": "fr",
+                      },
+                      Object {
+                        "dateFormat": "DD-MM-YYYY",
+                        "default": false,
+                        "defaultDescription": "The COVID19 website",
+                        "defaultTitle": "Community Health Information Project",
+                        "english_name": "Slovak",
+                        "locale": "sk",
+                        "name": "Slovenčina",
+                        "ogLanguage": "sk",
+                        "path": "sk",
+                        "siteLanguage": "sk",
+                      },
+                      Object {
+                        "dateFormat": "DD-MM-YYYY",
+                        "default": false,
+                        "defaultDescription": "The COVID19 website",
+                        "defaultTitle": "Community Health Information Project",
+                        "english_name": "Urdu",
+                        "locale": "ur",
+                        "name": "اردو",
+                        "ogLanguage": "ur",
+                        "path": "ur",
+                        "siteLanguage": "ur",
+                      },
+                      Object {
+                        "dateFormat": "DD-MM-YYYY",
+                        "default": false,
+                        "defaultDescription": "The COVID19 website",
+                        "defaultTitle": "Community Health Information Project",
+                        "english_name": "Swahili",
+                        "locale": "sw",
+                        "name": "Kiswahili",
+                        "ogLanguage": "sw",
+                        "path": "sw",
+                        "siteLanguage": "sw",
+                      },
+                      Object {
+                        "dateFormat": "DD-MM-YYYY",
+                        "default": false,
+                        "defaultDescription": "The COVID19 website",
+                        "defaultTitle": "Community Health Information Project",
+                        "english_name": "Polish",
+                        "locale": "pl",
+                        "name": "język polski",
+                        "ogLanguage": "pl",
+                        "path": "pl",
+                        "siteLanguage": "pl",
+                      },
+                      Object {
+                        "dateFormat": "DD-MM-YYYY",
+                        "default": false,
+                        "defaultDescription": "The COVID19 website",
+                        "defaultTitle": "Community Health Information Project",
+                        "english_name": "French",
+                        "locale": "syl",
+                        "name": "Français",
+                        "ogLanguage": "syl",
+                        "path": "syl",
+                        "siteLanguage": "syl",
+                      },
+                      Object {
+                        "dateFormat": "DD-MM-YYYY",
+                        "default": false,
+                        "defaultDescription": "The COVID19 website",
+                        "defaultTitle": "Community Health Information Project",
+                        "english_name": "Vietnamese",
+                        "locale": "vi",
+                        "name": "Tiếng Việt",
+                        "ogLanguage": "vi",
+                        "path": "vi",
+                        "siteLanguage": "vi",
+                      },
+                      Object {
+                        "dateFormat": "DD-MM-YYYY",
+                        "default": false,
+                        "defaultDescription": "The COVID19 website",
+                        "defaultTitle": "Community Health Information Project",
+                        "english_name": "Swedish",
+                        "locale": "sv",
+                        "name": "Svenska",
+                        "ogLanguage": "sv",
+                        "path": "sv",
+                        "siteLanguage": "sv",
+                      },
+                      Object {
+                        "dateFormat": "DD-MM-YYYY",
+                        "default": false,
+                        "defaultDescription": "The COVID19 website",
+                        "defaultTitle": "Community Health Information Project",
+                        "english_name": "Hebrew",
+                        "locale": "he",
+                        "name": "עברית",
+                        "ogLanguage": "he",
+                        "path": "he",
+                        "siteLanguage": "he",
+                      },
+                      Object {
+                        "dateFormat": "DD-MM-YYYY",
+                        "default": false,
+                        "defaultDescription": "The COVID19 website",
+                        "defaultTitle": "Community Health Information Project",
+                        "english_name": "Gujarati",
+                        "locale": "gu",
+                        "name": "ગુજરાતી",
+                        "ogLanguage": "gu",
+                        "path": "gu",
+                        "siteLanguage": "gu",
+                      },
+                      Object {
+                        "dateFormat": "DD-MM-YYYY",
+                        "default": false,
+                        "defaultDescription": "The COVID19 website",
+                        "defaultTitle": "Community Health Information Project",
+                        "english_name": "Japanese",
+                        "locale": "ja",
+                        "name": "日本語",
+                        "ogLanguage": "ja",
+                        "path": "ja",
+                        "siteLanguage": "ja",
+                      },
+                      Object {
+                        "dateFormat": "DD-MM-YYYY",
+                        "default": false,
+                        "defaultDescription": "The COVID19 website",
+                        "defaultTitle": "Community Health Information Project",
+                        "english_name": "Italian",
+                        "locale": "it",
+                        "name": "Italiano",
+                        "ogLanguage": "it",
+                        "path": "it",
+                        "siteLanguage": "it",
+                      },
+                      Object {
+                        "dateFormat": "DD-MM-YYYY",
+                        "default": false,
+                        "defaultDescription": "The COVID19 website",
+                        "defaultTitle": "Community Health Information Project",
+                        "english_name": "Czech",
+                        "locale": "cs",
+                        "name": "čeština",
+                        "ogLanguage": "cs",
+                        "path": "cs",
+                        "siteLanguage": "cs",
+                      },
+                      Object {
+                        "dateFormat": "DD-MM-YYYY",
+                        "default": false,
+                        "defaultDescription": "The COVID19 website",
+                        "defaultTitle": "Community Health Information Project",
+                        "english_name": "Russian",
+                        "locale": "ru",
+                        "name": "русский",
+                        "ogLanguage": "ru",
+                        "path": "ru",
+                        "siteLanguage": "ru",
+                      },
+                      Object {
+                        "dateFormat": "DD-MM-YYYY",
+                        "default": false,
+                        "defaultDescription": "The COVID19 website",
+                        "defaultTitle": "Community Health Information Project",
+                        "english_name": "Romanian",
+                        "locale": "ro",
+                        "name": "Română",
+                        "ogLanguage": "ro",
+                        "path": "ro",
+                        "siteLanguage": "ro",
+                      },
+                      Object {
+                        "dateFormat": "DD-MM-YYYY",
+                        "default": false,
+                        "defaultDescription": "The COVID19 website",
+                        "defaultTitle": "Community Health Information Project",
+                        "english_name": "Yoruba",
+                        "locale": "yo",
+                        "name": "Yorùbá",
+                        "ogLanguage": "yo",
+                        "path": "yo",
+                        "siteLanguage": "yo",
+                      },
+                      Object {
+                        "dateFormat": "DD-MM-YYYY",
+                        "default": false,
+                        "defaultDescription": "The COVID19 website",
+                        "defaultTitle": "Community Health Information Project",
+                        "english_name": "Somali",
+                        "locale": "so",
+                        "name": "Soomaaliga",
+                        "ogLanguage": "so",
+                        "path": "so",
+                        "siteLanguage": "so",
+                      },
+                      Object {
+                        "dateFormat": "DD-MM-YYYY",
+                        "default": false,
+                        "defaultDescription": "The COVID19 website",
+                        "defaultTitle": "Community Health Information Project",
+                        "english_name": "Portuguese",
+                        "locale": "pt",
+                        "name": "Português",
+                        "ogLanguage": "pt",
+                        "path": "pt",
+                        "siteLanguage": "pt",
+                      },
+                      Object {
+                        "dateFormat": "DD-MM-YYYY",
+                        "default": false,
+                        "defaultDescription": "The COVID19 website",
+                        "defaultTitle": "Community Health Information Project",
+                        "english_name": "Ukrainian",
+                        "locale": "uk",
+                        "name": "Українська",
+                        "ogLanguage": "uk",
+                        "path": "uk",
+                        "siteLanguage": "uk",
+                      },
+                      Object {
+                        "dateFormat": "DD-MM-YYYY",
+                        "default": false,
+                        "defaultDescription": "The COVID19 website",
+                        "defaultTitle": "Community Health Information Project",
+                        "english_name": "Punjabi",
+                        "locale": "pa",
+                        "name": "ਪੰਜਾਬੀ",
+                        "ogLanguage": "pa",
+                        "path": "pa",
+                        "siteLanguage": "pa",
+                      },
+                      Object {
+                        "dateFormat": "DD-MM-YYYY",
+                        "default": false,
+                        "defaultDescription": "The COVID19 website",
+                        "defaultTitle": "Community Health Information Project",
+                        "english_name": "Sinhala",
+                        "locale": "si",
+                        "name": "සිංහල",
+                        "ogLanguage": "si",
+                        "path": "si",
+                        "siteLanguage": "si",
+                      },
+                      Object {
+                        "dateFormat": "DD-MM-YYYY",
+                        "default": false,
+                        "defaultDescription": "The COVID19 website",
+                        "defaultTitle": "Community Health Information Project",
+                        "english_name": "Malayalam",
+                        "locale": "ml",
+                        "name": "മലയാളം",
+                        "ogLanguage": "ml",
+                        "path": "ml",
+                        "siteLanguage": "ml",
+                      },
+                      Object {
+                        "dateFormat": "DD-MM-YYYY",
+                        "default": false,
+                        "defaultDescription": "The COVID19 website",
+                        "defaultTitle": "Community Health Information Project",
+                        "english_name": "Kurdish",
+                        "locale": "ku",
+                        "name": "Kurdî",
+                        "ogLanguage": "ku",
+                        "path": "ku",
+                        "siteLanguage": "ku",
+                      },
+                      Object {
+                        "dateFormat": "DD-MM-YYYY",
+                        "default": false,
+                        "defaultDescription": "The COVID19 website",
+                        "defaultTitle": "Community Health Information Project",
+                        "english_name": "Arabic",
+                        "locale": "ar",
+                        "name": "العربية",
+                        "ogLanguage": "ar",
+                        "path": "ar",
+                        "siteLanguage": "ar",
+                      },
+                      Object {
+                        "dateFormat": "DD-MM-YYYY",
+                        "default": false,
+                        "defaultDescription": "The COVID19 website",
+                        "defaultTitle": "Community Health Information Project",
+                        "english_name": "Dutch",
+                        "locale": "nl",
+                        "name": "Nederlands",
+                        "ogLanguage": "nl",
+                        "path": "nl",
+                        "siteLanguage": "nl",
+                      },
+                      Object {
+                        "dateFormat": "DD-MM-YYYY",
+                        "default": false,
+                        "defaultDescription": "The COVID19 website",
+                        "defaultTitle": "Community Health Information Project",
+                        "english_name": "Bulgarian",
+                        "locale": "bg",
+                        "name": "български",
+                        "ogLanguage": "bg",
+                        "path": "bg",
+                        "siteLanguage": "bg",
+                      },
+                      Object {
+                        "dateFormat": "DD-MM-YYYY",
+                        "default": false,
+                        "defaultDescription": "The COVID19 website",
+                        "defaultTitle": "Community Health Information Project",
+                        "english_name": "Bengali",
+                        "locale": "bn",
+                        "name": "বাংলা",
+                        "ogLanguage": "bn",
+                        "path": "bn",
+                        "siteLanguage": "bn",
+                      },
+                      Object {
+                        "dateFormat": "DD-MM-YYYY",
+                        "default": false,
+                        "defaultDescription": "The COVID19 website",
+                        "defaultTitle": "Community Health Information Project",
+                        "english_name": "Hindi",
+                        "locale": "hi",
+                        "name": "हिन्दी",
+                        "ogLanguage": "hi",
+                        "path": "hi",
+                        "siteLanguage": "hi",
+                      },
+                      Object {
+                        "dateFormat": "DD-MM-YYYY",
+                        "default": false,
+                        "defaultDescription": "The COVID19 website",
+                        "defaultTitle": "Community Health Information Project",
+                        "english_name": "German",
+                        "locale": "de",
+                        "name": "Deutsch",
+                        "ogLanguage": "de",
+                        "path": "de",
+                        "siteLanguage": "de",
+                      },
+                      Object {
+                        "dateFormat": "DD-MM-YYYY",
+                        "default": false,
+                        "defaultDescription": "The COVID19 website",
+                        "defaultTitle": "Community Health Information Project",
+                        "english_name": "Korean",
+                        "locale": "ko",
+                        "name": "한국어",
+                        "ogLanguage": "ko",
+                        "path": "ko",
+                        "siteLanguage": "ko",
+                      },
+                      Object {
+                        "dateFormat": "DD-MM-YYYY",
+                        "default": false,
+                        "defaultDescription": "The COVID19 website",
+                        "defaultTitle": "Community Health Information Project",
+                        "english_name": "Spanish",
+                        "locale": "es",
+                        "name": "Español",
+                        "ogLanguage": "es",
+                        "path": "es",
+                        "siteLanguage": "es",
+                      },
+                      Object {
+                        "dateFormat": "DD-MM-YYYY",
+                        "default": false,
+                        "defaultDescription": "The COVID19 website",
+                        "defaultTitle": "Community Health Information Project",
+                        "english_name": "Persian",
+                        "locale": "fa",
+                        "name": "فارسی",
+                        "ogLanguage": "fa",
+                        "path": "fa",
+                        "siteLanguage": "fa",
+                      },
+                      Object {
+                        "dateFormat": "DD-MM-YYYY",
+                        "default": false,
+                        "defaultDescription": "The COVID19 website",
+                        "defaultTitle": "Community Health Information Project",
+                        "english_name": "Lithuanian",
+                        "locale": "lt",
+                        "name": "lietuvių kalba",
+                        "ogLanguage": "lt",
+                        "path": "lt",
+                        "siteLanguage": "lt",
+                      },
+                      Object {
+                        "dateFormat": "DD-MM-YYYY",
+                        "default": false,
+                        "defaultDescription": "The COVID19 website",
+                        "defaultTitle": "Community Health Information Project",
+                        "english_name": "Tamil",
+                        "locale": "ta",
+                        "name": "தமிழ்",
+                        "ogLanguage": "ta",
+                        "path": "ta",
+                        "siteLanguage": "ta",
+                      },
+                      Object {
+                        "dateFormat": "DD-MM-YYYY",
+                        "default": false,
+                        "defaultDescription": "The COVID19 website",
+                        "defaultTitle": "Community Health Information Project",
+                        "english_name": "Turkish",
+                        "locale": "tr",
+                        "name": "Türkçe",
+                        "ogLanguage": "tr",
+                        "path": "tr",
+                        "siteLanguage": "tr",
+                      },
+                      Object {
+                        "dateFormat": "DD-MM-YYYY",
+                        "default": false,
+                        "defaultDescription": "The COVID19 website",
+                        "defaultTitle": "Community Health Information Project",
+                        "english_name": "Chinese Traditional",
+                        "locale": "zht",
+                        "name": "中文",
+                        "ogLanguage": "zht",
+                        "path": "zht",
+                        "siteLanguage": "zht",
+                      },
+                      Object {
+                        "dateFormat": "DD-MM-YYYY",
+                        "default": false,
+                        "defaultDescription": "The COVID19 website",
+                        "defaultTitle": "Community Health Information Project",
+                        "english_name": "Chinese Simplified",
+                        "locale": "zhs",
+                        "name": "中文",
+                        "ogLanguage": "zhs",
+                        "path": "zhs",
+                        "siteLanguage": "zhs",
+                      },
+                    ]
+                  }
+                />
+              </div>
+            </Hidden>
+          </LocalizedLink>
         </WithStyles(ForwardRef(Grid))>
         <Hidden
           smDown={true}
@@ -534,7 +552,7 @@ exports[`Should render the five pages correctly 1`] = `
               className="makeStyles-flexContainer-2"
             >
               <WithStyles(ForwardRef(ListItem))
-                className="makeStyles-navContainer-3"
+                className="makeStyles-navContainer-4"
               >
                 <Selector
                   languages={
@@ -1000,11 +1018,11 @@ exports[`Should render the five pages correctly 1`] = `
               </WithStyles(ForwardRef(ListItem))>
               <WithStyles(ForwardRef(ListItem))
                 button={true}
-                className="makeStyles-navContainer-3"
+                className="makeStyles-navContainer-4"
                 key="home"
               >
                 <LocalizedLink
-                  className="makeStyles-navButton-4"
+                  className="makeStyles-navButton-8"
                   to="/"
                 >
                   Home
@@ -1012,11 +1030,11 @@ exports[`Should render the five pages correctly 1`] = `
               </WithStyles(ForwardRef(ListItem))>
               <WithStyles(ForwardRef(ListItem))
                 button={true}
-                className="makeStyles-navContainer-3"
+                className="makeStyles-navContainer-4"
                 key="about"
               >
                 <LocalizedLink
-                  className="makeStyles-navButton-4"
+                  className="makeStyles-navButton-8"
                   to="/about"
                 >
                   About us
@@ -1024,11 +1042,11 @@ exports[`Should render the five pages correctly 1`] = `
               </WithStyles(ForwardRef(ListItem))>
               <WithStyles(ForwardRef(ListItem))
                 button={true}
-                className="makeStyles-navContainer-3"
+                className="makeStyles-navContainer-4"
                 key="partners"
               >
                 <LocalizedLink
-                  className="makeStyles-navButton-4"
+                  className="makeStyles-navButton-8"
                   to="/partners"
                 >
                   Partners
@@ -1036,11 +1054,11 @@ exports[`Should render the five pages correctly 1`] = `
               </WithStyles(ForwardRef(ListItem))>
               <WithStyles(ForwardRef(ListItem))
                 button={true}
-                className="makeStyles-navContainer-3"
+                className="makeStyles-navContainer-4"
                 key="resources"
               >
                 <LocalizedLink
-                  className="makeStyles-navButton-4"
+                  className="makeStyles-navButton-8"
                   to="/resources"
                 >
                   Resources
@@ -1048,11 +1066,11 @@ exports[`Should render the five pages correctly 1`] = `
               </WithStyles(ForwardRef(ListItem))>
               <WithStyles(ForwardRef(ListItem))
                 button={true}
-                className="makeStyles-navContainer-3"
+                className="makeStyles-navContainer-4"
                 key="media"
               >
                 <LocalizedLink
-                  className="makeStyles-navButton-4"
+                  className="makeStyles-navButton-8"
                   to="/media"
                 >
                   Media
@@ -1060,11 +1078,11 @@ exports[`Should render the five pages correctly 1`] = `
               </WithStyles(ForwardRef(ListItem))>
               <WithStyles(ForwardRef(ListItem))
                 button={true}
-                className="makeStyles-navContainer-3"
+                className="makeStyles-navContainer-4"
                 key="involved"
               >
                 <LocalizedLink
-                  className="makeStyles-navButton-4"
+                  className="makeStyles-navButton-8"
                   to="/involved"
                 >
                   Get Involved
@@ -1081,10 +1099,10 @@ exports[`Should render the five pages correctly 1`] = `
   >
     <ForwardRef(SwipeableDrawer)
       anchor="left"
-      className="makeStyles-drawer-10"
+      className="makeStyles-drawer-14"
       classes={
         Object {
-          "paper": "makeStyles-drawerPaper-11",
+          "paper": "makeStyles-drawerPaper-15",
         }
       }
       onClose={[Function]}
@@ -1093,7 +1111,7 @@ exports[`Should render the five pages correctly 1`] = `
       variant="persistent"
     >
       <div
-        className="makeStyles-drawerHeader-12"
+        className="makeStyles-drawerHeader-16"
       >
         <WithStyles(ForwardRef(IconButton))
           onClick={[Function]}
@@ -1105,11 +1123,11 @@ exports[`Should render the five pages correctly 1`] = `
       <WithStyles(ForwardRef(List))>
         <WithStyles(ForwardRef(ListItem))
           button={true}
-          className="makeStyles-navContainer-3"
+          className="makeStyles-navContainer-4"
           key="home"
         >
           <LocalizedLink
-            className="makeStyles-navDrawerButton-5"
+            className="makeStyles-navDrawerButton-9"
             to="/"
           >
             Home
@@ -1117,11 +1135,11 @@ exports[`Should render the five pages correctly 1`] = `
         </WithStyles(ForwardRef(ListItem))>
         <WithStyles(ForwardRef(ListItem))
           button={true}
-          className="makeStyles-navContainer-3"
+          className="makeStyles-navContainer-4"
           key="about"
         >
           <LocalizedLink
-            className="makeStyles-navDrawerButton-5"
+            className="makeStyles-navDrawerButton-9"
             to="/about"
           >
             About us
@@ -1129,11 +1147,11 @@ exports[`Should render the five pages correctly 1`] = `
         </WithStyles(ForwardRef(ListItem))>
         <WithStyles(ForwardRef(ListItem))
           button={true}
-          className="makeStyles-navContainer-3"
+          className="makeStyles-navContainer-4"
           key="partners"
         >
           <LocalizedLink
-            className="makeStyles-navDrawerButton-5"
+            className="makeStyles-navDrawerButton-9"
             to="/partners"
           >
             Partners
@@ -1141,11 +1159,11 @@ exports[`Should render the five pages correctly 1`] = `
         </WithStyles(ForwardRef(ListItem))>
         <WithStyles(ForwardRef(ListItem))
           button={true}
-          className="makeStyles-navContainer-3"
+          className="makeStyles-navContainer-4"
           key="resources"
         >
           <LocalizedLink
-            className="makeStyles-navDrawerButton-5"
+            className="makeStyles-navDrawerButton-9"
             to="/resources"
           >
             Resources
@@ -1153,11 +1171,11 @@ exports[`Should render the five pages correctly 1`] = `
         </WithStyles(ForwardRef(ListItem))>
         <WithStyles(ForwardRef(ListItem))
           button={true}
-          className="makeStyles-navContainer-3"
+          className="makeStyles-navContainer-4"
           key="media"
         >
           <LocalizedLink
-            className="makeStyles-navDrawerButton-5"
+            className="makeStyles-navDrawerButton-9"
             to="/media"
           >
             Media
@@ -1165,11 +1183,11 @@ exports[`Should render the five pages correctly 1`] = `
         </WithStyles(ForwardRef(ListItem))>
         <WithStyles(ForwardRef(ListItem))
           button={true}
-          className="makeStyles-navContainer-3"
+          className="makeStyles-navContainer-4"
           key="involved"
         >
           <LocalizedLink
-            className="makeStyles-navDrawerButton-5"
+            className="makeStyles-navDrawerButton-9"
             to="/involved"
           >
             Get Involved

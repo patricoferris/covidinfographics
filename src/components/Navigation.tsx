@@ -5,6 +5,7 @@ import LocalizedLink from './LocalizedLink'
 import Selector from './Selector'
 import locales from '../../config/i18n'
 import useTranslations, { Translations } from '../utils/useTranslations'
+import logo from '../assets/logo.jpg'
 
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft'
 import ChevronRightIcon from '@material-ui/icons/ChevronRight'
@@ -42,9 +43,28 @@ const useStyles = makeStyles((theme: Theme) => ({
     flexDirection: 'row',
     padding: 0,
   },
+  toolBar: {
+    padding: '1em 1em',
+  },
   navContainer: {
     padding: '0px',
     color: 'black',
+  },
+  logo: {
+    display: 'inline-block',
+  },
+  title: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignContent: 'center',
+    alignItems: 'center',
+    color: 'black',
+    width: '100%',
+    height: '100%',
+  },
+  titleText: {
+    marginLeft: '.3em',
+    display: 'inline-block',
   },
   navButton: {
     display: 'flex',
@@ -144,7 +164,7 @@ export const PureNavigation: React.SFC<PureNavigationProps> = ({ title, pages, t
           [classes.appBarShift]: open,
         })}
       >
-        <Toolbar>
+        <Toolbar className={classes.toolBar}>
           <Hidden mdUp>
             <IconButton
               color="inherit"
@@ -160,9 +180,18 @@ export const PureNavigation: React.SFC<PureNavigationProps> = ({ title, pages, t
             <Grid item xs={12} sm={12} md={5}>
               <LocalizedLink to={`/`}>
                 <Hidden smDown>
-                  <Typography variant="h6" noWrap>
-                    {title}
-                  </Typography>
+                  <div className={classes.title}>
+                    <img
+                      className={classes.logo}
+                      src={logo}
+                      width="64"
+                      height="64"
+                      alt="Covid19 Logo"
+                    />
+                    <Typography className={classes.titleText} variant="h6" noWrap>
+                      {title}
+                    </Typography>
+                  </div>
                 </Hidden>
                 <Hidden mdUp>
                   <div style={{ display: 'flex', width: '100%', justifyContent: 'space-between' }}>
