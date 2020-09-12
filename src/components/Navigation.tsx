@@ -158,19 +158,21 @@ export const PureNavigation: React.SFC<PureNavigationProps> = ({ title, pages, t
           </Hidden>
           <Grid container spacing={3}>
             <Grid item xs={12} sm={12} md={5}>
-              <Hidden smDown>
-                <Typography variant="h6" noWrap>
-                  {title}
-                </Typography>
-              </Hidden>
-              <Hidden mdUp>
-                <div style={{ display: 'flex', width: '100%', justifyContent: 'space-between' }}>
+              <LocalizedLink to={`/`}>
+                <Hidden smDown>
                   <Typography variant="h6" noWrap>
-                    CHIP
+                    {title}
                   </Typography>
-                  <Selector languages={Object.keys(locales).map((locale) => locales[locale])} />
-                </div>
-              </Hidden>
+                </Hidden>
+                <Hidden mdUp>
+                  <div style={{ display: 'flex', width: '100%', justifyContent: 'space-between' }}>
+                    <Typography variant="h6" noWrap>
+                      CHIP
+                    </Typography>
+                    <Selector languages={Object.keys(locales).map((locale) => locales[locale])} />
+                  </div>
+                </Hidden>
+              </LocalizedLink>
             </Grid>
             <Hidden smDown>
               <Grid item md={7}>
