@@ -14,4 +14,18 @@ aboutMessage: We are a group of doctors, medical students and volunteers, we’v
   of languages to get the right information, in an easy to understand format, to
   these communities.
 aboutImage: /images/hands.png
+featuredOn: Featured On 
+features:
+  - title: Rory
+    url: https://ecosia.org
+    image: /images/rory.jpg
+  - title: Rory
+    url: https://ecosia.org
+    image: /images/rory.jpg
+  - title: Rory
+    url: https://ecosia.org
+    image: /images/rory.jpg
+contactTitle: Want more information?
+contactMessage: Contact us via email or on our social media platforms
 ---
+

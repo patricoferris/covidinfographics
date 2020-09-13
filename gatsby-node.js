@@ -144,7 +144,17 @@ exports.createPages = async ({ graphql, actions }) => {
             aboutMessage
             aboutImage {
               ${imageQuery}
-            }`
+            }
+            featuredOn
+            features {
+              title
+              url
+              image {
+                ${imageQuery}
+              }
+            }
+            contactTitle
+            contactMessage`
             const { local, english } = await languageHelper(graphql, 'index', lang, innerQuery)
             createPage({
               path: removeTrailingSlash(localizedPath),

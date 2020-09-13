@@ -38,6 +38,10 @@ collections:
       - { label: 'Who we are title', name: 'aboutTitle', widget: 'string' }
       - { label: 'Who we are message', name: 'aboutMessage', widget: 'text'}
       - { label: 'Who we are image', name: 'aboutImage', widget: image }
+      - { label: 'Featured on title', name: 'featuredOn', widget: 'text'}
+      - { label: "Features", name: "features", widget: "list", summary: '{{fields.title}}', fields: [{label: "Title", name: "title", widget: 'text'}, {label: "URL", name: 'url', widget: 'text'}, {label: Image, name: image, widget: image}]}
+      - { label: 'Contact title', name: 'contactTitle', widget: 'text'}
+      - { label: 'Contact Message', name: 'contactMessage', widget: 'text'}
   - name: 'about'
     label: 'About-pages'
     folder: 'content/pages/about'
