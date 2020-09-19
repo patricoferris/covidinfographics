@@ -133,11 +133,11 @@ const Index: React.SFC<IndexProps> = ({ pageContext: { local, english } }) => {
             {localised(local, english, 'features').map((feature) => {
               return (
                 <a
-                  style={{ height: '100%', width: '100%', margin: '3em' }}
+                  style={{ height: '100%', width: '100%', flexBasis: '33%' }}
                   key={feature.title}
                   href={feature.url}
                 >
-                  <div style={{ width: '100%' }}>
+                  <div style={{ width: '100%', padding: '3em' }}>
                     <BackgroundImage
                       className={classes.aboutImage}
                       fluid={feature.image.childImageSharp.fluid}

@@ -169,12 +169,14 @@ exports.createPages = async ({ graphql, actions }) => {
             })
           } else if (base === 'partners') {
             const innerQuery = `title
+              description
               partners {
                 partner
                 text
                 image {
                   ${imageQuery}
                 }
+                url 
               }
               `
             const { local, english } = await languageHelper(graphql, 'partners', lang, innerQuery)
@@ -226,12 +228,14 @@ exports.createPages = async ({ graphql, actions }) => {
             })
           } else if (base === 'media') {
             const innerQuery = `title
+            description
             features {
               featureTitle
               featureText
               image {
                 ${imageQuery}
               }
+              url
             }`
             const { local, english } = await languageHelper(graphql, 'media', lang, innerQuery)
             createPage({

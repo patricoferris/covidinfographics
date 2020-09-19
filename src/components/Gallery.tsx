@@ -16,7 +16,12 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexDirection: 'row',
     flexWrap: 'nowrap',
-    justifyContent: 'space-around',
+  },
+  small: {
+    minWidth: 275,
+    marginBottom: theme.spacing(3),
+    display: 'flex',
+    flexDirection: 'column',
   },
   centerText: {
     textAlign: 'center',
@@ -32,7 +37,9 @@ const Gallery: React.SFC<GalleryProps> = ({ title, children }) => {
           <Typography className={classes.centerText} variant="h4">
             {title}
           </Typography>
-          <div className={classes.root}>{children}</div>
+          <div style={{ flexWrap: 'wrap' }} className={classes.root}>
+            {children}
+          </div>
         </div>
       </Hidden>
       <Hidden mdUp>
@@ -40,7 +47,7 @@ const Gallery: React.SFC<GalleryProps> = ({ title, children }) => {
           <Typography className={classes.centerText} variant="h4">
             {title}
           </Typography>
-          <div style={{ flexWrap: 'wrap' }} className={classes.root}>
+          <div style={{ flexWrap: 'wrap' }} className={classes.small}>
             {children}
           </div>
         </div>

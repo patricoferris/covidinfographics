@@ -159,7 +159,6 @@ export const PureNavigation: React.SFC<PureNavigationProps> = ({ title, pages, t
     <div>
       <AppBar
         position="static"
-        elevation={3}
         className={clsx(classes.appBar, {
           [classes.appBarShift]: open,
         })}

@@ -67,7 +67,8 @@ collections:
     fields: 
       - { label: 'Locale', name: 'locale', widget: 'string'}
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Partners', name: 'partners', widget: 'list', summary: '{{fields.partner}}', fields: [{label: 'Partner', name: 'partner', widget: 'string'}, {label: 'Partner Explanation', name: 'text', widget: 'text'}, {label: 'Partner Image', name: 'image', widget: image}]}
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Partners', name: 'partners', widget: 'list', summary: '{{fields.partner}}', fields: [{label: 'Partner', name: 'partner', widget: 'string'}, {label: 'Partner Explanation', name: 'text', widget: 'text'}, {label: 'Partner Image', name: 'image', widget: image}, {label: 'Partner URL', name: 'url', widget: string}]}
   - name: 'resources'
     label: 'Resources-pages'
     folder: 'content/pages/resources'
@@ -92,7 +93,8 @@ collections:
     fields: 
       - { label: 'Locale', name: 'locale', widget: 'string'}
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Features', name: 'features', widget: 'list', summary: '{{fields.featureTitle}}', fields: [{label: 'Feature Title', name: 'featureTitle', widget: 'string'}, {label: 'Feature Text', name: 'featureText', widget: 'text'}, {label: 'Partner Image', name: 'image', widget: image}]}
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Features', name: 'features', widget: 'list', summary: '{{fields.featureTitle}}', fields: [{label: 'Feature Title', name: 'featureTitle', widget: 'string'}, {label: 'Feature Text', name: 'featureText', widget: 'text'}, {label: 'Partner Image', name: 'image', widget: image}, {label: 'Partner URL', name: 'url', widget: string}]}
   - name: 'contact'
     label: 'Contact-pages'
     folder: 'content/pages/contact'
