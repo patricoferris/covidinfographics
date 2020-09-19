@@ -105,61 +105,65 @@ const Index: React.SFC<IndexProps> = ({ pageContext: { local, english } }) => {
             </div>
           </BackgroundImage>
         </Grid>
-        <Grid style={{ height: '40px' }} item sm={false} md={12} />
-        <Grid item sm={false} md={1} />
-        <Grid item sm={12} md={5}>
-          <div className={classes.aboutText}>
-            <Typography style={{ marginBottom: '1.2rem' }} variant="h3">
-              {localised(local, english, 'aboutTitle')}
-            </Typography>
-            <Typography style={{ marginBottom: '1.2rem' }} variant="body1">
-              {localised(local, english, 'aboutMessage')}
-            </Typography>
-            <LocalizedLink to={'/about'}>
-              <Button variant="outlined">About</Button>
-            </LocalizedLink>
-          </div>
-        </Grid>
-        <Grid item xs={12} sm={12} md={5}>
-          <div style={{ width: '100%' }}>
-            <BackgroundImage
-              className={classes.aboutImage}
-              fluid={localised(local, english, 'titleBgImg').childImageSharp.fluid}
-            />
-          </div>
-        </Grid>
-        <Grid item xs={12} sm={12}>
-          <Gallery title={localised(local, english, 'featuredOn')}>
-            {localised(local, english, 'features').map((feature) => {
-              return (
-                <a
-                  style={{ height: '100%', width: '100%', flexBasis: '33%' }}
-                  key={feature.title}
-                  href={feature.url}
-                >
-                  <div style={{ width: '100%', padding: '3em' }}>
-                    <BackgroundImage
-                      className={classes.aboutImage}
-                      fluid={feature.image.childImageSharp.fluid}
-                    />
-                  </div>
-                </a>
-              )
-            })}
-          </Gallery>
-        </Grid>
-        <Grid item sm={1} md={1}></Grid>
-        <Grid item sm={5} md={5}>
-          <Typography variant="h4">{localised(local, english, 'contactTitle')}</Typography>
-          <Typography variant="h6">{localised(local, english, 'contactMessage')}</Typography>
-        </Grid>
-        <Grid item sm={5} md={5}>
-          <LocalizedLink to={'/contact'}>
-            <Button variant="outlined">Contact</Button>
-          </LocalizedLink>
-        </Grid>
-        <Grid style={{ height: '100px' }} item sm={false} md={12} />
       </Grid>
+      <div className="global-wrapper">
+        <Grid container spacing={5}>
+          <Grid style={{ height: '40px' }} item sm={false} md={12} />
+          <Grid item sm={false} md={1} />
+          <Grid item sm={12} md={5}>
+            <div className={classes.aboutText}>
+              <Typography style={{ marginBottom: '1.2rem' }} variant="h3">
+                {localised(local, english, 'aboutTitle')}
+              </Typography>
+              <Typography style={{ marginBottom: '1.2rem' }} variant="body1">
+                {localised(local, english, 'aboutMessage')}
+              </Typography>
+              <LocalizedLink to={'/about'}>
+                <Button variant="outlined">About</Button>
+              </LocalizedLink>
+            </div>
+          </Grid>
+          <Grid item xs={12} sm={12} md={5}>
+            <div style={{ width: '100%' }}>
+              <BackgroundImage
+                className={classes.aboutImage}
+                fluid={localised(local, english, 'titleBgImg').childImageSharp.fluid}
+              />
+            </div>
+          </Grid>
+          <Grid item xs={12} sm={12}>
+            <Gallery title={localised(local, english, 'featuredOn')}>
+              {localised(local, english, 'features').map((feature) => {
+                return (
+                  <a
+                    style={{ height: '100%', width: '100%', flexBasis: '33%' }}
+                    key={feature.title}
+                    href={feature.url}
+                  >
+                    <div style={{ width: '100%', padding: '3em' }}>
+                      <BackgroundImage
+                        className={classes.aboutImage}
+                        fluid={feature.image.childImageSharp.fluid}
+                      />
+                    </div>
+                  </a>
+                )
+              })}
+            </Gallery>
+          </Grid>
+          <Grid item sm={1} md={1}></Grid>
+          <Grid item sm={5} md={5}>
+            <Typography variant="h4">{localised(local, english, 'contactTitle')}</Typography>
+            <Typography variant="h6">{localised(local, english, 'contactMessage')}</Typography>
+          </Grid>
+          <Grid item sm={5} md={5}>
+            <LocalizedLink to={'/contact'}>
+              <Button variant="outlined">Contact</Button>
+            </LocalizedLink>
+          </Grid>
+          <Grid style={{ height: '100px' }} item sm={false} md={12} />
+        </Grid>
+      </div>
     </Layout>
   )
 }

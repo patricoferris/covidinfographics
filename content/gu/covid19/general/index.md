@@ -2,14 +2,24 @@
 category: covid19
 sub: general
 infographics:
-  - alttext: A COVID19 Infographic
+  - updating: false
+    mod_time: September 19, 2020 2:56 PM
+    alttext: A COVID19 Infographic
     image: wellbeing.png
-  - alttext: A COVID19 Infographic
+  - updating: false
+    mod_time: September 19, 2020 2:56 PM
+    alttext: A COVID19 Infographic
     image: myths.png
-  - alttext: A COVID19 Infographic
+  - updating: false
+    mod_time: September 19, 2020 2:56 PM
+    alttext: A COVID19 Infographic
     image: self_care.png
-  - alttext: A COVID19 Infographic
+  - updating: false
+    mod_time: September 19, 2020 2:56 PM
+    alttext: A COVID19 Infographic
     image: overview.png
-  - alttext: A COVID19 Infographic
+  - updating: false
+    mod_time: September 19, 2020 2:56 PM
+    alttext: A COVID19 Infographic
     image: spread_and_prevention.png
 ---

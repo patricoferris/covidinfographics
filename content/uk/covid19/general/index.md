@@ -2,6 +2,8 @@
 category: covid19
 sub: general
 infographics:
-  - alttext: A COVID19 Infographic
+  - updating: false
+    mod_time: September 19, 2020 2:56 PM
+    alttext: A COVID19 Infographic
     image: overview.png
 ---

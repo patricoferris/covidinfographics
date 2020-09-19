@@ -120,7 +120,9 @@ collections:
     fields:
       - { label: 'Category', name: 'category', widget: 'string' }
       - { label: 'Subcategory', name: 'sub', widget: 'string' }
-      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', 
+          fields: [{label: AltText, name: alttext, widget: string}, {label: "Being Updated", name: "updating", widget: "boolean", default: false},  {label: Image, name: image, widget: image}, 
+          {label: "Modified time", name: "mod_time", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL", picker_utc: true}]}
       - { label: 'Category Summary', name: 'body', widget: 'markdown'}
   - name: 'fr'
     label: 'fr'
@@ -136,7 +138,8 @@ collections:
     fields:
       - { label: 'Category', name: 'category', widget: 'string' }
       - { label: 'Subcategory', name: 'sub', widget: 'string' }
-      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string},  {label: Image, name: image, widget: image}, 
+        {label: "Being Updated", name: "updating", widget: "boolean", default: false},{label: "Modified time", name: "mod_time", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL", picker_utc: true}]}
       - { label: 'Category Summary', name: 'body', widget: 'markdown'}
   - name: 'sk'
     label: 'sk'
@@ -152,7 +155,9 @@ collections:
     fields:
       - { label: 'Category', name: 'category', widget: 'string' }
       - { label: 'Subcategory', name: 'sub', widget: 'string' }
-      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', 
+          fields: [{label: AltText, name: alttext, widget: string}, {label: "Being Updated", name: "updating", widget: "boolean", default: false},  {label: Image, name: image, widget: image}, 
+          {label: "Modified time", name: "mod_time", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL", picker_utc: true}]}
       - { label: 'Category Summary', name: 'body', widget: 'markdown'}
   - name: 'ur'
     label: 'ur'
@@ -168,7 +173,9 @@ collections:
     fields:
       - { label: 'Category', name: 'category', widget: 'string' }
       - { label: 'Subcategory', name: 'sub', widget: 'string' }
-      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', 
+          fields: [{label: AltText, name: alttext, widget: string}, {label: "Being Updated", name: "updating", widget: "boolean", default: false},  {label: Image, name: image, widget: image}, 
+          {label: "Modified time", name: "mod_time", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL", picker_utc: true}]}
       - { label: 'Category Summary', name: 'body', widget: 'markdown'}
   - name: 'sw'
     label: 'sw'
@@ -184,7 +191,9 @@ collections:
     fields:
       - { label: 'Category', name: 'category', widget: 'string' }
       - { label: 'Subcategory', name: 'sub', widget: 'string' }
-      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', 
+          fields: [{label: AltText, name: alttext, widget: string}, {label: "Being Updated", name: "updating", widget: "boolean", default: false},  {label: Image, name: image, widget: image}, 
+          {label: "Modified time", name: "mod_time", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL", picker_utc: true}]}
       - { label: 'Category Summary', name: 'body', widget: 'markdown'}
   - name: 'pl'
     label: 'pl'
@@ -200,7 +209,9 @@ collections:
     fields:
       - { label: 'Category', name: 'category', widget: 'string' }
       - { label: 'Subcategory', name: 'sub', widget: 'string' }
-      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', 
+          fields: [{label: AltText, name: alttext, widget: string}, {label: "Being Updated", name: "updating", widget: "boolean", default: false},  {label: Image, name: image, widget: image}, 
+          {label: "Modified time", name: "mod_time", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL", picker_utc: true}]}
       - { label: 'Category Summary', name: 'body', widget: 'markdown'}
   - name: 'syl'
     label: 'syl'
@@ -216,7 +227,9 @@ collections:
     fields:
       - { label: 'Category', name: 'category', widget: 'string' }
       - { label: 'Subcategory', name: 'sub', widget: 'string' }
-      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', 
+          fields: [{label: AltText, name: alttext, widget: string}, {label: "Being Updated", name: "updating", widget: "boolean", default: false},  {label: Image, name: image, widget: image}, 
+          {label: "Modified time", name: "mod_time", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL", picker_utc: true}]}
       - { label: 'Category Summary', name: 'body', widget: 'markdown'}
   - name: 'vi'
     label: 'vi'
@@ -232,7 +245,9 @@ collections:
     fields:
       - { label: 'Category', name: 'category', widget: 'string' }
       - { label: 'Subcategory', name: 'sub', widget: 'string' }
-      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', 
+          fields: [{label: AltText, name: alttext, widget: string}, {label: "Being Updated", name: "updating", widget: "boolean", default: false},  {label: Image, name: image, widget: image}, 
+          {label: "Modified time", name: "mod_time", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL", picker_utc: true}]}
       - { label: 'Category Summary', name: 'body', widget: 'markdown'}
   - name: 'sv'
     label: 'sv'
@@ -248,7 +263,9 @@ collections:
     fields:
       - { label: 'Category', name: 'category', widget: 'string' }
       - { label: 'Subcategory', name: 'sub', widget: 'string' }
-      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', 
+          fields: [{label: AltText, name: alttext, widget: string}, {label: "Being Updated", name: "updating", widget: "boolean", default: false},  {label: Image, name: image, widget: image}, 
+          {label: "Modified time", name: "mod_time", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL", picker_utc: true}]}
       - { label: 'Category Summary', name: 'body', widget: 'markdown'}
   - name: 'he'
     label: 'he'
@@ -264,7 +281,9 @@ collections:
     fields:
       - { label: 'Category', name: 'category', widget: 'string' }
       - { label: 'Subcategory', name: 'sub', widget: 'string' }
-      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', 
+          fields: [{label: AltText, name: alttext, widget: string}, {label: "Being Updated", name: "updating", widget: "boolean", default: false},  {label: Image, name: image, widget: image}, 
+          {label: "Modified time", name: "mod_time", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL", picker_utc: true}]}
       - { label: 'Category Summary', name: 'body', widget: 'markdown'}
   - name: 'gu'
     label: 'gu'
@@ -280,7 +299,9 @@ collections:
     fields:
       - { label: 'Category', name: 'category', widget: 'string' }
       - { label: 'Subcategory', name: 'sub', widget: 'string' }
-      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', 
+          fields: [{label: AltText, name: alttext, widget: string}, {label: "Being Updated", name: "updating", widget: "boolean", default: false},  {label: Image, name: image, widget: image}, 
+          {label: "Modified time", name: "mod_time", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL", picker_utc: true}]}
       - { label: 'Category Summary', name: 'body', widget: 'markdown'}
   - name: 'ja'
     label: 'ja'
@@ -296,7 +317,9 @@ collections:
     fields:
       - { label: 'Category', name: 'category', widget: 'string' }
       - { label: 'Subcategory', name: 'sub', widget: 'string' }
-      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', 
+          fields: [{label: AltText, name: alttext, widget: string}, {label: "Being Updated", name: "updating", widget: "boolean", default: false},  {label: Image, name: image, widget: image}, 
+          {label: "Modified time", name: "mod_time", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL", picker_utc: true}]}
       - { label: 'Category Summary', name: 'body', widget: 'markdown'}
   - name: 'it'
     label: 'it'
@@ -312,7 +335,9 @@ collections:
     fields:
       - { label: 'Category', name: 'category', widget: 'string' }
       - { label: 'Subcategory', name: 'sub', widget: 'string' }
-      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', 
+          fields: [{label: AltText, name: alttext, widget: string}, {label: "Being Updated", name: "updating", widget: "boolean", default: false},  {label: Image, name: image, widget: image}, 
+          {label: "Modified time", name: "mod_time", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL", picker_utc: true}]}
       - { label: 'Category Summary', name: 'body', widget: 'markdown'}
   - name: 'cs'
     label: 'cs'
@@ -328,7 +353,9 @@ collections:
     fields:
       - { label: 'Category', name: 'category', widget: 'string' }
       - { label: 'Subcategory', name: 'sub', widget: 'string' }
-      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', 
+          fields: [{label: AltText, name: alttext, widget: string}, {label: "Being Updated", name: "updating", widget: "boolean", default: false},  {label: Image, name: image, widget: image}, 
+          {label: "Modified time", name: "mod_time", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL", picker_utc: true}]}
       - { label: 'Category Summary', name: 'body', widget: 'markdown'}
   - name: 'ru'
     label: 'ru'
@@ -344,7 +371,9 @@ collections:
     fields:
       - { label: 'Category', name: 'category', widget: 'string' }
       - { label: 'Subcategory', name: 'sub', widget: 'string' }
-      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', 
+          fields: [{label: AltText, name: alttext, widget: string}, {label: "Being Updated", name: "updating", widget: "boolean", default: false},  {label: Image, name: image, widget: image}, 
+          {label: "Modified time", name: "mod_time", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL", picker_utc: true}]}
       - { label: 'Category Summary', name: 'body', widget: 'markdown'}
   - name: 'ro'
     label: 'ro'
@@ -360,7 +389,9 @@ collections:
     fields:
       - { label: 'Category', name: 'category', widget: 'string' }
       - { label: 'Subcategory', name: 'sub', widget: 'string' }
-      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', 
+          fields: [{label: AltText, name: alttext, widget: string}, {label: "Being Updated", name: "updating", widget: "boolean", default: false},  {label: Image, name: image, widget: image}, 
+          {label: "Modified time", name: "mod_time", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL", picker_utc: true}]}
       - { label: 'Category Summary', name: 'body', widget: 'markdown'}
   - name: 'yo'
     label: 'yo'
@@ -376,7 +407,9 @@ collections:
     fields:
       - { label: 'Category', name: 'category', widget: 'string' }
       - { label: 'Subcategory', name: 'sub', widget: 'string' }
-      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', 
+          fields: [{label: AltText, name: alttext, widget: string}, {label: "Being Updated", name: "updating", widget: "boolean", default: false},  {label: Image, name: image, widget: image}, 
+          {label: "Modified time", name: "mod_time", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL", picker_utc: true}]}
       - { label: 'Category Summary', name: 'body', widget: 'markdown'}
   - name: 'so'
     label: 'so'
@@ -392,7 +425,9 @@ collections:
     fields:
       - { label: 'Category', name: 'category', widget: 'string' }
       - { label: 'Subcategory', name: 'sub', widget: 'string' }
-      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', 
+          fields: [{label: AltText, name: alttext, widget: string}, {label: "Being Updated", name: "updating", widget: "boolean", default: false},  {label: Image, name: image, widget: image}, 
+          {label: "Modified time", name: "mod_time", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL", picker_utc: true}]}
       - { label: 'Category Summary', name: 'body', widget: 'markdown'}
   - name: 'pt'
     label: 'pt'
@@ -408,7 +443,9 @@ collections:
     fields:
       - { label: 'Category', name: 'category', widget: 'string' }
       - { label: 'Subcategory', name: 'sub', widget: 'string' }
-      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', 
+          fields: [{label: AltText, name: alttext, widget: string}, {label: "Being Updated", name: "updating", widget: "boolean", default: false},  {label: Image, name: image, widget: image}, 
+          {label: "Modified time", name: "mod_time", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL", picker_utc: true}]}
       - { label: 'Category Summary', name: 'body', widget: 'markdown'}
   - name: 'uk'
     label: 'uk'
@@ -424,7 +461,9 @@ collections:
     fields:
       - { label: 'Category', name: 'category', widget: 'string' }
       - { label: 'Subcategory', name: 'sub', widget: 'string' }
-      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', 
+          fields: [{label: AltText, name: alttext, widget: string}, {label: "Being Updated", name: "updating", widget: "boolean", default: false},  {label: Image, name: image, widget: image}, 
+          {label: "Modified time", name: "mod_time", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL", picker_utc: true}]}
       - { label: 'Category Summary', name: 'body', widget: 'markdown'}
   - name: 'pa'
     label: 'pa'
@@ -440,7 +479,9 @@ collections:
     fields:
       - { label: 'Category', name: 'category', widget: 'string' }
       - { label: 'Subcategory', name: 'sub', widget: 'string' }
-      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', 
+          fields: [{label: AltText, name: alttext, widget: string}, {label: "Being Updated", name: "updating", widget: "boolean", default: false},  {label: Image, name: image, widget: image}, 
+          {label: "Modified time", name: "mod_time", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL", picker_utc: true}]}
       - { label: 'Category Summary', name: 'body', widget: 'markdown'}
   - name: 'si'
     label: 'si'
@@ -456,7 +497,9 @@ collections:
     fields:
       - { label: 'Category', name: 'category', widget: 'string' }
       - { label: 'Subcategory', name: 'sub', widget: 'string' }
-      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', 
+          fields: [{label: AltText, name: alttext, widget: string}, {label: "Being Updated", name: "updating", widget: "boolean", default: false},  {label: Image, name: image, widget: image}, 
+          {label: "Modified time", name: "mod_time", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL", picker_utc: true}]}
       - { label: 'Category Summary', name: 'body', widget: 'markdown'}
   - name: 'ml'
     label: 'ml'
@@ -472,7 +515,9 @@ collections:
     fields:
       - { label: 'Category', name: 'category', widget: 'string' }
       - { label: 'Subcategory', name: 'sub', widget: 'string' }
-      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', 
+          fields: [{label: AltText, name: alttext, widget: string}, {label: "Being Updated", name: "updating", widget: "boolean", default: false},  {label: Image, name: image, widget: image}, 
+          {label: "Modified time", name: "mod_time", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL", picker_utc: true}]}
       - { label: 'Category Summary', name: 'body', widget: 'markdown'}
   - name: 'ku'
     label: 'ku'
@@ -488,7 +533,9 @@ collections:
     fields:
       - { label: 'Category', name: 'category', widget: 'string' }
       - { label: 'Subcategory', name: 'sub', widget: 'string' }
-      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', 
+          fields: [{label: AltText, name: alttext, widget: string}, {label: "Being Updated", name: "updating", widget: "boolean", default: false},  {label: Image, name: image, widget: image}, 
+          {label: "Modified time", name: "mod_time", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL", picker_utc: true}]}
       - { label: 'Category Summary', name: 'body', widget: 'markdown'}
   - name: 'ar'
     label: 'ar'
@@ -504,7 +551,9 @@ collections:
     fields:
       - { label: 'Category', name: 'category', widget: 'string' }
       - { label: 'Subcategory', name: 'sub', widget: 'string' }
-      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', 
+          fields: [{label: AltText, name: alttext, widget: string}, {label: "Being Updated", name: "updating", widget: "boolean", default: false},  {label: Image, name: image, widget: image}, 
+          {label: "Modified time", name: "mod_time", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL", picker_utc: true}]}
       - { label: 'Category Summary', name: 'body', widget: 'markdown'}
   - name: 'nl'
     label: 'nl'
@@ -520,7 +569,9 @@ collections:
     fields:
       - { label: 'Category', name: 'category', widget: 'string' }
       - { label: 'Subcategory', name: 'sub', widget: 'string' }
-      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', 
+          fields: [{label: AltText, name: alttext, widget: string}, {label: "Being Updated", name: "updating", widget: "boolean", default: false},  {label: Image, name: image, widget: image}, 
+          {label: "Modified time", name: "mod_time", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL", picker_utc: true}]}
       - { label: 'Category Summary', name: 'body', widget: 'markdown'}
   - name: 'bg'
     label: 'bg'
@@ -536,7 +587,9 @@ collections:
     fields:
       - { label: 'Category', name: 'category', widget: 'string' }
       - { label: 'Subcategory', name: 'sub', widget: 'string' }
-      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', 
+          fields: [{label: AltText, name: alttext, widget: string}, {label: "Being Updated", name: "updating", widget: "boolean", default: false},  {label: Image, name: image, widget: image}, 
+          {label: "Modified time", name: "mod_time", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL", picker_utc: true}]}
       - { label: 'Category Summary', name: 'body', widget: 'markdown'}
   - name: 'bn'
     label: 'bn'
@@ -552,7 +605,9 @@ collections:
     fields:
       - { label: 'Category', name: 'category', widget: 'string' }
       - { label: 'Subcategory', name: 'sub', widget: 'string' }
-      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', 
+          fields: [{label: AltText, name: alttext, widget: string}, {label: "Being Updated", name: "updating", widget: "boolean", default: false},  {label: Image, name: image, widget: image}, 
+          {label: "Modified time", name: "mod_time", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL", picker_utc: true}]}
       - { label: 'Category Summary', name: 'body', widget: 'markdown'}
   - name: 'hi'
     label: 'hi'
@@ -568,7 +623,9 @@ collections:
     fields:
       - { label: 'Category', name: 'category', widget: 'string' }
       - { label: 'Subcategory', name: 'sub', widget: 'string' }
-      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', 
+          fields: [{label: AltText, name: alttext, widget: string}, {label: "Being Updated", name: "updating", widget: "boolean", default: false},  {label: Image, name: image, widget: image}, 
+          {label: "Modified time", name: "mod_time", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL", picker_utc: true}]}
       - { label: 'Category Summary', name: 'body', widget: 'markdown'}
   - name: 'de'
     label: 'de'
@@ -584,7 +641,9 @@ collections:
     fields:
       - { label: 'Category', name: 'category', widget: 'string' }
       - { label: 'Subcategory', name: 'sub', widget: 'string' }
-      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', 
+          fields: [{label: AltText, name: alttext, widget: string}, {label: "Being Updated", name: "updating", widget: "boolean", default: false},  {label: Image, name: image, widget: image}, 
+          {label: "Modified time", name: "mod_time", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL", picker_utc: true}]}
       - { label: 'Category Summary', name: 'body', widget: 'markdown'}
   - name: 'ko'
     label: 'ko'
@@ -600,7 +659,9 @@ collections:
     fields:
       - { label: 'Category', name: 'category', widget: 'string' }
       - { label: 'Subcategory', name: 'sub', widget: 'string' }
-      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', 
+          fields: [{label: AltText, name: alttext, widget: string}, {label: "Being Updated", name: "updating", widget: "boolean", default: false},  {label: Image, name: image, widget: image}, 
+          {label: "Modified time", name: "mod_time", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL", picker_utc: true}]}
       - { label: 'Category Summary', name: 'body', widget: 'markdown'}
   - name: 'es'
     label: 'es'
@@ -616,7 +677,9 @@ collections:
     fields:
       - { label: 'Category', name: 'category', widget: 'string' }
       - { label: 'Subcategory', name: 'sub', widget: 'string' }
-      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', 
+          fields: [{label: AltText, name: alttext, widget: string}, {label: "Being Updated", name: "updating", widget: "boolean", default: false},  {label: Image, name: image, widget: image}, 
+          {label: "Modified time", name: "mod_time", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL", picker_utc: true}]}
       - { label: 'Category Summary', name: 'body', widget: 'markdown'}
   - name: 'fa'
     label: 'fa'
@@ -632,7 +695,9 @@ collections:
     fields:
       - { label: 'Category', name: 'category', widget: 'string' }
       - { label: 'Subcategory', name: 'sub', widget: 'string' }
-      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', 
+          fields: [{label: AltText, name: alttext, widget: string}, {label: "Being Updated", name: "updating", widget: "boolean", default: false},  {label: Image, name: image, widget: image}, 
+          {label: "Modified time", name: "mod_time", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL", picker_utc: true}]}
       - { label: 'Category Summary', name: 'body', widget: 'markdown'}
   - name: 'lt'
     label: 'lt'
@@ -648,7 +713,9 @@ collections:
     fields:
       - { label: 'Category', name: 'category', widget: 'string' }
       - { label: 'Subcategory', name: 'sub', widget: 'string' }
-      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', 
+          fields: [{label: AltText, name: alttext, widget: string}, {label: "Being Updated", name: "updating", widget: "boolean", default: false},  {label: Image, name: image, widget: image}, 
+          {label: "Modified time", name: "mod_time", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL", picker_utc: true}]}
       - { label: 'Category Summary', name: 'body', widget: 'markdown'}
   - name: 'ta'
     label: 'ta'
@@ -664,7 +731,9 @@ collections:
     fields:
       - { label: 'Category', name: 'category', widget: 'string' }
       - { label: 'Subcategory', name: 'sub', widget: 'string' }
-      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', 
+          fields: [{label: AltText, name: alttext, widget: string}, {label: "Being Updated", name: "updating", widget: "boolean", default: false},  {label: Image, name: image, widget: image}, 
+          {label: "Modified time", name: "mod_time", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL", picker_utc: true}]}
       - { label: 'Category Summary', name: 'body', widget: 'markdown'}
   - name: 'tr'
     label: 'tr'
@@ -680,7 +749,9 @@ collections:
     fields:
       - { label: 'Category', name: 'category', widget: 'string' }
       - { label: 'Subcategory', name: 'sub', widget: 'string' }
-      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', 
+          fields: [{label: AltText, name: alttext, widget: string}, {label: "Being Updated", name: "updating", widget: "boolean", default: false},  {label: Image, name: image, widget: image}, 
+          {label: "Modified time", name: "mod_time", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL", picker_utc: true}]}
       - { label: 'Category Summary', name: 'body', widget: 'markdown'}
   - name: 'zht'
     label: 'zht'
@@ -696,7 +767,9 @@ collections:
     fields:
       - { label: 'Category', name: 'category', widget: 'string' }
       - { label: 'Subcategory', name: 'sub', widget: 'string' }
-      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', 
+          fields: [{label: AltText, name: alttext, widget: string}, {label: "Being Updated", name: "updating", widget: "boolean", default: false},  {label: Image, name: image, widget: image}, 
+          {label: "Modified time", name: "mod_time", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL", picker_utc: true}]}
       - { label: 'Category Summary', name: 'body', widget: 'markdown'}
   - name: 'zhs'
     label: 'zhs'
@@ -712,6 +785,7 @@ collections:
     fields:
       - { label: 'Category', name: 'category', widget: 'string' }
       - { label: 'Subcategory', name: 'sub', widget: 'string' }
-      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', fields: [{label: AltText, name: alttext, widget: string}, {label: Image, name: image, widget: image}]}
+      - { label: 'Infographics', name: "infographics", widget: "list", summary: '{{fields.image}}', 
+          fields: [{label: AltText, name: alttext, widget: string}, {label: "Being Updated", name: "updating", widget: "boolean", default: false},  {label: Image, name: image, widget: image}, 
+          {label: "Modified time", name: "mod_time", widget: "datetime", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL", picker_utc: true}]}
       - { label: 'Category Summary', name: 'body', widget: 'markdown'}
-
