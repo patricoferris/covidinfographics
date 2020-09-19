@@ -254,7 +254,7 @@ exports.createPages = async ({ graphql, actions }) => {
             topics.forEach((topic) => {
               const links = allLinks.data.rawData.edges.filter((edge) => {
                 const relPath = edge.node.relativePath
-                return relPath.split('/')[1] === topic
+                return relPath.split('/')[1] === topic && relPath.split('.')[1] !== 'md'
               })
 
               createPage({

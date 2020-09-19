@@ -5,6 +5,6 @@ infographics:
   - alttext: "An infographic explaining symptoms of a heart attack including
       shortness of breath, indigestion, nausea, chest-pain and sweatiness.
       anxiety, "
-    image: heart.png
+    image: heart_attack_symptoms.png
 ---
 Infographics for cardiovascular diseases and problems including heart-attack
