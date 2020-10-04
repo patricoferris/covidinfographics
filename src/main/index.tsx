@@ -22,6 +22,10 @@ export interface Link {
     relativePath: string
     publicURL: string
   }
+  data: {
+    mod_time: string
+    updating: boolean
+  }
 }
 
 interface IndexProps {

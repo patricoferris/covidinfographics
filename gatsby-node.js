@@ -8,6 +8,16 @@ exports.onCreateNode = ({ node }) => {
   fmImagesToRelative(node)
 }
 
+const flatten = (arr) => {
+  let res = []
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr[i].length; j++) {
+      res.push(arr[i][j])
+    }
+  }
+  return res
+}
+
 const imageQuery = `
   childImageSharp {
     fluid {
@@ -47,7 +57,6 @@ const languageHelper = async (graphql, page, locale, frontmatterContent) => {
     }
   `)
   if (!content.data) {
-
     console.log(content)
   }
   const { local, english } = content.data
@@ -251,24 +260,84 @@ exports.createPages = async ({ graphql, actions }) => {
             })
           } else if (base === 'content') {
             // Create a content page for each topic
-            topics.forEach((topic) => {
-              const links = allLinks.data.rawData.edges.filter((edge) => {
-                const relPath = edge.node.relativePath
-                return relPath.split('/')[1] === topic && relPath.split('.')[1] !== 'md'
-              })
+            await Promise.all(
+              [...topics].map(async (topic) => {
+                let links = allLinks.data.rawData.edges.filter((edge) => {
+                  const relPath = edge.node.relativePath
+                  return relPath.split('/')[1] === topic && relPath.split('.')[1] !== 'md'
+                })
 
-              createPage({
-                path: removeTrailingSlash(`${localizedPath}/${topic}`),
-                component: template,
-                context: {
-                  ...page.context,
-                  locale: lang,
-                  links,
-                  topic,
-                  dateFormat: locales[lang].dateFormat,
-                },
+                // Query for the frontmatter data of the topic
+                const innerQuery = `
+                infographics {
+                  updating
+                  mod_time
+                  alttext
+                  image {
+                    name
+                  }
+                }
+              `
+
+                const content = await graphql(`
+              {
+                local: allMarkdownRemark(
+                  filter: { fileAbsolutePath: { regex: "/(${lang}\\/${topic})/" } }
+                ) {
+                  edges {
+                    node {
+                      frontmatter {
+                        ${innerQuery}
+                      }
+                    }
+                  }
+                }
+                english: allMarkdownRemark(
+                  filter: { fileAbsolutePath: { regex: "/(\\/en\\/${topic})/" } }
+                ) {
+                  edges {
+                    node {
+                      frontmatter {
+                        ${innerQuery}
+                      }
+                    }
+                  }
+                }
+              }`)
+                const { local, english } = content.data
+
+                const info = {
+                  locals: local.edges[0]
+                    ? flatten(local.edges.map((edge) => edge.node.frontmatter.infographics))
+                    : undefined,
+                  englishes: flatten(
+                    english.edges.map((edge) => edge.node.frontmatter.infographics)
+                  ),
+                }
+
+                links = links.map((link) => {
+                  return {
+                    ...link,
+                    data: info.englishes.filter((i) => {
+                      return i.image.name === link.node.name
+                    })[0],
+                  }
+                })
+
+                createPage({
+                  path: removeTrailingSlash(`${localizedPath}/${topic}`),
+                  component: template,
+                  context: {
+                    ...page.context,
+                    locale: lang,
+                    links,
+                    topic,
+                    info,
+                    dateFormat: locales[lang].dateFormat,
+                  },
+                })
               })
-            })
+            )
           } else if (base === 'contact') {
             const innerQuery = `title`
             const { local, english } = await languageHelper(graphql, 'contact', lang, innerQuery)

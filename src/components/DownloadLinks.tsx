@@ -10,6 +10,7 @@ import CloudDownload from '@material-ui/icons/CloudDownload'
 import { makeStyles } from '@material-ui/core/styles'
 import Divider from '@material-ui/core/Divider'
 import Accordion from './Accordion'
+import Chip from '@material-ui/core/Chip'
 import Share from './Share'
 import { capitaliseFirstLetter, removeUnderscores } from '../utils/strings'
 import { Link } from '../main/index'
@@ -17,7 +18,12 @@ import { Link } from '../main/index'
 const useStyles = makeStyles((theme) => ({
   link: {
     color: 'black',
-    textDecoraction: 'none',
+    textDecoration: 'none',
+  },
+  chip: {
+    borderRadius: '5px',
+    backgroundColor: '#E2EEC2',
+    padding: '5px',
   },
   download: {
     color: 'black',
@@ -78,6 +84,10 @@ const DownloadLinks: React.SFC<DownloadProps> = ({ data: { topic, links } }) => 
                       </IconButton>
                       <Share url={publicURL} />
                     </ListItemSecondaryAction>
+                  </ListItem>
+                  <ListItem>
+                    <div className={classes.chip}>Uploaded: {img.data.mod_time}</div>
+                    {img.data.updating ? <Chip label={`Updating`} /> : undefined}
                   </ListItem>
                   <Divider />
                 </>
