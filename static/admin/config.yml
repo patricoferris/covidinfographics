@@ -6,21 +6,6 @@ media_folder: 'static/images'
 public_folder: /images
 
 collections:
-  - name: 'infographics'
-    label: 'Infographics'
-    folder: 'content/infographics'
-    create: true
-    slug: 'index'
-    media_folder: ''
-    public_folder: ''
-    summary: '{{locale}}/{{sub}}'
-    path: '{{locale}}/{{sub}}/index'
-    editor:
-      preview: false
-    fields:
-      - { label: 'Locale', name: 'locale', widget: 'string' }
-      - { label: 'Subcategory', name: 'sub', widget: 'string' }
-      - { label: "Infographics", name: "infographics", widget: "list", summary: '{{fields.image}}', field: {label: Image, name: image, widget: image}}
   - name: 'index'
     label: 'Index-pages'
     folder: 'content/pages/index'

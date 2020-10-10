@@ -56,9 +56,9 @@ const languageHelper = async (graphql, page, locale, frontmatterContent) => {
       }
     }
   `)
-  if (!content.data) {
-    console.log(content)
-  }
+  // if (!content.data) {
+  //   console.log(content)
+  // }
   const { local, english } = content.data
   if (local.edges[0]) {
     return {
