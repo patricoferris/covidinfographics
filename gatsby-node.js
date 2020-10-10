@@ -56,9 +56,7 @@ const languageHelper = async (graphql, page, locale, frontmatterContent) => {
       }
     }
   `)
-  // if (!content.data) {
-  //   console.log(content)
-  // }
+
   const { local, english } = content.data
   if (local.edges[0]) {
     return {
@@ -187,6 +185,14 @@ exports.createPages = async ({ graphql, actions }) => {
                 }
                 url 
               }
+              features {
+                featureTitle
+                featureText
+                image {
+                  ${imageQuery}
+                }
+                url
+              }
               `
             const { local, english } = await languageHelper(graphql, 'partners', lang, innerQuery)
             createPage({
@@ -235,18 +241,18 @@ exports.createPages = async ({ graphql, actions }) => {
                 dateFormat: locales[lang].dateFormat,
               },
             })
-          } else if (base === 'media') {
+          } else if (base === 'involved') {
             const innerQuery = `title
             description
-            features {
-              featureTitle
-              featureText
-              image {
-                ${imageQuery}
-              }
-              url
+            helpTitle
+            donateTitle
+            donateBody
+            donateButton
+            roles { 
+              roleTitle
+              roleBody
             }`
-            const { local, english } = await languageHelper(graphql, 'media', lang, innerQuery)
+            const { local, english } = await languageHelper(graphql, 'involved', lang, innerQuery)
             createPage({
               path: removeTrailingSlash(localizedPath),
               component: template,

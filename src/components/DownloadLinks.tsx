@@ -77,7 +77,6 @@ const DownloadLinks: React.SFC<DownloadProps> = ({ data: { topic, links } }) => 
           <List key={sub} style={{ width: '100%', overflow: 'auto' }}>
             <Divider />
             {data[sub].map((img, idx) => {
-              console.log(img.data)
               const { publicURL, name } = img.node
               return (
                 <>

@@ -46,7 +46,7 @@ const query = graphql`
               about
               partners
               resources
-              media
+              involved
               contact
             }
             index {

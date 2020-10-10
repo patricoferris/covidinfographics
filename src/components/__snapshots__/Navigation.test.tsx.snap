@@ -1066,13 +1066,13 @@ exports[`Should render the five pages correctly 1`] = `
               <WithStyles(ForwardRef(ListItem))
                 button={true}
                 className="makeStyles-navContainer-4"
-                key="media"
+                key="involved"
               >
                 <LocalizedLink
                   className="makeStyles-navButton-8"
-                  to="/media"
+                  to="/involved"
                 >
-                  Media
+                  Get Involved
                 </LocalizedLink>
               </WithStyles(ForwardRef(ListItem))>
               <WithStyles(ForwardRef(ListItem))
@@ -1171,13 +1171,13 @@ exports[`Should render the five pages correctly 1`] = `
         <WithStyles(ForwardRef(ListItem))
           button={true}
           className="makeStyles-navContainer-4"
-          key="media"
+          key="involved"
         >
           <LocalizedLink
             className="makeStyles-navDrawerButton-9"
-            to="/media"
+            to="/involved"
           >
-            Media
+            Get Involved
           </LocalizedLink>
         </WithStyles(ForwardRef(ListItem))>
         <WithStyles(ForwardRef(ListItem))
