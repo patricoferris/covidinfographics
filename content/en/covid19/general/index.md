@@ -6,7 +6,7 @@ infographics:
     mod_time: September 19, 2020 2:56 PM
     alttext: A COVID19 Infographic
     image: wellbeing.png
-  - updating: false
+  - updating: true
     mod_time: September 19, 2020 2:56 PM
     alttext: A COVID19 Infographic
     image: myths.png

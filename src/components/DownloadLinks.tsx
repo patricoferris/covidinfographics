@@ -20,9 +20,22 @@ const useStyles = makeStyles((theme) => ({
     color: 'black',
     textDecoration: 'none',
   },
+  meta: {
+    display: 'flex',
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+  },
   chip: {
+    margin: '.4em',
     borderRadius: '5px',
     backgroundColor: '#E2EEC2',
+    padding: '5px',
+  },
+  updating: {
+    borderRadius: '5px',
+    margin: '.4em',
+    backgroundColor: 'red',
+    color: 'white',
     padding: '5px',
   },
   download: {
@@ -64,6 +77,7 @@ const DownloadLinks: React.SFC<DownloadProps> = ({ data: { topic, links } }) => 
           <List key={sub} style={{ width: '100%', overflow: 'auto' }}>
             <Divider />
             {data[sub].map((img, idx) => {
+              console.log(img.data)
               const { publicURL, name } = img.node
               return (
                 <>
@@ -86,8 +100,12 @@ const DownloadLinks: React.SFC<DownloadProps> = ({ data: { topic, links } }) => 
                     </ListItemSecondaryAction>
                   </ListItem>
                   <ListItem>
-                    <div className={classes.chip}>Uploaded: {img.data.mod_time}</div>
-                    {img.data.updating ? <Chip label={`Updating`} /> : undefined}
+                    <div className={classes.meta}>
+                      {img.data.updating ? (
+                        <div className={classes.updating}>Currently being updated...</div>
+                      ) : undefined}
+                      <div className={classes.chip}>Uploaded: {img.data.mod_time}</div>
+                    </div>
                   </ListItem>
                   <Divider />
                 </>

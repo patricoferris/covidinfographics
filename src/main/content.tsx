@@ -16,8 +16,8 @@ const Content: React.SFC<ContentProps> = ({ pageContext: { topic, links } }) => 
     <Layout>
       <div className="global-wrapper">
         <Grid container spacing={3}>
-          <Grid item xs={1} sm={1} md={2} />
-          <Grid xs={10} sm={10} md={8}>
+          <Grid item md={2} />
+          <Grid xs={12} sm={12} md={8}>
             <div className="global-wrapper">
               <Typography variant="h3">{topic}</Typography>
               <div style={{ marginTop: '20px' }}>
